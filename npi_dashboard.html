@@ -156,7 +156,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 <script>
 (function(){
   function sha256(s){const a=new TextEncoder().encode(s);return crypto.subtle.digest('SHA-256',a).then(b=>{const h=Array.from(new Uint8Array(b));return h.map(x=>x.toString(16).padStart(2,'0')).join('')})}
-  const CORRECT='094dcc48a1a72f4ea1fcd4f6a58fad20cc8fdbcd02919c8576c553c24fc5fa55';
+  const CORRECT='45e6b4b61669f8056a518e8a0ab3cbf9e77265b8ad300526af7d6a89e6fb78a5';
   function unlock(){document.getElementById('authGate').style.display='none';document.getElementById('authPwd').value=''}
   function tryAuth(pwd){sha256(pwd).then(h=>{if(h===CORRECT||h===sessionStorage.getItem('npi_h')){sessionStorage.setItem('npi_h',h);unlock()}else{document.getElementById('authErr').style.display='block';document.getElementById('authPwd').value='';document.getElementById('authPwd').focus()}})}
   window.authCheck=function(){tryAuth(document.getElementById('authPwd').value)};
@@ -16575,7 +16575,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/24 14:31:25"
+  "buildTime": "2026/04/24 14:35:42"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];

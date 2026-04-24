@@ -119,9 +119,11 @@ def inject_html(records):
     if count == 0:
         raise RuntimeError("未找到 'const DATA = { ... };' 块，请检查 HTML 文件")
 
-    # 替换密码哈希占位符
+    # 替换密码哈希（支持占位符和已有哈希两种情况）
     pwd_hash = hashlib.sha256(DASHBOARD_PASSWORD.encode("utf-8")).hexdigest()
     new_html = new_html.replace("__NPI_PWD_HASH__", pwd_hash)
+    # 如果占位符已被替换过，则用正则替换已有的哈希值
+    new_html, _ = re.subn(r"const CORRECT='[a-f0-9]{64}'", f"const CORRECT='{pwd_hash}'", new_html, count=1)
 
     with open(HTML_PATH, "w", encoding="utf-8") as f:
         f.write(new_html)
