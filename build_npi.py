@@ -104,7 +104,7 @@ def inject_html(records):
         html = f.read()
 
     # 把 records 序列化为 JSON
-    data_obj = {"records": records}
+    data_obj = {"records": records, "buildTime": datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S")}
     json_str = json.dumps(data_obj, ensure_ascii=False, indent=2)
 
     # 替换 const DATA = { ... }; 块
@@ -126,7 +126,7 @@ def main():
 
     # 保存 JSON 副本
     with open(JSON_PATH, "w", encoding="utf-8") as f:
-        json.dump({"records": records}, f, ensure_ascii=False, indent=2)
+        json.dump({"records": records, "buildTime": datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S")}, f, ensure_ascii=False, indent=2)
     print(f"JSON 已保存: {JSON_PATH}")
 
     # 嵌入 HTML

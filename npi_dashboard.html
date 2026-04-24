@@ -16553,7 +16553,8 @@ const DATA = {
         "MP": "2026/05/23"
       }
     }
-  ]
+  ],
+  "buildTime": "2026/04/24 13:39:13"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16596,7 +16597,7 @@ DATA.records.forEach(r=>{
 // Build actual stage order: from STAGE_ORDER, keep only those that appear in data
 const ACTIVE_STAGES = STAGE_ORDER.filter(s => stats[s]);
 
-document.getElementById('headerDate').textContent = 'Last updated: ' + new Date().toLocaleString('en-US',{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
+document.getElementById('headerDate').textContent = 'Last updated: ' + (DATA.buildTime ? new Date(DATA.buildTime).toLocaleString('en-US',{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}) : 'N/A');
 
 function getGrouped(){
   // Group by model, pick parent = earliest MP (if tie, smallest orig_idx)
