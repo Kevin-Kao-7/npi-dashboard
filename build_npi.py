@@ -15,7 +15,7 @@ HTML_PATH  = r"c:\Users\msipm\WorkBuddy\20260422080636\npi_dashboard.html"
 JSON_PATH  = r"c:\Users\msipm\WorkBuddy\20260422080636\npi_data.json"
 
 # ── 密码配置 ──
-DASHBOARD_PASSWORD = "npi2026"
+DASHBOARD_PASSWORD = "msiyjb"
 
 # Excel Schedule sheet 列映射 (1-indexed, Row 1=表头)
 COL = {
