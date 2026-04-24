@@ -91,6 +91,9 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .gantt-table tbody td{padding:6px 8px;font-size:11px;white-space:nowrap;vertical-align:middle}
 .gantt-table tbody td.col-model{position:sticky;left:0;z-index:3;background:var(--bg2);font-weight:600;color:#fff}
 .gantt-table tbody tr:hover td.col-model{background:var(--bg3)}
+.gantt-table tbody td.col-model.mp-changed{background:#4a2020;animation:mp-pulse 1.5s ease-in-out infinite}
+.gantt-table tbody tr:hover td.col-model.mp-changed{background:#5a2a2a}
+@keyframes mp-pulse{0%,100%{box-shadow:inset 3px 0 0 #FF4444}50%{box-shadow:inset 3px 0 0 #FF8888}}
 .gantt-table tbody td.col-toggle{position:sticky;left:80px;z-index:3;background:var(--bg2);text-align:center;padding:0;cursor:pointer;font-size:14px;color:var(--text2);user-select:none}
 .gantt-table tbody td.col-toggle:hover{color:#fff}
 .gantt-table tbody tr:hover td.col-toggle{background:var(--bg3)}
@@ -16575,7 +16578,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/24 14:58:10"
+  "buildTime": "2026/04/24 16:10:01"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16945,7 +16948,8 @@ function renderGantt(){
 
     // Parent row
     tbH+='<tr>';
-    tbH+=`<td class="col-model">${model}</td>`;
+    const mpCls=parent.mp_changed?' mp-changed':'';
+    tbH+=`<td class="col-model${mpCls}">${model}</td>`;
     tbH+=`<td class="col-toggle" onclick="toggleExpand('${escAttr(model)}')">${hasChildren?(isExpanded?'−':'+'):''}</td>`;
     tbH+=`<td class="col-stage"><span class="badge badge-${parent.stage.toLowerCase()}">${parent.stage}</span></td>`;
     tbH+=`<td class="col-mkt" title="${escAttr(parent.mkt)}">${parent.mkt}</td>`;
@@ -16958,8 +16962,9 @@ function renderGantt(){
       for(let i=1;i<rows.length;i++){
         const r=rows[i];
         const show=isExpanded;
+        const childCls=r.mp_changed?' mp-changed':'';
         tbH+=`<tr class="child-row${show?' open':''}">`;
-        tbH+=`<td class="col-model" style="color:var(--text2);font-weight:400;padding-left:16px">${model}</td>`;
+        tbH+=`<td class="col-model${childCls}" style="color:var(--text2);font-weight:400;padding-left:16px">${model}</td>`;
         tbH+=`<td class="col-toggle"></td>`;
         tbH+=`<td class="col-stage"><span class="badge badge-${r.stage.toLowerCase()}">${r.stage}</span></td>`;
         tbH+=`<td class="col-mkt" title="${escAttr(r.mkt)}">${r.mkt}</td>`;
