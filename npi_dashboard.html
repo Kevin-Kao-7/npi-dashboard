@@ -10408,8 +10408,8 @@ const DATA = {
       "gpu": "RTX 5070",
       "npm": "蔡東宏",
       "stage": "MVT",
-      "status": "PCB可以依業務工單需求下單執行",
-      "highlight": "RPL-H R與RPL-H都有提供MVT sample給RD,RD同意ATS用RPL-H R or RPL-H 都可以,另一個C/R",
+      "status": "MVT 測試中",
+      "highlight": "預計5/6 ATS C/R RPL-H, 目前兩個問題請RDSW儘速釐清 1.使用網易雲客戶端播放音樂，幾率性出現PO音 2. DC下透過瀏覽器播放線上影片,播放一會影片會卡頓",
       "mp_sort": "2026/05/16",
       "orig_idx": 517,
       "dates": {
@@ -10427,7 +10427,7 @@ const DATA = {
       "gpu": "RTX 5050",
       "npm": "蔡東宏",
       "stage": "Design",
-      "status": "因Normal版追加30K訂單與此專案外觀是白色,目前模具只有一套,持續tracking,是否MVT/MP Schedule 需要做調整",
+      "status": "需客製的4大件/KB/Thermal/Packing在進行中,時程依原計畫,預計5/18 齊料, 5/20 試組,5/21 ID hand carry 3台並於 5/25 當週在公司內部展出(ID 玻璃屋)",
       "highlight": "由於時程很緊迫,MP備料無法等待工廠與DQA測試後再行啟動,Team共識須優先確保 MP 時程,take risk請廠商一次性備料生產(MP+MVT+RMA共230套)",
       "mp_sort": "2026/06/18",
       "orig_idx": 518,
@@ -10594,7 +10594,7 @@ const DATA = {
       "stage": "Design",
       "status": "follow Katana 15 HX C14WFK",
       "highlight": ".",
-      "mp_sort": "2026/08/30",
+      "mp_sort": "2026/08/25",
       "orig_idx": 526,
       "dates": {
         "Kickoff": "2026/04/20",
@@ -10602,7 +10602,7 @@ const DATA = {
         "MVT-start": "2026/07/21",
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
-        "MP": "2026/08/30"
+        "MP": "2026/08/25"
       }
     },
     {
@@ -14867,7 +14867,7 @@ const DATA = {
       "dates": {
         "Kickoff": "2026/04/20",
         "DVT-start": "2026/05/26",
-        "EVT-start": "2026/07/10",
+        "MVT-start": "2026/07/10",
         "BTO ready": "2026/07/20",
         "ATS-start": "2026/08/17",
         "MP": "2026/08/27"
@@ -16526,7 +16526,7 @@ const DATA = {
       "stage": "MVT",
       "status": "MVT DQA test4/15-4/29",
       "highlight": "1.請RD support MVT debug@5/7 2.包材落摔fail,待確認機構卡扣能否改善,行銷包材增加泡棉後能否pass;若4/24決定,包材交期5/M;否則ATS 時間會依包材確定結果延後相應時間3.CCC認證預計5/E,若機殼樣品條燃燒結果fail,會再延後",
-      "mp_sort": "2026/05/23",
+      "mp_sort": "2026/05/30",
       "orig_idx": 826,
       "dates": {
         "Kickoff": "2025/11/06",
@@ -16535,7 +16535,7 @@ const DATA = {
         "MVT-start": "2026/04/02",
         "BTO ready": "2026/04/09",
         "ATS-start": "2026/05/08",
-        "MP": "2026/05/23"
+        "MP": "2026/05/30"
       }
     },
     {
@@ -16578,7 +16578,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/24 16:10:01"
+  "buildTime": "2026/04/24 16:38:28"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16946,10 +16946,13 @@ function renderGantt(){
     const hasChildren=rows.length>1;
     const isExpanded=expandedModels.has(model);
 
+    // Parent highlight: parent itself changed, OR any child changed (MP date/stage)
+    const anyChildChanged=rows.some(r=>r.mp_changed);
+    const parentCls=anyChildChanged?' mp-changed':'';
+
     // Parent row
     tbH+='<tr>';
-    const mpCls=parent.mp_changed?' mp-changed':'';
-    tbH+=`<td class="col-model${mpCls}">${model}</td>`;
+    tbH+=`<td class="col-model${parentCls}">${model}</td>`;
     tbH+=`<td class="col-toggle" onclick="toggleExpand('${escAttr(model)}')">${hasChildren?(isExpanded?'−':'+'):''}</td>`;
     tbH+=`<td class="col-stage"><span class="badge badge-${parent.stage.toLowerCase()}">${parent.stage}</span></td>`;
     tbH+=`<td class="col-mkt" title="${escAttr(parent.mkt)}">${parent.mkt}</td>`;
