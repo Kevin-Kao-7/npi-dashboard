@@ -24,11 +24,13 @@ if errorlevel 1 (
 )
 echo.
 
-:: 3. 推送到 GitHub
+:: 3. 推送到 GitHub（使用本地代理）
 echo [3/3] 正在推送到 GitHub...
+set http_proxy=http://127.0.0.1:7890
+set https_proxy=http://127.0.0.1:7890
 "C:\Program Files\Git\cmd\git.exe" push origin main 2>nul
 if errorlevel 1 (
-    echo 推送失败，可能网络不通或未配置远程仓库
+    echo 推送失败，请检查网络/代理是否开启
     echo 可稍后手动执行: git push origin main
 ) else (
     echo 推送成功！GitHub Pages 将自动更新。
