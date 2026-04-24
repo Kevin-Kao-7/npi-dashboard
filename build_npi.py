@@ -119,11 +119,21 @@ def inject_html(records):
     if count == 0:
         raise RuntimeError("未找到 'const DATA = { ... };' 块，请检查 HTML 文件")
 
-    # 替换密码哈希（支持占位符和已有哈希两种情况）
-    pwd_hash = hashlib.sha256(DASHBOARD_PASSWORD.encode("utf-8")).hexdigest()
-    new_html = new_html.replace("__NPI_PWD_HASH__", pwd_hash)
-    # 如果占位符已被替换过，则用正则替换已有的哈希值
-    new_html, _ = re.subn(r"const CORRECT='[a-f0-9]{64}'", f"const CORRECT='{pwd_hash}'", new_html, count=1)
+    # 替换密码（支持占位符和已有值两种情况）
+    # JS hashCode: h=((h<<5)-h)+s.charCodeAt(i); h|=0; return h.toString(36)
+    def js_hashcode(s):
+        h = 0
+        for c in s:
+            h = ((h << 5) - h) + ord(c)
+            h = h & 0xFFFFFFFF  # simulate JS 32-bit int
+            if h >= 0x80000000:
+                h -= 0x100000000  # simulate JS |=0 (signed)
+        return str(h & 0xFFFFFFFF) if h >= 0 else str(h)
+
+    pwd_code = js_hashcode(DASHBOARD_PASSWORD)
+    new_html = new_html.replace("__NPI_PWD_HASH__", pwd_code)
+    # 如果占位符已被替换过，替换 const CORRECT=hashCode('...')
+    new_html = re.sub(r"hashCode\('[^']*'\)", f"hashCode('{DASHBOARD_PASSWORD}')", new_html, count=1)
 
     with open(HTML_PATH, "w", encoding="utf-8") as f:
         f.write(new_html)

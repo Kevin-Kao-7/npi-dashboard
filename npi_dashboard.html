@@ -155,10 +155,10 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 </div>
 <script>
 (function(){
-  function sha256(s){const a=new TextEncoder().encode(s);return crypto.subtle.digest('SHA-256',a).then(b=>{const h=Array.from(new Uint8Array(b));return h.map(x=>x.toString(16).padStart(2,'0')).join('')})}
-  const CORRECT='45e6b4b61669f8056a518e8a0ab3cbf9e77265b8ad300526af7d6a89e6fb78a5';
+  function hashCode(s){let h=0;for(let i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0}return h.toString(36)}
+  const CORRECT=hashCode('msiyjb');
   function unlock(){document.getElementById('authGate').style.display='none';document.getElementById('authPwd').value=''}
-  function tryAuth(pwd){sha256(pwd).then(h=>{if(h===CORRECT||h===sessionStorage.getItem('npi_h')){sessionStorage.setItem('npi_h',h);unlock()}else{document.getElementById('authErr').style.display='block';document.getElementById('authPwd').value='';document.getElementById('authPwd').focus()}})}
+  function tryAuth(pwd){if(hashCode(pwd)===CORRECT||sessionStorage.getItem('npi_h')===hashCode(pwd)){sessionStorage.setItem('npi_h',hashCode(pwd));unlock()}else{document.getElementById('authErr').style.display='block';document.getElementById('authPwd').value='';document.getElementById('authPwd').focus()}}
   window.authCheck=function(){tryAuth(document.getElementById('authPwd').value)};
   if(sessionStorage.getItem('npi_h'))unlock();
 })();
@@ -16522,7 +16522,7 @@ const DATA = {
       "npm": "楊淑賢",
       "stage": "MVT",
       "status": "MVT DQA test4/15-4/29",
-      "highlight": "1.請RD support MVT debug@5/7 2.包材落摔fail,待請示leader決議,目前包材廠回復預計5/13交料3.CCC認證預計5/E,若機殼樣品條燃燒結果fail,會再延後",
+      "highlight": "1.請RD support MVT debug@5/7 2.包材落摔fail,待確認機構卡扣能否改善,行銷包材增加泡棉後能否pass;若4/24決定,包材交期5/M;否則ATS 時間會依包材確定結果延後相應時間3.CCC認證預計5/E,若機殼樣品條燃燒結果fail,會再延後",
       "mp_sort": "2026/05/23",
       "orig_idx": 826,
       "dates": {
@@ -16575,7 +16575,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/24 14:35:42"
+  "buildTime": "2026/04/24 14:58:10"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
