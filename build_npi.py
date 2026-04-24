@@ -6,12 +6,16 @@
 import json
 import re
 import datetime
+import hashlib
 import openpyxl
 
 # ── 路径配置 ──
 EXCEL_PATH = r"C:\Users\msipm\Desktop\work\Spec總表.xlsx"
 HTML_PATH  = r"c:\Users\msipm\WorkBuddy\20260422080636\npi_dashboard.html"
 JSON_PATH  = r"c:\Users\msipm\WorkBuddy\20260422080636\npi_data.json"
+
+# ── 密码配置 ──
+DASHBOARD_PASSWORD = "npi2026"
 
 # Excel Schedule sheet 列映射 (1-indexed, Row 1=表头)
 COL = {
@@ -114,6 +118,10 @@ def inject_html(records):
     new_html, count = re.subn(pattern, replacement, html, count=1)
     if count == 0:
         raise RuntimeError("未找到 'const DATA = { ... };' 块，请检查 HTML 文件")
+
+    # 替换密码哈希占位符
+    pwd_hash = hashlib.sha256(DASHBOARD_PASSWORD.encode("utf-8")).hexdigest()
+    new_html = new_html.replace("__NPI_PWD_HASH__", pwd_hash)
 
     with open(HTML_PATH, "w", encoding="utf-8") as f:
         f.write(new_html)

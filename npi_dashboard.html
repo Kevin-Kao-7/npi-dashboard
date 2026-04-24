@@ -143,6 +143,27 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 </head>
 <body>
 
+<!-- Password Gate -->
+<div id="authGate" style="position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg);z-index:9999;display:flex;align-items:center;justify-content:center">
+  <div style="text-align:center;padding:40px;background:var(--bg2);border:1px solid var(--border);border-radius:12px;min-width:300px">
+    <div style="font-size:20px;font-weight:600;color:#fff;margin-bottom:8px">NPI Dashboard</div>
+    <div style="font-size:12px;color:var(--text2);margin-bottom:24px">请输入密码以访问</div>
+    <input id="authPwd" type="password" placeholder="Password" style="width:100%;padding:10px 14px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:8px;font-size:14px;outline:none;margin-bottom:12px" onkeydown="if(event.key==='Enter')authCheck()">
+    <button onclick="authCheck()" style="width:100%;padding:10px;background:#4472C4;color:#fff;border:none;border-radius:8px;font-size:14px;cursor:pointer;font-weight:500">登 录</button>
+    <div id="authErr" style="color:#FF4444;font-size:12px;margin-top:10px;display:none">密码错误</div>
+  </div>
+</div>
+<script>
+(function(){
+  function sha256(s){const a=new TextEncoder().encode(s);return crypto.subtle.digest('SHA-256',a).then(b=>{const h=Array.from(new Uint8Array(b));return h.map(x=>x.toString(16).padStart(2,'0')).join('')})}
+  const CORRECT='094dcc48a1a72f4ea1fcd4f6a58fad20cc8fdbcd02919c8576c553c24fc5fa55';
+  function unlock(){document.getElementById('authGate').style.display='none';document.getElementById('authPwd').value=''}
+  function tryAuth(pwd){sha256(pwd).then(h=>{if(h===CORRECT||h===sessionStorage.getItem('npi_h')){sessionStorage.setItem('npi_h',h);unlock()}else{document.getElementById('authErr').style.display='block';document.getElementById('authPwd').value='';document.getElementById('authPwd').focus()}})}
+  window.authCheck=function(){tryAuth(document.getElementById('authPwd').value)};
+  if(sessionStorage.getItem('npi_h'))unlock();
+})();
+</script>
+
 <div class="header">
   <h1>NPI Check Dashboard</h1>
   <div class="date" id="headerDate"></div>
@@ -16554,7 +16575,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/24 13:46:34"
+  "buildTime": "2026/04/24 14:19:34"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
