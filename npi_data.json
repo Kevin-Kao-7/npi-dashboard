@@ -4522,6 +4522,86 @@
       }
     },
     {
+      "model": "15K1",
+      "mkt": "Cyborg 15 Black Edition A13UDO",
+      "cpu": "RPL-H 45W",
+      "gpu": "RTX 3050",
+      "npm": "梅燕",
+      "stage": "Design",
+      "status": "",
+      "highlight": ".",
+      "mp_sort": "2026/06/30",
+      "orig_idx": 228,
+      "dates": {
+        "Kickoff": "2026/04/21",
+        "MVT-start": "2026/05/25",
+        "BTO ready": "2026/05/29",
+        "ATS-start": "2026/06/20",
+        "MP": "2026/06/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "15K1",
+      "mkt": "Cyborg 15 Black Edition A13VEO",
+      "cpu": "RPL-H 45W",
+      "gpu": "RTX 4050",
+      "npm": "梅燕",
+      "stage": "Design",
+      "status": "",
+      "highlight": ".",
+      "mp_sort": "2026/06/30",
+      "orig_idx": 229,
+      "dates": {
+        "Kickoff": "2026/04/21",
+        "MVT-start": "2026/05/25",
+        "BTO ready": "2026/05/29",
+        "ATS-start": "2026/06/20",
+        "MP": "2026/06/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "15K1",
+      "mkt": "Cyborg 15 Black Edition A2UDXO",
+      "cpu": "RPL-H refresh 45W",
+      "gpu": "RTX 3050",
+      "npm": "梅燕",
+      "stage": "Design",
+      "status": "",
+      "highlight": ".",
+      "mp_sort": "2026/06/30",
+      "orig_idx": 230,
+      "dates": {
+        "Kickoff": "2026/04/21",
+        "MVT-start": "2026/05/25",
+        "BTO ready": "2026/05/29",
+        "ATS-start": "2026/06/20",
+        "MP": "2026/06/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "15K1",
+      "mkt": "Cyborg 15 Black Edition A2VEO",
+      "cpu": "RPL-H refresh 45W",
+      "gpu": "RTX 4050",
+      "npm": "梅燕",
+      "stage": "Design",
+      "status": "",
+      "highlight": ".",
+      "mp_sort": "2026/06/30",
+      "orig_idx": 231,
+      "dates": {
+        "Kickoff": "2026/04/21",
+        "MVT-start": "2026/05/25",
+        "BTO ready": "2026/05/29",
+        "ATS-start": "2026/06/20",
+        "MP": "2026/06/30"
+      },
+      "mp_changed": true
+    },
+    {
       "model": "15M3",
       "mkt": "Raider 16 HX AI A2XWHG",
       "cpu": "ARL-HX 55W",
@@ -4531,14 +4611,15 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/09/22",
-      "orig_idx": 228,
+      "orig_idx": 232,
       "dates": {
         "Kickoff": "2025/04/15",
         "MVT-start": "2026/05/14",
         "BTO ready": "2025/09/03",
         "ATS-start": "2025/09/22",
         "MP": "2025/09/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M3",
@@ -4550,13 +4631,14 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/09/22",
-      "orig_idx": 229,
+      "orig_idx": 233,
       "dates": {
         "Kickoff": "2025/04/15",
         "BTO ready": "2025/09/03",
         "ATS-start": "2025/09/18",
         "MP": "2025/09/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M3",
@@ -4568,14 +4650,15 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/09/22",
-      "orig_idx": 230,
+      "orig_idx": 234,
       "dates": {
         "Kickoff": "2025/04/15",
         "MVT-start": "2025/05/14",
         "BTO ready": "2025/09/03",
         "ATS-start": "2025/09/22",
         "MP": "2025/09/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M3",
@@ -4587,7 +4670,7 @@
       "status": "0",
       "highlight": "",
       "mp_sort": "2025/03/24",
-      "orig_idx": 231,
+      "orig_idx": 235,
       "dates": {
         "Kickoff": "2024/05/15",
         "DVT-start": "2024/07/22",
@@ -4596,7 +4679,8 @@
         "BTO ready": "2024/12/25",
         "ATS-start": "2025/03/20",
         "MP": "2025/03/24"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M3",
@@ -4608,7 +4692,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/03/30",
-      "orig_idx": 232,
+      "orig_idx": 236,
       "dates": {
         "Kickoff": "2024/05/15",
         "DVT-start": "2024/07/22",
@@ -4617,7 +4701,8 @@
         "BTO ready": "2024/12/25",
         "ATS-start": "2025/03/20",
         "MP": "2025/03/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M3",
@@ -4629,7 +4714,7 @@
       "status": "0",
       "highlight": "",
       "mp_sort": "2025/03/11",
-      "orig_idx": 233,
+      "orig_idx": 237,
       "dates": {
         "Kickoff": "2024/05/15",
         "DVT-start": "2024/07/22",
@@ -4638,7 +4723,8 @@
         "BTO ready": "2024/12/25",
         "ATS-start": "2025/02/04",
         "MP": "2025/03/11"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M3",
@@ -4650,7 +4736,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/02/26",
-      "orig_idx": 234,
+      "orig_idx": 238,
       "dates": {
         "Kickoff": "2024/05/15",
         "DVT-start": "2024/07/22",
@@ -4659,7 +4745,8 @@
         "BTO ready": "2024/12/25",
         "ATS-start": "2025/02/12",
         "MP": "2025/02/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M3",
@@ -4671,7 +4758,7 @@
       "status": "0",
       "highlight": "首筆訂單5/28完成C/R 轉MP.",
       "mp_sort": "2025/03/12",
-      "orig_idx": 235,
+      "orig_idx": 239,
       "dates": {
         "Kickoff": "2024/05/15",
         "DVT-start": "2024/07/22",
@@ -4680,7 +4767,8 @@
         "BTO ready": "2025/01/20",
         "ATS-start": "2025/02/26",
         "MP": "2025/03/12"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M3",
@@ -4692,7 +4780,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/03/12",
-      "orig_idx": 236,
+      "orig_idx": 240,
       "dates": {
         "Kickoff": "2024/05/15",
         "DVT-start": "2024/07/22",
@@ -4701,7 +4789,8 @@
         "BTO ready": "2025/01/20",
         "ATS-start": "2025/02/26",
         "MP": "2025/03/12"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M4",
@@ -4713,7 +4802,7 @@
       "status": "BTO 關閉,暫不出",
       "highlight": "NPI DQA debug 未結束",
       "mp_sort": "2025/05/23",
-      "orig_idx": 237,
+      "orig_idx": 241,
       "dates": {
         "Kickoff": "2024/10/24",
         "EVT-start": "2025/01/08",
@@ -4721,7 +4810,8 @@
         "BTO ready": "2025/04/09",
         "ATS-start": "2025/05/09",
         "MP": "2025/05/23"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M4",
@@ -4733,7 +4823,7 @@
       "status": "BTO 關閉，暫不出",
       "highlight": "NPI DQA debug 未結束",
       "mp_sort": "2025/05/08",
-      "orig_idx": 238,
+      "orig_idx": 242,
       "dates": {
         "Kickoff": "2024/10/24",
         "EVT-start": "2025/01/08",
@@ -4741,7 +4831,8 @@
         "BTO ready": "2025/03/21",
         "ATS-start": "2025/04/21",
         "MP": "2025/05/08"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M4",
@@ -4753,7 +4844,7 @@
       "status": "BTO 關閉，暫不出",
       "highlight": "NPI DQA debug 未結束",
       "mp_sort": "2025/05/08",
-      "orig_idx": 239,
+      "orig_idx": 243,
       "dates": {
         "Kickoff": "2024/10/24",
         "EVT-start": "2025/01/08",
@@ -4761,7 +4852,8 @@
         "BTO ready": "2025/03/21",
         "ATS-start": "2025/04/21",
         "MP": "2025/05/08"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M4",
@@ -4773,7 +4865,7 @@
       "status": "0",
       "highlight": "業務無需求, BTO未開",
       "mp_sort": "2025/05/23",
-      "orig_idx": 240,
+      "orig_idx": 244,
       "dates": {
         "Kickoff": "2024/07/04",
         "DVT-start": "2024/12/19",
@@ -4781,7 +4873,8 @@
         "BTO ready": "2025/04/09",
         "ATS-start": "2025/05/09",
         "MP": "2025/05/23"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M4",
@@ -4793,7 +4886,7 @@
       "status": "0",
       "highlight": "業務無需求, BTO未開",
       "mp_sort": "2025/05/23",
-      "orig_idx": 241,
+      "orig_idx": 245,
       "dates": {
         "Kickoff": "2024/07/04",
         "DVT-start": "2024/12/19",
@@ -4801,7 +4894,8 @@
         "BTO ready": "2025/04/09",
         "ATS-start": "2025/05/09",
         "MP": "2025/05/23"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M4",
@@ -4813,7 +4907,7 @@
       "status": "4",
       "highlight": "",
       "mp_sort": "2025/04/26",
-      "orig_idx": 242,
+      "orig_idx": 246,
       "dates": {
         "Kickoff": "2024/07/04",
         "DVT-start": "2024/12/19",
@@ -4821,7 +4915,8 @@
         "BTO ready": "2025/03/14",
         "ATS-start": "2025/04/15",
         "MP": "2025/04/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M4",
@@ -4833,7 +4928,7 @@
       "status": "4",
       "highlight": "",
       "mp_sort": "2025/04/26",
-      "orig_idx": 243,
+      "orig_idx": 247,
       "dates": {
         "Kickoff": "2024/07/04",
         "DVT-start": "2024/12/19",
@@ -4841,7 +4936,8 @@
         "BTO ready": "2025/03/14",
         "ATS-start": "2025/04/15",
         "MP": "2025/04/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M4",
@@ -4853,7 +4949,7 @@
       "status": "4",
       "highlight": "",
       "mp_sort": "2025/04/26",
-      "orig_idx": 244,
+      "orig_idx": 248,
       "dates": {
         "Kickoff": "2024/07/04",
         "DVT-start": "2024/12/19",
@@ -4861,7 +4957,8 @@
         "BTO ready": "2025/03/14",
         "ATS-start": "2025/04/15",
         "MP": "2025/04/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15M4",
@@ -4873,7 +4970,7 @@
       "status": "4",
       "highlight": "",
       "mp_sort": "2025/04/26",
-      "orig_idx": 245,
+      "orig_idx": 249,
       "dates": {
         "Kickoff": "2024/07/04",
         "DVT-start": "2024/12/19",
@@ -4881,7 +4978,8 @@
         "BTO ready": "2025/03/14",
         "ATS-start": "2025/04/15",
         "MP": "2025/04/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15P4",
@@ -4893,7 +4991,7 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/05/20",
-      "orig_idx": 246,
+      "orig_idx": 250,
       "dates": {
         "Kickoff": "2024/07/16",
         "DVT-start": "2024/09/18",
@@ -4902,7 +5000,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/05/12",
         "MP": "2025/05/20"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15P4",
@@ -4914,7 +5013,7 @@
       "status": "5",
       "highlight": "",
       "mp_sort": "2025/04/30",
-      "orig_idx": 247,
+      "orig_idx": 251,
       "dates": {
         "Kickoff": "2024/07/16",
         "DVT-start": "2024/09/18",
@@ -4923,7 +5022,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/04/17",
         "MP": "2025/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15P4",
@@ -4935,7 +5035,7 @@
       "status": "5",
       "highlight": "",
       "mp_sort": "2025/04/30",
-      "orig_idx": 248,
+      "orig_idx": 252,
       "dates": {
         "Kickoff": "2024/07/16",
         "DVT-start": "2024/09/18",
@@ -4944,7 +5044,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/04/17",
         "MP": "2025/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PK",
@@ -4956,13 +5057,14 @@
       "status": "Leverage 17TK",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/08/13",
-      "orig_idx": 249,
+      "orig_idx": 253,
       "dates": {
         "Kickoff": "2025/05/23",
         "BTO ready": "2025/07/01",
         "ATS-start": "2025/08/02",
         "MP": "2025/08/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PK",
@@ -4974,14 +5076,15 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/08/13",
-      "orig_idx": 250,
+      "orig_idx": 254,
       "dates": {
         "Kickoff": "2025/05/23",
         "MVT-start": "2025/06/03",
         "BTO ready": "2025/07/01",
         "ATS-start": "2025/08/02",
         "MP": "2025/08/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PK",
@@ -4993,14 +5096,15 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/08/13",
-      "orig_idx": 251,
+      "orig_idx": 255,
       "dates": {
         "Kickoff": "2025/05/23",
         "MVT-start": "2025/06/03",
         "BTO ready": "2025/07/01",
         "ATS-start": "2025/08/02",
         "MP": "2025/08/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PK",
@@ -5012,7 +5116,7 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/05/26",
-      "orig_idx": 252,
+      "orig_idx": 256,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -5021,7 +5125,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/05/19",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PK",
@@ -5033,7 +5138,7 @@
       "status": "-13",
       "highlight": "1.ATS黑屏/藍屏debug delay",
       "mp_sort": "2025/05/22",
-      "orig_idx": 253,
+      "orig_idx": 257,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -5042,7 +5147,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/04/21",
         "MP": "2025/05/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PK",
@@ -5054,7 +5160,7 @@
       "status": "-13",
       "highlight": "1.ATS黑屏/藍屏debug delay",
       "mp_sort": "2025/05/22",
-      "orig_idx": 254,
+      "orig_idx": 258,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -5063,7 +5169,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/04/21",
         "MP": "2025/05/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PK",
@@ -5075,7 +5182,7 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/05/26",
-      "orig_idx": 255,
+      "orig_idx": 259,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -5083,7 +5190,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/05/19",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PK",
@@ -5095,7 +5203,7 @@
       "status": "-17",
       "highlight": "1.KRK ATS黑屏/藍屏debug delay 2.KRK MP後排CR",
       "mp_sort": "2025/05/26",
-      "orig_idx": 256,
+      "orig_idx": 260,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -5115,7 +5223,7 @@
       "status": "-17",
       "highlight": "1.KRK ATS黑屏/藍屏debug delay 2.KRK MP後排CR",
       "mp_sort": "2025/05/26",
-      "orig_idx": 257,
+      "orig_idx": 261,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -5123,7 +5231,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/05/21",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5135,14 +5244,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/05/30",
-      "orig_idx": 258,
+      "orig_idx": 262,
       "dates": {
         "Kickoff": "2025/04/11",
         "MVT-start": "2025/04/17",
         "BTO ready": "2025/04/24",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5154,14 +5264,15 @@
       "status": "+4",
       "highlight": "NA",
       "mp_sort": "2025/05/26",
-      "orig_idx": 259,
+      "orig_idx": 263,
       "dates": {
         "Kickoff": "2025/04/11",
         "MVT-start": "2025/04/17",
         "BTO ready": "2025/04/24",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5173,14 +5284,15 @@
       "status": "+4",
       "highlight": "NA",
       "mp_sort": "2025/05/26",
-      "orig_idx": 260,
+      "orig_idx": 264,
       "dates": {
         "Kickoff": "2025/04/11",
         "MVT-start": "2025/04/17",
         "BTO ready": "2025/04/24",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5192,7 +5304,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/05/30",
-      "orig_idx": 261,
+      "orig_idx": 265,
       "dates": {
         "Kickoff": "2024/09/11",
         "DVT-start": "2024/12/20",
@@ -5201,7 +5313,8 @@
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5213,7 +5326,7 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/05/25",
-      "orig_idx": 262,
+      "orig_idx": 266,
       "dates": {
         "Kickoff": "2024/09/11",
         "DVT-start": "2024/12/20",
@@ -5222,7 +5335,8 @@
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/12",
         "MP": "2025/05/25"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5234,7 +5348,7 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/05/25",
-      "orig_idx": 263,
+      "orig_idx": 267,
       "dates": {
         "Kickoff": "2024/09/11",
         "DVT-start": "2024/12/20",
@@ -5243,7 +5357,8 @@
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/12",
         "MP": "2025/05/25"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5255,7 +5370,7 @@
       "status": "",
       "highlight": "10/14收到通知Pending",
       "mp_sort": "2026/02/14",
-      "orig_idx": 264,
+      "orig_idx": 268,
       "dates": {
         "Kickoff": "2025/09/26",
         "MVT-start": "2025/12/09",
@@ -5274,14 +5389,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/07/14",
-      "orig_idx": 265,
+      "orig_idx": 269,
       "dates": {
         "Kickoff": "2024/09/11",
         "MVT-start": "2025/05/26",
         "BTO ready": "2025/06/06",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5293,14 +5409,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/07/14",
-      "orig_idx": 266,
+      "orig_idx": 270,
       "dates": {
         "Kickoff": "2024/09/11",
         "MVT-start": "2025/05/26",
         "BTO ready": "2025/06/06",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5312,14 +5429,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/07/14",
-      "orig_idx": 267,
+      "orig_idx": 271,
       "dates": {
         "Kickoff": "2024/09/11",
         "MVT-start": "2025/05/26",
         "BTO ready": "2025/06/06",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15PL",
@@ -5331,14 +5449,15 @@
       "status": "",
       "highlight": "10/14收到通知Pending",
       "mp_sort": "2026/02/14",
-      "orig_idx": 268,
+      "orig_idx": 272,
       "dates": {
         "Kickoff": "2025/09/26",
         "MVT-start": "2025/12/09",
         "BTO ready": "2026/01/06",
         "ATS-start": "2026/02/03",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15Q3",
@@ -5350,14 +5469,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/09/20",
-      "orig_idx": 269,
+      "orig_idx": 273,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/07/25",
         "BTO ready": "2025/08/26",
         "ATS-start": "2025/09/17",
         "MP": "2025/09/20"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15Q3",
@@ -5369,13 +5489,14 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/09/20",
-      "orig_idx": 270,
+      "orig_idx": 274,
       "dates": {
         "Kickoff": "2024/12/06",
         "BTO ready": "2025/08/26",
         "ATS-start": "2025/09/18",
         "MP": "2025/09/20"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15Q3",
@@ -5387,13 +5508,14 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/09/26",
-      "orig_idx": 271,
+      "orig_idx": 275,
       "dates": {
         "Kickoff": "2024/12/06",
         "BTO ready": "2025/08/26",
         "ATS-start": "2025/09/23",
         "MP": "2025/09/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15Q3",
@@ -5405,14 +5527,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/06/30",
-      "orig_idx": 272,
+      "orig_idx": 276,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/04/26",
         "BTO ready": "2025/05/14",
         "ATS-start": "2025/06/25",
         "MP": "2025/06/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15Q3",
@@ -5424,14 +5547,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/06/25",
-      "orig_idx": 273,
+      "orig_idx": 277,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/04/26",
         "BTO ready": "2025/05/14",
         "ATS-start": "2025/06/12",
         "MP": "2025/06/25"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15Q3",
@@ -5443,14 +5567,15 @@
       "status": "0",
       "highlight": "na",
       "mp_sort": "2025/07/30",
-      "orig_idx": 274,
+      "orig_idx": 278,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/04/26",
         "BTO ready": "2025/05/14",
         "ATS-start": "2025/07/15",
         "MP": "2025/07/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15Q3",
@@ -5462,14 +5587,15 @@
       "status": "10/27 關閉",
       "highlight": "NA",
       "mp_sort": "2026/02/14",
-      "orig_idx": 275,
+      "orig_idx": 279,
       "dates": {
         "Kickoff": "2025/10/27",
         "MVT-start": "2025/12/10",
         "BTO ready": "2025/12/19",
         "ATS-start": "2026/02/04",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15QL",
@@ -5481,14 +5607,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/07/15",
-      "orig_idx": 276,
+      "orig_idx": 280,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/06/07",
         "BTO ready": "2025/06/10",
         "ATS-start": "2025/07/12",
         "MP": "2025/07/15"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15QL",
@@ -5500,14 +5627,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/07/12",
-      "orig_idx": 277,
+      "orig_idx": 281,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/06/07",
         "BTO ready": "2025/06/10",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/12"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15QL",
@@ -5519,14 +5647,15 @@
       "status": "1",
       "highlight": "NA",
       "mp_sort": "2025/08/16",
-      "orig_idx": 278,
+      "orig_idx": 282,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/06/07",
         "BTO ready": "2025/06/10",
         "ATS-start": "2025/08/11",
         "MP": "2025/08/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15QL",
@@ -5538,7 +5667,7 @@
       "status": "BTO 未開放",
       "highlight": "NA",
       "mp_sort": "2025/06/21",
-      "orig_idx": 279,
+      "orig_idx": 283,
       "dates": {
         "Kickoff": "2024/09/10",
         "EVT-start": "2025/03/10",
@@ -5558,7 +5687,7 @@
       "status": "BTO 未開放",
       "highlight": "NA",
       "mp_sort": "2025/06/21",
-      "orig_idx": 280,
+      "orig_idx": 284,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/04/15",
@@ -5577,7 +5706,7 @@
       "status": "BTO 未開放",
       "highlight": "NA",
       "mp_sort": "2025/06/21",
-      "orig_idx": 281,
+      "orig_idx": 285,
       "dates": {
         "Kickoff": "2024/09/10",
         "EVT-start": "2025/02/27",
@@ -5597,13 +5726,14 @@
       "status": "165HZ panel 交期8/E或者9/B，業務急單36台 assy@8/12，入庫：8/18",
       "highlight": "NA",
       "mp_sort": "2025/08/18",
-      "orig_idx": 282,
+      "orig_idx": 286,
       "dates": {
         "Kickoff": "2024/09/10",
         "BTO ready": "2025/06/10",
         "ATS-start": "2025/08/12",
         "MP": "2025/08/18"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15QL",
@@ -5615,14 +5745,15 @@
       "status": "BTO 未開放",
       "highlight": "NA",
       "mp_sort": "2025/06/21",
-      "orig_idx": 283,
+      "orig_idx": 287,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/04/28",
         "BTO ready": "2025/04/10",
         "ATS-start": "2025/06/11",
         "MP": "2025/06/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15QL",
@@ -5634,14 +5765,15 @@
       "status": "BTO 未開放",
       "highlight": "NA",
       "mp_sort": "2025/06/21",
-      "orig_idx": 284,
+      "orig_idx": 288,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/04/15",
         "BTO ready": "2025/04/10",
         "ATS-start": "2025/06/11",
         "MP": "2025/06/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15QL",
@@ -5653,14 +5785,15 @@
       "status": "BTO 未開放",
       "highlight": "NA",
       "mp_sort": "2025/06/21",
-      "orig_idx": 285,
+      "orig_idx": 289,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/04/15",
         "BTO ready": "2025/04/10",
         "ATS-start": "2025/06/11",
         "MP": "2025/06/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -5672,7 +5805,7 @@
       "status": "3/20正式进入MP",
       "highlight": "同Cyborg 15 Max C2WG",
       "mp_sort": "2026/03/21",
-      "orig_idx": 286,
+      "orig_idx": 290,
       "dates": {
         "Kickoff": "2026/01/13",
         "EVT-start": "2026/01/27",
@@ -5691,7 +5824,7 @@
       "status": "3/20正式进入MP",
       "highlight": "同Cyborg 15 Max C2WG",
       "mp_sort": "2026/03/21",
-      "orig_idx": 287,
+      "orig_idx": 291,
       "dates": {
         "Kickoff": "2026/01/13",
         "EVT-start": "2026/01/27",
@@ -5710,7 +5843,7 @@
       "status": "3/18正式进入MP",
       "highlight": "同Cyborg 15 Max C2WG",
       "mp_sort": "2026/03/19",
-      "orig_idx": 288,
+      "orig_idx": 292,
       "dates": {
         "Kickoff": "2025/10/08",
         "DVT-start": "2025/11/24",
@@ -5718,7 +5851,8 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/03/06",
         "MP": "2026/03/19"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -5730,7 +5864,7 @@
       "status": "3/18正式进入MP",
       "highlight": "同Cyborg 15 Max C2WG",
       "mp_sort": "2026/03/19",
-      "orig_idx": 289,
+      "orig_idx": 293,
       "dates": {
         "Kickoff": "2025/10/08",
         "DVT-start": "2025/11/24",
@@ -5750,14 +5884,15 @@
       "status": "3/20正式进入MP",
       "highlight": "同Cyborg 15 Max C2WG",
       "mp_sort": "2026/03/21",
-      "orig_idx": 290,
+      "orig_idx": 294,
       "dates": {
         "Kickoff": "2026/01/13",
         "EVT-start": "2026/01/27",
         "BTO ready": "2026/02/12",
         "ATS-start": "2026/03/18",
         "MP": "2026/03/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -5769,14 +5904,15 @@
       "status": "3/20正式进入MP",
       "highlight": "同Cyborg 15 Max C2WG",
       "mp_sort": "2026/03/21",
-      "orig_idx": 291,
+      "orig_idx": 295,
       "dates": {
         "Kickoff": "2026/01/13",
         "EVT-start": "2026/01/27",
         "BTO ready": "2026/02/12",
         "ATS-start": "2026/03/18",
         "MP": "2026/03/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -5788,14 +5924,15 @@
       "status": "3/20正式进入MP",
       "highlight": "同Cyborg 15 Max C2WG",
       "mp_sort": "2026/03/21",
-      "orig_idx": 292,
+      "orig_idx": 296,
       "dates": {
         "Kickoff": "2026/01/13",
         "EVT-start": "2026/01/27",
         "BTO ready": "2026/02/12",
         "ATS-start": "2026/03/18",
         "MP": "2026/03/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -5807,7 +5944,7 @@
       "status": "3/18正式进入MP",
       "highlight": "同Cyborg 15 Max C2WG",
       "mp_sort": "2026/03/19",
-      "orig_idx": 293,
+      "orig_idx": 297,
       "dates": {
         "Kickoff": "2025/10/03",
         "DVT-start": "2025/11/17",
@@ -5815,7 +5952,8 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/03/06",
         "MP": "2026/03/19"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -5827,7 +5965,7 @@
       "status": "3/18正式进入MP",
       "highlight": "同Cyborg 15 Max C2WG",
       "mp_sort": "2026/03/19",
-      "orig_idx": 294,
+      "orig_idx": 298,
       "dates": {
         "Kickoff": "2025/10/03",
         "DVT-start": "2025/11/17",
@@ -5835,7 +5973,8 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/03/06",
         "MP": "2026/03/19"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -5847,7 +5986,7 @@
       "status": "3/18正式进入MP",
       "highlight": "KCC預計4/E取證, PRC SRRC 認證仍未取得資源,認證ready時間及影響TBD",
       "mp_sort": "2026/03/19",
-      "orig_idx": 295,
+      "orig_idx": 299,
       "dates": {
         "Kickoff": "2025/10/03",
         "DVT-start": "2025/11/17",
@@ -5855,7 +5994,8 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/03/06",
         "MP": "2026/03/19"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15TK",
@@ -5867,7 +6007,7 @@
       "status": "同Cyborg A15 Max C1WG",
       "highlight": "同Cyborg A15 Max C1WG",
       "mp_sort": "2026/03/18",
-      "orig_idx": 296,
+      "orig_idx": 300,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/17",
@@ -5887,7 +6027,7 @@
       "status": "同Cyborg A15 Max C1WG",
       "highlight": "同Cyborg A15 Max C1WG",
       "mp_sort": "2026/03/18",
-      "orig_idx": 297,
+      "orig_idx": 301,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/17",
@@ -5895,7 +6035,8 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/03/06",
         "MP": "2026/03/18"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15TK",
@@ -5907,7 +6048,7 @@
       "status": "同Cyborg A15 Max C1WG",
       "highlight": "同Cyborg A15 Max C1WG",
       "mp_sort": "2026/03/18",
-      "orig_idx": 298,
+      "orig_idx": 302,
       "dates": {
         "Kickoff": "2025/10/03",
         "DVT-start": "2025/11/17",
@@ -5915,7 +6056,8 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/03/06",
         "MP": "2026/03/18"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15TK",
@@ -5927,7 +6069,7 @@
       "status": "同Cyborg A15 Max C1WG",
       "highlight": "同Cyborg A15 Max C1WG",
       "mp_sort": "2026/03/18",
-      "orig_idx": 299,
+      "orig_idx": 303,
       "dates": {
         "Kickoff": "2025/10/03",
         "DVT-start": "2025/11/17",
@@ -5935,7 +6077,8 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/03/06",
         "MP": "2026/03/18"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15TK",
@@ -5947,7 +6090,7 @@
       "status": "3/10: Project pending, 並關閉BTO",
       "highlight": "3/10: Project pending, 並關閉BTO",
       "mp_sort": "2026/03/18",
-      "orig_idx": 300,
+      "orig_idx": 304,
       "dates": {
         "Kickoff": "2025/10/03",
         "DVT-start": "2025/11/17",
@@ -5955,7 +6098,8 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/03/06",
         "MP": "2026/03/18"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17L7",
@@ -5967,7 +6111,7 @@
       "status": "+6",
       "highlight": "NA",
       "mp_sort": "2025/05/12",
-      "orig_idx": 301,
+      "orig_idx": 305,
       "dates": {
         "Kickoff": "2024/09/27",
         "DVT-start": "2024/12/20",
@@ -5976,7 +6120,8 @@
         "BTO ready": "2025/03/27",
         "ATS-start": "2025/05/09",
         "MP": "2025/05/12"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17L7",
@@ -5988,7 +6133,7 @@
       "status": "+16",
       "highlight": "NA",
       "mp_sort": "2025/05/02",
-      "orig_idx": 302,
+      "orig_idx": 306,
       "dates": {
         "Kickoff": "2024/09/27",
         "DVT-start": "2024/12/20",
@@ -5997,7 +6142,8 @@
         "BTO ready": "2025/03/27",
         "ATS-start": "2025/04/21",
         "MP": "2025/05/02"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17L7",
@@ -6009,7 +6155,7 @@
       "status": "+16",
       "highlight": "NA",
       "mp_sort": "2025/05/02",
-      "orig_idx": 303,
+      "orig_idx": 307,
       "dates": {
         "Kickoff": "2024/09/27",
         "DVT-start": "2024/12/20",
@@ -6018,7 +6164,8 @@
         "BTO ready": "2025/03/27",
         "ATS-start": "2025/04/21",
         "MP": "2025/05/02"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17S3",
@@ -6030,7 +6177,7 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/04/12",
-      "orig_idx": 304,
+      "orig_idx": 308,
       "dates": {
         "Kickoff": "2024/09/09",
         "EVT-start": "2025/01/11",
@@ -6038,7 +6185,8 @@
         "BTO ready": "2025/02/19",
         "ATS-start": "2025/04/03",
         "MP": "2025/04/12"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17S3",
@@ -6050,7 +6198,7 @@
       "status": "",
       "highlight": "BTO未開",
       "mp_sort": "2025/04/12",
-      "orig_idx": 305,
+      "orig_idx": 309,
       "dates": {
         "Kickoff": "2024/09/09",
         "EVT-start": "2025/01/11",
@@ -6058,7 +6206,8 @@
         "BTO ready": "2025/02/19",
         "ATS-start": "2025/04/03",
         "MP": "2025/04/12"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17S3",
@@ -6070,7 +6219,7 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/04/10",
-      "orig_idx": 306,
+      "orig_idx": 310,
       "dates": {
         "Kickoff": "2024/09/09",
         "EVT-start": "2024/12/15",
@@ -6078,7 +6227,8 @@
         "BTO ready": "2025/02/19",
         "ATS-start": "2025/03/27",
         "MP": "2025/04/10"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17S3",
@@ -6090,7 +6240,7 @@
       "status": "",
       "highlight": "BTO未開",
       "mp_sort": "2025/04/10",
-      "orig_idx": 307,
+      "orig_idx": 311,
       "dates": {
         "Kickoff": "2024/09/09",
         "EVT-start": "2024/12/15",
@@ -6098,7 +6248,8 @@
         "BTO ready": "2025/02/19",
         "ATS-start": "2025/03/27",
         "MP": "2025/04/10"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17S3",
@@ -6110,7 +6261,7 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/04/10",
-      "orig_idx": 308,
+      "orig_idx": 312,
       "dates": {
         "Kickoff": "2024/09/09",
         "EVT-start": "2024/12/26",
@@ -6118,7 +6269,8 @@
         "BTO ready": "2025/02/19",
         "ATS-start": "2025/03/27",
         "MP": "2025/04/10"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17S3",
@@ -6130,7 +6282,7 @@
       "status": "",
       "highlight": "BTO未開",
       "mp_sort": "2025/04/10",
-      "orig_idx": 309,
+      "orig_idx": 313,
       "dates": {
         "Kickoff": "2024/09/09",
         "EVT-start": "2024/12/26",
@@ -6138,7 +6290,8 @@
         "BTO ready": "2025/02/19",
         "ATS-start": "2025/03/27",
         "MP": "2025/04/10"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17SL",
@@ -6150,7 +6303,7 @@
       "status": "",
       "highlight": "",
       "mp_sort": "2025/06/15",
-      "orig_idx": 310,
+      "orig_idx": 314,
       "dates": {
         "Kickoff": "2024/11/22",
         "DVT-start": "2024/12/23",
@@ -6159,7 +6312,8 @@
         "BTO ready": "2025/05/09",
         "ATS-start": "2025/06/05",
         "MP": "2025/06/15"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17SL",
@@ -6171,7 +6325,7 @@
       "status": "",
       "highlight": "",
       "mp_sort": "2025/06/15",
-      "orig_idx": 311,
+      "orig_idx": 315,
       "dates": {
         "Kickoff": "2024/11/22",
         "DVT-start": "2024/12/23",
@@ -6180,7 +6334,8 @@
         "BTO ready": "2025/05/09",
         "ATS-start": "2025/06/05",
         "MP": "2025/06/15"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17SL",
@@ -6192,7 +6347,7 @@
       "status": "",
       "highlight": "",
       "mp_sort": "2025/06/15",
-      "orig_idx": 312,
+      "orig_idx": 316,
       "dates": {
         "Kickoff": "2024/11/22",
         "DVT-start": "2024/12/23",
@@ -6201,7 +6356,8 @@
         "BTO ready": "2025/05/09",
         "ATS-start": "2025/06/05",
         "MP": "2025/06/15"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17T4",
@@ -6213,7 +6369,7 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/05/20",
-      "orig_idx": 313,
+      "orig_idx": 317,
       "dates": {
         "Kickoff": "2024/07/16",
         "DVT-start": "2024/09/18",
@@ -6222,7 +6378,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/05/12",
         "MP": "2025/05/20"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17T4",
@@ -6234,7 +6391,7 @@
       "status": "5",
       "highlight": "",
       "mp_sort": "2025/04/30",
-      "orig_idx": 314,
+      "orig_idx": 318,
       "dates": {
         "Kickoff": "2024/07/16",
         "DVT-start": "2024/09/18",
@@ -6243,7 +6400,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/04/17",
         "MP": "2025/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17T4",
@@ -6255,7 +6413,7 @@
       "status": "5",
       "highlight": "",
       "mp_sort": "2025/04/30",
-      "orig_idx": 315,
+      "orig_idx": 319,
       "dates": {
         "Kickoff": "2024/07/16",
         "DVT-start": "2024/09/18",
@@ -6264,7 +6422,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/04/17",
         "MP": "2025/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TK",
@@ -6276,14 +6435,15 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/08/13",
-      "orig_idx": 316,
+      "orig_idx": 320,
       "dates": {
         "Kickoff": "2025/05/23",
         "MVT-start": "2025/06/03",
         "BTO ready": "2025/07/01",
         "ATS-start": "2025/08/02",
         "MP": "2025/08/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TK",
@@ -6295,13 +6455,14 @@
       "status": "Leverage 15PK",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/08/13",
-      "orig_idx": 317,
+      "orig_idx": 321,
       "dates": {
         "Kickoff": "2025/05/23",
         "BTO ready": "2025/07/01",
         "ATS-start": "2025/08/02",
         "MP": "2025/08/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TK",
@@ -6313,14 +6474,15 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/08/13",
-      "orig_idx": 318,
+      "orig_idx": 322,
       "dates": {
         "Kickoff": "2025/05/23",
         "MVT-start": "2025/05/28",
         "BTO ready": "2025/07/01",
         "ATS-start": "2025/08/02",
         "MP": "2025/08/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TK",
@@ -6332,7 +6494,7 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/05/26",
-      "orig_idx": 319,
+      "orig_idx": 323,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -6341,7 +6503,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/05/19",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TK",
@@ -6353,7 +6516,7 @@
       "status": "-13",
       "highlight": "1.ATS黑屏/藍屏debug delay",
       "mp_sort": "2025/05/22",
-      "orig_idx": 320,
+      "orig_idx": 324,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -6362,7 +6525,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/04/21",
         "MP": "2025/05/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TK",
@@ -6374,7 +6538,7 @@
       "status": "-13",
       "highlight": "1.ATS黑屏/藍屏debug delay",
       "mp_sort": "2025/05/22",
-      "orig_idx": 321,
+      "orig_idx": 325,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -6383,7 +6547,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/04/21",
         "MP": "2025/05/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TK",
@@ -6395,7 +6560,7 @@
       "status": "",
       "highlight": "BTO暫未開放",
       "mp_sort": "2025/05/26",
-      "orig_idx": 322,
+      "orig_idx": 326,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -6403,7 +6568,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/05/19",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TK",
@@ -6415,7 +6581,7 @@
       "status": "-17",
       "highlight": "1.KRK ATS黑屏/藍屏debug delay 2.KRK MP後排CR",
       "mp_sort": "2025/05/26",
-      "orig_idx": 323,
+      "orig_idx": 327,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -6435,7 +6601,7 @@
       "status": "-17",
       "highlight": "1.KRK ATS黑屏/藍屏debug delay 2.KRK MP後排CR",
       "mp_sort": "2025/05/26",
-      "orig_idx": 324,
+      "orig_idx": 328,
       "dates": {
         "Kickoff": "2024/07/22",
         "DVT-start": "2024/10/15",
@@ -6443,7 +6609,8 @@
         "BTO ready": "2025/03/25",
         "ATS-start": "2025/05/21",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TL",
@@ -6455,13 +6622,14 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/05/30",
-      "orig_idx": 325,
+      "orig_idx": 329,
       "dates": {
         "Kickoff": "2025/04/11",
         "BTO ready": "2025/04/24",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TL",
@@ -6473,7 +6641,7 @@
       "status": "+4",
       "highlight": "NA",
       "mp_sort": "2025/05/26",
-      "orig_idx": 326,
+      "orig_idx": 330,
       "dates": {
         "Kickoff": "2025/04/11",
         "BTO ready": "2025/04/24",
@@ -6491,13 +6659,14 @@
       "status": "+4",
       "highlight": "NA",
       "mp_sort": "2025/05/26",
-      "orig_idx": 327,
+      "orig_idx": 331,
       "dates": {
         "Kickoff": "2025/04/11",
         "BTO ready": "2025/04/24",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TL",
@@ -6509,7 +6678,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/05/30",
-      "orig_idx": 328,
+      "orig_idx": 332,
       "dates": {
         "Kickoff": "2024/09/11",
         "DVT-start": "2024/12/20",
@@ -6518,7 +6687,8 @@
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TL",
@@ -6530,7 +6700,7 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/05/26",
-      "orig_idx": 329,
+      "orig_idx": 333,
       "dates": {
         "Kickoff": "2024/09/11",
         "DVT-start": "2024/12/20",
@@ -6539,7 +6709,8 @@
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/12",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TL",
@@ -6551,7 +6722,7 @@
       "status": "-1",
       "highlight": "依工廠排程C/R",
       "mp_sort": "2025/05/26",
-      "orig_idx": 330,
+      "orig_idx": 334,
       "dates": {
         "Kickoff": "2024/09/11",
         "DVT-start": "2024/12/20",
@@ -6560,7 +6731,8 @@
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/12",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TL",
@@ -6572,14 +6744,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/07/14",
-      "orig_idx": 331,
+      "orig_idx": 335,
       "dates": {
         "Kickoff": "2024/09/11",
         "MVT-start": "2025/05/26",
         "BTO ready": "2025/06/06",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TL",
@@ -6591,14 +6764,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/07/14",
-      "orig_idx": 332,
+      "orig_idx": 336,
       "dates": {
         "Kickoff": "2024/09/11",
         "MVT-start": "2025/05/26",
         "BTO ready": "2025/06/06",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17TL",
@@ -6610,14 +6784,15 @@
       "status": "0",
       "highlight": "等業務訂單到7/14 C/R上線, C/R於7/18入庫",
       "mp_sort": "2025/07/18",
-      "orig_idx": 333,
+      "orig_idx": 337,
       "dates": {
         "Kickoff": "2024/09/11",
         "MVT-start": "2025/05/26",
         "BTO ready": "2025/06/06",
         "ATS-start": "2025/07/14",
         "MP": "2025/07/18"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17U3",
@@ -6629,13 +6804,14 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/10/27",
-      "orig_idx": 334,
+      "orig_idx": 338,
       "dates": {
         "Kickoff": "2024/12/06",
         "BTO ready": "2025/08/26",
         "ATS-start": "2025/10/21",
         "MP": "2025/10/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17U3",
@@ -6647,14 +6823,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/09/19",
-      "orig_idx": 335,
+      "orig_idx": 339,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/07/25",
         "BTO ready": "2025/08/26",
         "ATS-start": "2025/09/08",
         "MP": "2025/09/19"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17U3",
@@ -6666,13 +6843,14 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/09/30",
-      "orig_idx": 336,
+      "orig_idx": 340,
       "dates": {
         "Kickoff": "2024/12/06",
         "BTO ready": "2025/08/26",
         "ATS-start": "2025/09/27",
         "MP": "2025/09/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17U3",
@@ -6684,14 +6862,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/06/24",
-      "orig_idx": 337,
+      "orig_idx": 341,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/04/26",
         "BTO ready": "2025/05/27",
         "ATS-start": "2025/06/20",
         "MP": "2025/06/24"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17U3",
@@ -6703,14 +6882,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/06/30",
-      "orig_idx": 338,
+      "orig_idx": 342,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/04/26",
         "BTO ready": "2025/05/27",
         "ATS-start": "2025/06/26",
         "MP": "2025/06/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17U3",
@@ -6722,14 +6902,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/08/27",
-      "orig_idx": 339,
+      "orig_idx": 343,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/04/26",
         "BTO ready": "2025/05/27",
         "ATS-start": "2025/08/25",
         "MP": "2025/08/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17U3",
@@ -6741,14 +6922,15 @@
       "status": "10/27關閉",
       "highlight": "NA",
       "mp_sort": "2026/02/14",
-      "orig_idx": 340,
+      "orig_idx": 344,
       "dates": {
         "Kickoff": "2025/10/27",
         "MVT-start": "2025/12/10",
         "BTO ready": "2025/12/19",
         "ATS-start": "2026/02/04",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17UL",
@@ -6760,14 +6942,15 @@
       "status": "0",
       "highlight": "N/A",
       "mp_sort": "2025/07/12",
-      "orig_idx": 341,
+      "orig_idx": 345,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/06/07",
         "BTO ready": "2025/06/10",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/12"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17UL",
@@ -6779,14 +6962,15 @@
       "status": "0",
       "highlight": "N/A",
       "mp_sort": "2025/07/15",
-      "orig_idx": 342,
+      "orig_idx": 346,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/06/07",
         "BTO ready": "2025/06/10",
         "ATS-start": "2025/07/12",
         "MP": "2025/07/15"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17UL",
@@ -6798,14 +6982,15 @@
       "status": "BTO 未开放（暂无业务订单）",
       "highlight": "N/A",
       "mp_sort": "2025/07/12",
-      "orig_idx": 343,
+      "orig_idx": 347,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/06/07",
         "BTO ready": "2025/06/10",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/12"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17UL",
@@ -6817,7 +7002,7 @@
       "status": "BTO 未开放（暂无业务订单）",
       "highlight": "N/A",
       "mp_sort": "2025/06/21",
-      "orig_idx": 344,
+      "orig_idx": 348,
       "dates": {
         "Kickoff": "2024/09/10",
         "EVT-start": "2025/03/10",
@@ -6837,7 +7022,7 @@
       "status": "BTO 未开放（暂无业务订单）",
       "highlight": "N/A",
       "mp_sort": "2025/06/21",
-      "orig_idx": 345,
+      "orig_idx": 349,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/04/15",
@@ -6856,7 +7041,7 @@
       "status": "BTO 未开放（暂无业务订单）",
       "highlight": "N/A",
       "mp_sort": "2025/06/21",
-      "orig_idx": 346,
+      "orig_idx": 350,
       "dates": {
         "Kickoff": "2024/09/10",
         "EVT-start": "2025/02/27",
@@ -6864,7 +7049,8 @@
         "BTO ready": "2025/04/10",
         "ATS-start": "2025/06/11",
         "MP": "2025/06/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17UL",
@@ -6876,14 +7062,15 @@
       "status": "BTO 未开放（暂无业务订单）",
       "highlight": "N/A",
       "mp_sort": "2025/06/21",
-      "orig_idx": 347,
+      "orig_idx": 351,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/04/28",
         "BTO ready": "2025/04/10",
         "ATS-start": "2025/06/11",
         "MP": "2025/06/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17UL",
@@ -6895,14 +7082,15 @@
       "status": "BTO 未开放（暂无业务订单）",
       "highlight": "N/A",
       "mp_sort": "2025/06/21",
-      "orig_idx": 348,
+      "orig_idx": 352,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/04/15",
         "BTO ready": "2025/04/10",
         "ATS-start": "2025/06/11",
         "MP": "2025/06/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "17UL",
@@ -6914,14 +7102,15 @@
       "status": "BTO 未开放（暂无业务订单）",
       "highlight": "N/A",
       "mp_sort": "2025/06/21",
-      "orig_idx": 349,
+      "orig_idx": 353,
       "dates": {
         "Kickoff": "2024/09/10",
         "MVT-start": "2025/04/15",
         "BTO ready": "2025/04/10",
         "ATS-start": "2025/06/11",
         "MP": "2025/06/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -6933,13 +7122,14 @@
       "status": "0",
       "highlight": "排程原因",
       "mp_sort": "2026/03/27",
-      "orig_idx": 350,
+      "orig_idx": 354,
       "dates": {
         "Kickoff": "2025/09/30",
         "BTO ready": "2026/02/03",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -6951,14 +7141,15 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/03/27",
-      "orig_idx": 351,
+      "orig_idx": 355,
       "dates": {
         "Kickoff": "2025/09/30",
         "MVT-start": "2026/01/19",
         "BTO ready": "2026/02/03",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -6970,13 +7161,14 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/03/27",
-      "orig_idx": 352,
+      "orig_idx": 356,
       "dates": {
         "Kickoff": "2025/09/30",
         "BTO ready": "2026/02/03",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -6988,13 +7180,14 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/03/27",
-      "orig_idx": 353,
+      "orig_idx": 357,
       "dates": {
         "Kickoff": "2025/09/30",
         "BTO ready": "2026/02/03",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7006,13 +7199,14 @@
       "status": "",
       "highlight": "",
       "mp_sort": "",
-      "orig_idx": 354,
+      "orig_idx": 358,
       "dates": {
         "Kickoff": "2024/10/22",
         "EVT-start": "2024/11/18",
         "BTO ready": "2024/11/29",
         "ATS-start": "2024/12/31"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7024,13 +7218,14 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/03/20",
-      "orig_idx": 355,
+      "orig_idx": 359,
       "dates": {
         "Kickoff": "2025/09/30",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/02/28",
         "MP": "2026/03/20"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7042,14 +7237,15 @@
       "status": "+13",
       "highlight": "ATS发现自動reboot宕機/自動S5 宕机/3D mark蓝屏 issue",
       "mp_sort": "2026/03/20",
-      "orig_idx": 356,
+      "orig_idx": 360,
       "dates": {
         "Kickoff": "2025/09/30",
         "MVT-start": "2025/12/24",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/02/28",
         "MP": "2026/03/20"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7061,13 +7257,14 @@
       "status": "+13",
       "highlight": "NA",
       "mp_sort": "2026/03/20",
-      "orig_idx": 357,
+      "orig_idx": 361,
       "dates": {
         "Kickoff": "2025/09/30",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/02/28",
         "MP": "2026/03/20"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7079,7 +7276,7 @@
       "status": "0",
       "highlight": "MP",
       "mp_sort": "2025/03/30",
-      "orig_idx": 358,
+      "orig_idx": 362,
       "dates": {
         "Kickoff": "2024/05/20",
         "DVT-start": "2024/06/29",
@@ -7088,7 +7285,8 @@
         "BTO ready": "2024/12/23",
         "ATS-start": "2025/03/20",
         "MP": "2025/03/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7100,7 +7298,7 @@
       "status": "0",
       "highlight": "1. 3/11 ATS 入庫。2. NV Formal VBIOS, WHQL Driver延遲Release。",
       "mp_sort": "2025/02/26",
-      "orig_idx": 359,
+      "orig_idx": 363,
       "dates": {
         "Kickoff": "2024/05/20",
         "DVT-start": "2024/06/29",
@@ -7109,7 +7307,8 @@
         "BTO ready": "2024/12/23",
         "ATS-start": "2025/02/12",
         "MP": "2025/02/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7121,7 +7320,7 @@
       "status": "0",
       "highlight": "1. 3/10入庫。2. NV Formal VBIOS, WHQL Driver延遲Release。",
       "mp_sort": "2025/03/10",
-      "orig_idx": 360,
+      "orig_idx": 364,
       "dates": {
         "Kickoff": "2024/05/20",
         "DVT-start": "2024/06/29",
@@ -7130,7 +7329,8 @@
         "BTO ready": "2024/12/23",
         "ATS-start": "2025/02/26",
         "MP": "2025/03/10"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7142,7 +7342,7 @@
       "status": "MVT",
       "highlight": "",
       "mp_sort": "2025/03/30",
-      "orig_idx": 361,
+      "orig_idx": 365,
       "dates": {
         "Kickoff": "2024/05/20",
         "DVT-start": "2024/06/29",
@@ -7150,7 +7350,8 @@
         "BTO ready": "2024/12/23",
         "ATS-start": "2025/03/20",
         "MP": "2025/03/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7162,7 +7363,7 @@
       "status": "0",
       "highlight": "業務無訂單。",
       "mp_sort": "2025/03/30",
-      "orig_idx": 362,
+      "orig_idx": 366,
       "dates": {
         "Kickoff": "2024/08/23",
         "DVT-start": "2024/06/29",
@@ -7171,7 +7372,8 @@
         "BTO ready": "2024/12/23",
         "ATS-start": "2025/03/20",
         "MP": "2025/03/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7183,7 +7385,7 @@
       "status": "0",
       "highlight": "1. 3/11 ATS 入庫。2. NV Formal VBIOS, WHQL Driver延遲Release。",
       "mp_sort": "2025/03/12",
-      "orig_idx": 363,
+      "orig_idx": 367,
       "dates": {
         "Kickoff": "2024/08/23",
         "DVT-start": "2024/06/29",
@@ -7192,7 +7394,8 @@
         "BTO ready": "2024/12/23",
         "ATS-start": "2025/02/26",
         "MP": "2025/03/12"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7204,7 +7407,7 @@
       "status": "0",
       "highlight": "1. 3/10 ATS 入庫。2. NV Formal VBIOS, WHQL Driver延遲Release。",
       "mp_sort": "2025/03/27",
-      "orig_idx": 364,
+      "orig_idx": 368,
       "dates": {
         "Kickoff": "2024/08/23",
         "DVT-start": "2024/06/29",
@@ -7213,7 +7416,8 @@
         "BTO ready": "2024/12/23",
         "ATS-start": "2025/03/13",
         "MP": "2025/03/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7225,13 +7429,14 @@
       "status": "SW PM安裝OS，待台北Intel回覆機台寄送訊息。",
       "highlight": "1.目前 Glan 無法使用。 2.Card reader SD 7.0 需要rescan才能看到device。3. 其餘TBT & Display & USB 功能都正常。",
       "mp_sort": "",
-      "orig_idx": 365,
+      "orig_idx": 369,
       "dates": {
         "Kickoff": "2024/01/03",
         "DVT-start": "2024/03/04",
         "BTO ready": "2024/05/30",
         "ATS-start": "2024/06/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7243,14 +7448,15 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/04/10",
-      "orig_idx": 366,
+      "orig_idx": 370,
       "dates": {
         "Kickoff": "2025/03/05",
         "MVT-start": "2025/03/17",
         "BTO ready": "2025/03/14",
         "ATS-start": "2025/04/06",
         "MP": "2025/04/10"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7262,14 +7468,15 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/04/10",
-      "orig_idx": 367,
+      "orig_idx": 371,
       "dates": {
         "Kickoff": "2025/03/05",
         "MVT-start": "2025/03/17",
         "BTO ready": "2025/03/14",
         "ATS-start": "2025/04/06",
         "MP": "2025/04/10"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -7281,14 +7488,15 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/04/10",
-      "orig_idx": 368,
+      "orig_idx": 372,
       "dates": {
         "Kickoff": "2025/03/05",
         "MVT-start": "2025/03/17",
         "BTO ready": "2025/03/14",
         "ATS-start": "2025/04/06",
         "MP": "2025/04/10"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7300,14 +7508,15 @@
       "status": "BTO未開",
       "highlight": "BTO未開",
       "mp_sort": "2025/06/08",
-      "orig_idx": 369,
+      "orig_idx": 373,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/04/03",
         "BTO ready": "2025/04/29",
         "ATS-start": "2025/05/27",
         "MP": "2025/06/08"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7319,14 +7528,15 @@
       "status": "暫停PCB2.1 MVT2 SMT與組裝",
       "highlight": "業務更新 正式release 2026 Gaming機種的業務報價單,使用mLED 240hz只有1824 Titan 18 HX Dragon Edition & Titan 18 HX 一般版. 182L Rader A18沒有使用了.",
       "mp_sort": "2026/02/14",
-      "orig_idx": 370,
+      "orig_idx": 374,
       "dates": {
         "Kickoff": "2025/09/22",
         "MVT-start": "2025/11/14",
         "BTO ready": "2026/01/07",
         "ATS-start": "2026/02/02",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7338,14 +7548,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2025/06/08",
-      "orig_idx": 371,
+      "orig_idx": 375,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/04/03",
         "BTO ready": "2025/04/29",
         "ATS-start": "2025/05/27",
         "MP": "2025/06/08"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7357,14 +7568,15 @@
       "status": "BTO未開",
       "highlight": "BTO未開",
       "mp_sort": "2025/06/08",
-      "orig_idx": 372,
+      "orig_idx": 376,
       "dates": {
         "Kickoff": "2024/12/06",
         "MVT-start": "2025/04/03",
         "BTO ready": "2025/04/29",
         "ATS-start": "2025/05/27",
         "MP": "2025/06/08"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7376,7 +7588,7 @@
       "status": "0",
       "highlight": "",
       "mp_sort": "2025/03/27",
-      "orig_idx": 373,
+      "orig_idx": 377,
       "dates": {
         "Kickoff": "2024/06/24",
         "DVT-start": "2024/10/10",
@@ -7385,7 +7597,8 @@
         "BTO ready": "2025/01/24",
         "ATS-start": "2025/03/22",
         "MP": "2025/03/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7397,7 +7610,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/04/02",
-      "orig_idx": 374,
+      "orig_idx": 378,
       "dates": {
         "Kickoff": "2024/06/24",
         "DVT-start": "2024/10/10",
@@ -7406,7 +7619,8 @@
         "BTO ready": "2025/01/24",
         "ATS-start": "2025/03/27",
         "MP": "2025/04/02"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7418,7 +7632,7 @@
       "status": "0",
       "highlight": "",
       "mp_sort": "2025/03/14",
-      "orig_idx": 375,
+      "orig_idx": 379,
       "dates": {
         "Kickoff": "2024/06/24",
         "DVT-start": "2024/10/10",
@@ -7427,7 +7641,8 @@
         "BTO ready": "2025/01/24",
         "ATS-start": "2025/02/19",
         "MP": "2025/03/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7439,7 +7654,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/02/28",
-      "orig_idx": 376,
+      "orig_idx": 380,
       "dates": {
         "Kickoff": "2024/06/24",
         "DVT-start": "2024/10/10",
@@ -7448,7 +7663,8 @@
         "BTO ready": "2025/01/24",
         "ATS-start": "2025/02/16",
         "MP": "2025/02/28"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7460,7 +7676,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/03/17",
-      "orig_idx": 377,
+      "orig_idx": 381,
       "dates": {
         "Kickoff": "2024/06/24",
         "DVT-start": "2024/10/10",
@@ -7469,7 +7685,8 @@
         "BTO ready": "2025/01/24",
         "ATS-start": "2025/03/05",
         "MP": "2025/03/17"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "182L",
@@ -7481,7 +7698,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/03/17",
-      "orig_idx": 378,
+      "orig_idx": 382,
       "dates": {
         "Kickoff": "2024/06/24",
         "DVT-start": "2024/10/10",
@@ -7490,7 +7707,8 @@
         "BTO ready": "2025/01/24",
         "ATS-start": "2025/03/05",
         "MP": "2025/03/17"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1841",
@@ -7502,14 +7720,15 @@
       "status": "0",
       "highlight": "待報價單重新開BTO",
       "mp_sort": "2026/02/14",
-      "orig_idx": 379,
+      "orig_idx": 383,
       "dates": {
         "Kickoff": "2025/09/12",
         "MVT-start": "2025/12/25",
         "BTO ready": "2026/01/08",
         "ATS-start": "2026/02/04",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1841",
@@ -7521,14 +7740,15 @@
       "status": "0",
       "highlight": "待報價單重新開BTO",
       "mp_sort": "2026/02/14",
-      "orig_idx": 380,
+      "orig_idx": 384,
       "dates": {
         "Kickoff": "2025/09/12",
         "MVT-start": "2025/12/17",
         "BTO ready": "2026/01/08",
         "ATS-start": "2026/02/04",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1841",
@@ -7540,14 +7760,15 @@
       "status": "0",
       "highlight": "待報價單重新開BTO",
       "mp_sort": "2026/02/14",
-      "orig_idx": 381,
+      "orig_idx": 385,
       "dates": {
         "Kickoff": "2025/09/12",
         "MVT-start": "2025/12/17",
         "BTO ready": "2026/01/08",
         "ATS-start": "2026/02/04",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1841",
@@ -7559,14 +7780,15 @@
       "status": "待報價單重新開BTO",
       "highlight": ".",
       "mp_sort": "2026/04/16",
-      "orig_idx": 382,
+      "orig_idx": 386,
       "dates": {
         "Kickoff": "2025/12/12",
         "MVT-start": "2026/02/10",
         "BTO ready": "2026/03/17",
         "ATS-start": "2026/04/08",
         "MP": "2026/04/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1841",
@@ -7578,7 +7800,7 @@
       "status": "-7",
       "highlight": "BTO 未開",
       "mp_sort": "2025/05/13",
-      "orig_idx": 383,
+      "orig_idx": 387,
       "dates": {
         "Kickoff": "2024/08/16",
         "EVT-start": "2024/12/20",
@@ -7586,7 +7808,8 @@
         "BTO ready": "2025/04/07",
         "ATS-start": "2025/05/15",
         "MP": "2025/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1841",
@@ -7598,7 +7821,7 @@
       "status": "-7",
       "highlight": "Pull in 7D",
       "mp_sort": "2025/05/13",
-      "orig_idx": 384,
+      "orig_idx": 388,
       "dates": {
         "Kickoff": "2024/08/16",
         "EVT-start": "2024/12/20",
@@ -7606,7 +7829,8 @@
         "BTO ready": "2025/03/28",
         "ATS-start": "2025/05/13",
         "MP": "2025/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1841",
@@ -7618,7 +7842,7 @@
       "status": "-7",
       "highlight": "Pull in 7D",
       "mp_sort": "2025/05/13",
-      "orig_idx": 385,
+      "orig_idx": 389,
       "dates": {
         "Kickoff": "2024/08/16",
         "EVT-start": "2024/12/20",
@@ -7626,7 +7850,8 @@
         "BTO ready": "2025/03/28",
         "ATS-start": "2025/05/07",
         "MP": "2025/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1841",
@@ -7638,14 +7863,15 @@
       "status": "0",
       "highlight": "C/R 工單 9S7-184111-077*10 9S7-184111-072*30",
       "mp_sort": "2026/04/16",
-      "orig_idx": 386,
+      "orig_idx": 390,
       "dates": {
         "Kickoff": "2025/12/25",
         "MVT-start": "2026/02/11",
         "BTO ready": "2026/03/18",
         "ATS-start": "2026/04/08",
         "MP": "2026/04/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7657,14 +7883,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/05/30",
-      "orig_idx": 387,
+      "orig_idx": 391,
       "dates": {
         "Kickoff": "2025/04/11",
         "MVT-start": "2025/04/17",
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7676,7 +7903,7 @@
       "status": "+4",
       "highlight": "NA",
       "mp_sort": "2025/05/26",
-      "orig_idx": 388,
+      "orig_idx": 392,
       "dates": {
         "Kickoff": "2025/04/11",
         "MVT-start": "2025/04/17",
@@ -7695,14 +7922,15 @@
       "status": "+4",
       "highlight": "NA",
       "mp_sort": "2025/05/26",
-      "orig_idx": 389,
+      "orig_idx": 393,
       "dates": {
         "Kickoff": "2025/04/11",
         "MVT-start": "2025/04/17",
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7714,7 +7942,7 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/05/30",
-      "orig_idx": 390,
+      "orig_idx": 394,
       "dates": {
         "Kickoff": "2024/09/11",
         "DVT-start": "2024/12/20",
@@ -7723,7 +7951,8 @@
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7735,7 +7964,7 @@
       "status": "+4",
       "highlight": "NA",
       "mp_sort": "2025/05/26",
-      "orig_idx": 391,
+      "orig_idx": 395,
       "dates": {
         "Kickoff": "2024/09/11",
         "DVT-start": "2024/12/20",
@@ -7744,7 +7973,8 @@
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7756,7 +7986,7 @@
       "status": "+4",
       "highlight": "NA",
       "mp_sort": "2025/05/26",
-      "orig_idx": 392,
+      "orig_idx": 396,
       "dates": {
         "Kickoff": "2024/09/11",
         "DVT-start": "2024/12/20",
@@ -7765,7 +7995,8 @@
         "BTO ready": "2025/04/17",
         "ATS-start": "2025/05/17",
         "MP": "2025/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7777,14 +8008,15 @@
       "status": "BTO未開",
       "highlight": "NA",
       "mp_sort": "2026/02/14",
-      "orig_idx": 393,
+      "orig_idx": 397,
       "dates": {
         "Kickoff": "2025/11/04",
         "MVT-start": "2025/12/16",
         "BTO ready": "2026/01/09",
         "ATS-start": "2026/02/04",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7796,14 +8028,15 @@
       "status": "",
       "highlight": "GN22 No refresh plan for 2026",
       "mp_sort": "2026/02/14",
-      "orig_idx": 394,
+      "orig_idx": 398,
       "dates": {
         "Kickoff": "2025/09/26",
         "MVT-start": "2025/12/09",
         "BTO ready": "2026/01/06",
         "ATS-start": "2026/02/03",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7815,14 +8048,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/07/14",
-      "orig_idx": 395,
+      "orig_idx": 399,
       "dates": {
         "Kickoff": "2024/09/11",
         "MVT-start": "2025/05/26",
         "BTO ready": "2025/06/06",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7834,14 +8068,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/07/14",
-      "orig_idx": 396,
+      "orig_idx": 400,
       "dates": {
         "Kickoff": "2024/09/11",
         "MVT-start": "2025/05/26",
         "BTO ready": "2025/06/06",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7853,14 +8088,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2025/07/14",
-      "orig_idx": 397,
+      "orig_idx": 401,
       "dates": {
         "Kickoff": "2024/09/11",
         "MVT-start": "2025/05/26",
         "BTO ready": "2025/06/06",
         "ATS-start": "2025/07/02",
         "MP": "2025/07/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7872,14 +8108,15 @@
       "status": "BTO未開",
       "highlight": "NA",
       "mp_sort": "2026/02/14",
-      "orig_idx": 398,
+      "orig_idx": 402,
       "dates": {
         "Kickoff": "2025/11/04",
         "MVT-start": "2025/12/16",
         "BTO ready": "2026/01/09",
         "ATS-start": "2026/02/04",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "184L",
@@ -7891,13 +8128,14 @@
       "status": "",
       "highlight": "GN22 No refresh plan for 2026",
       "mp_sort": "2026/02/14",
-      "orig_idx": 399,
+      "orig_idx": 403,
       "dates": {
         "Kickoff": "2025/09/26",
         "BTO ready": "2026/01/06",
         "ATS-start": "2026/02/03",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -7909,14 +8147,15 @@
       "status": "BTO-",
       "highlight": "follow RTX5090，BTO暫無需求",
       "mp_sort": "2026/02/14",
-      "orig_idx": 400,
+      "orig_idx": 404,
       "dates": {
         "Kickoff": "2025/06/25",
         "MVT-start": "2025/12/19",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/02/04",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -7928,13 +8167,14 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/02/26",
-      "orig_idx": 401,
+      "orig_idx": 405,
       "dates": {
         "Kickoff": "2025/06/25",
         "BTO ready": "2026/01/13",
         "ATS-start": "2026/02/02",
         "MP": "2026/02/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -7946,7 +8186,7 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/03/21",
-      "orig_idx": 402,
+      "orig_idx": 406,
       "dates": {
         "Kickoff": "2025/06/25",
         "MVT-start": "2025/12/19",
@@ -7965,14 +8205,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/02/26",
-      "orig_idx": 403,
+      "orig_idx": 407,
       "dates": {
         "Kickoff": "2025/06/25",
         "EVT-start": "2025/10/21",
         "BTO ready": "2026/01/13",
         "ATS-start": "2026/02/02",
         "MP": "2026/02/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -7984,7 +8225,7 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/03/06",
-      "orig_idx": 404,
+      "orig_idx": 408,
       "dates": {
         "Kickoff": "2025/06/25",
         "DVT-start": "2025/08/12",
@@ -7992,7 +8233,8 @@
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/02/28",
         "MP": "2026/03/06"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -8004,14 +8246,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/03/21",
-      "orig_idx": 405,
+      "orig_idx": 409,
       "dates": {
         "Kickoff": "2025/06/25",
         "MVT-start": "2025/12/06",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/03/09",
         "MP": "2026/03/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -8023,13 +8266,14 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/03/21",
-      "orig_idx": 406,
+      "orig_idx": 410,
       "dates": {
         "Kickoff": "2025/10/23",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/03/09",
         "MP": "2026/03/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -8041,14 +8285,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/03/13",
-      "orig_idx": 407,
+      "orig_idx": 411,
       "dates": {
         "Kickoff": "2025/10/23",
         "MVT-start": "2026/01/12",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/02/28",
         "MP": "2026/03/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -8060,13 +8305,14 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/03/21",
-      "orig_idx": 408,
+      "orig_idx": 412,
       "dates": {
         "Kickoff": "2025/10/23",
         "BTO ready": "2026/01/12",
         "ATS-start": "2026/03/09",
         "MP": "2026/03/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -8078,14 +8324,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/03/13",
-      "orig_idx": 409,
+      "orig_idx": 413,
       "dates": {
         "Kickoff": "2025/10/23",
         "MVT-start": "2026/01/12",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/02/28",
         "MP": "2026/03/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2651",
@@ -8097,91 +8344,96 @@
       "status": "BTO-",
       "highlight": "BTO暫無需求",
       "mp_sort": "2026/02/14",
-      "orig_idx": 410,
-      "dates": {
-        "Kickoff": "2025/10/23",
-        "BTO ready": "2026/01/05",
-        "ATS-start": "2026/02/04",
-        "MP": "2026/02/14"
-      }
-    },
-    {
-      "model": "2651",
-      "mkt": "Raider 16  HX B2WJ",
-      "cpu": "ARL-HX refresh 55W",
-      "gpu": "RTX 5090",
-      "npm": "吳美芳",
-      "stage": "BTO-",
-      "status": "BTO-",
-      "highlight": "BTO暫無需求",
-      "mp_sort": "2026/02/14",
-      "orig_idx": 411,
-      "dates": {
-        "Kickoff": "2025/10/23",
-        "BTO ready": "2026/01/05",
-        "ATS-start": "2026/02/04",
-        "MP": "2026/02/14"
-      }
-    },
-    {
-      "model": "2652",
-      "mkt": "Crosshair 16 Max HX E2WEK",
-      "cpu": "ARL-HX 55W",
-      "gpu": "RTX 5050",
-      "npm": "顏春梅",
-      "stage": "BTO-",
-      "status": "",
-      "highlight": "X2 需 C/R",
-      "mp_sort": "2026/04/09",
-      "orig_idx": 412,
-      "dates": {
-        "Kickoff": "2025/10/20",
-        "EVT-start": "2026/01/12",
-        "MVT-start": "2026/02/27",
-        "BTO ready": "2026/02/26",
-        "ATS-start": "2026/03/18",
-        "MP": "2026/04/09"
-      }
-    },
-    {
-      "model": "2652",
-      "mkt": "Crosshair 16 Max HX E2WEK",
-      "cpu": "ARL-HX refresh 55W",
-      "gpu": "RTX 5050",
-      "npm": "顏春梅",
-      "stage": "BTO-",
-      "status": "",
-      "highlight": "X2 需 C/R",
-      "mp_sort": "2026/04/09",
-      "orig_idx": 413,
-      "dates": {
-        "Kickoff": "2025/10/20",
-        "EVT-start": "2026/01/12",
-        "MVT-start": "2026/02/27",
-        "BTO ready": "2026/02/26",
-        "ATS-start": "2026/03/18",
-        "MP": "2026/04/09"
-      }
-    },
-    {
-      "model": "2652",
-      "mkt": "Crosshair 16 Max HX E2WFK",
-      "cpu": "ARL-HX 55W",
-      "gpu": "RTX 5060",
-      "npm": "顏春梅",
-      "stage": "MP",
-      "status": "",
-      "highlight": "leverage Raider X4 直接 MP",
-      "mp_sort": "2026/04/09",
       "orig_idx": 414,
       "dates": {
+        "Kickoff": "2025/10/23",
+        "BTO ready": "2026/01/05",
+        "ATS-start": "2026/02/04",
+        "MP": "2026/02/14"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "2651",
+      "mkt": "Raider 16  HX B2WJ",
+      "cpu": "ARL-HX refresh 55W",
+      "gpu": "RTX 5090",
+      "npm": "吳美芳",
+      "stage": "BTO-",
+      "status": "BTO-",
+      "highlight": "BTO暫無需求",
+      "mp_sort": "2026/02/14",
+      "orig_idx": 415,
+      "dates": {
+        "Kickoff": "2025/10/23",
+        "BTO ready": "2026/01/05",
+        "ATS-start": "2026/02/04",
+        "MP": "2026/02/14"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "2652",
+      "mkt": "Crosshair 16 Max HX E2WEK",
+      "cpu": "ARL-HX 55W",
+      "gpu": "RTX 5050",
+      "npm": "顏春梅",
+      "stage": "BTO-",
+      "status": "",
+      "highlight": "X2 需 C/R",
+      "mp_sort": "2026/04/09",
+      "orig_idx": 416,
+      "dates": {
         "Kickoff": "2025/10/20",
         "EVT-start": "2026/01/12",
         "MVT-start": "2026/02/27",
         "BTO ready": "2026/02/26",
         "ATS-start": "2026/03/18",
         "MP": "2026/04/09"
-      }
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "2652",
+      "mkt": "Crosshair 16 Max HX E2WEK",
+      "cpu": "ARL-HX refresh 55W",
+      "gpu": "RTX 5050",
+      "npm": "顏春梅",
+      "stage": "BTO-",
+      "status": "",
+      "highlight": "X2 需 C/R",
+      "mp_sort": "2026/04/09",
+      "orig_idx": 417,
+      "dates": {
+        "Kickoff": "2025/10/20",
+        "EVT-start": "2026/01/12",
+        "MVT-start": "2026/02/27",
+        "BTO ready": "2026/02/26",
+        "ATS-start": "2026/03/18",
+        "MP": "2026/04/09"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "2652",
+      "mkt": "Crosshair 16 Max HX E2WFK",
+      "cpu": "ARL-HX 55W",
+      "gpu": "RTX 5060",
+      "npm": "顏春梅",
+      "stage": "MP",
+      "status": "",
+      "highlight": "leverage Raider X4 直接 MP",
+      "mp_sort": "2026/04/09",
+      "orig_idx": 418,
+      "dates": {
+        "Kickoff": "2025/10/20",
+        "EVT-start": "2026/01/12",
+        "MVT-start": "2026/02/27",
+        "BTO ready": "2026/02/26",
+        "ATS-start": "2026/03/18",
+        "MP": "2026/04/09"
+      },
+      "mp_changed": true
     },
     {
       "model": "2652",
@@ -8193,7 +8445,7 @@
       "status": "",
       "highlight": "leverage Raider X4 直接 MP",
       "mp_sort": "2026/04/09",
-      "orig_idx": 415,
+      "orig_idx": 419,
       "dates": {
         "Kickoff": "2025/10/20",
         "EVT-start": "2026/01/12",
@@ -8201,7 +8453,8 @@
         "BTO ready": "2026/02/26",
         "ATS-start": "2026/03/18",
         "MP": "2026/04/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2652",
@@ -8213,7 +8466,7 @@
       "status": "",
       "highlight": "leverage crosshair Max  X6 ARL-HX-R 直接 MP",
       "mp_sort": "2026/04/09",
-      "orig_idx": 416,
+      "orig_idx": 420,
       "dates": {
         "Kickoff": "2025/10/20",
         "EVT-start": "2026/01/12",
@@ -8221,7 +8474,8 @@
         "BTO ready": "2026/02/26",
         "ATS-start": "2026/03/18",
         "MP": "2026/04/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2652",
@@ -8233,7 +8487,7 @@
       "status": "ATS sku: 26PN023621C 9S7-265232-008 歐洲 100pcs",
       "highlight": "重工 image4/8工回流，4/9重入庫",
       "mp_sort": "2026/04/09",
-      "orig_idx": 417,
+      "orig_idx": 421,
       "dates": {
         "Kickoff": "2025/10/20",
         "EVT-start": "2026/01/12",
@@ -8241,7 +8495,8 @@
         "BTO ready": "2026/02/26",
         "ATS-start": "2026/03/18",
         "MP": "2026/04/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2652",
@@ -8253,14 +8508,15 @@
       "status": "0",
       "highlight": "N/A",
       "mp_sort": "2026/04/16",
-      "orig_idx": 418,
+      "orig_idx": 422,
       "dates": {
         "Kickoff": "2025/01/12",
         "MVT-start": "2026/02/27",
         "BTO ready": "2026/03/13",
         "ATS-start": "2026/04/10",
         "MP": "2026/04/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2652",
@@ -8272,104 +8528,21 @@
       "status": "ARL-HX refresh leverage non refresh",
       "highlight": "N/A",
       "mp_sort": "2026/04/16",
-      "orig_idx": 419,
+      "orig_idx": 423,
       "dates": {
         "Kickoff": "2025/01/12",
         "MVT-start": "2026/02/27",
         "BTO ready": "2026/03/13",
         "ATS-start": "2026/04/10",
         "MP": "2026/04/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2652",
       "mkt": "Raider 16 HX B2WE",
       "cpu": "ARL-HX 55W",
       "gpu": "RTX 5050",
-      "npm": "顏春梅",
-      "stage": "BTO-",
-      "status": "",
-      "highlight": "SKU目前沒有訂單.可以follow RTX5060 ATS做ATS CR",
-      "mp_sort": "2026/02/14",
-      "orig_idx": 420,
-      "dates": {
-        "Kickoff": "2025/09/09",
-        "DVT-start": "2025/10/20",
-        "EVT-start": "2025/12/08",
-        "MVT-start": "2026/01/15",
-        "BTO ready": "2026/01/10",
-        "ATS-start": "2026/02/04",
-        "MP": "2026/02/14"
-      }
-    },
-    {
-      "model": "2652",
-      "mkt": "Raider 16 HX B2WE",
-      "cpu": "ARL-HX refresh 55W",
-      "gpu": "RTX 5050",
-      "npm": "顏春梅",
-      "stage": "BTO-",
-      "status": "",
-      "highlight": "SKU目前沒有訂單.可以follow RTX5060 ATS做ATS CR",
-      "mp_sort": "2026/02/14",
-      "orig_idx": 421,
-      "dates": {
-        "Kickoff": "2025/09/09",
-        "DVT-start": "2025/10/20",
-        "EVT-start": "2025/12/08",
-        "MVT-start": "2026/01/15",
-        "BTO ready": "2026/01/10",
-        "ATS-start": "2026/02/04",
-        "MP": "2026/02/14"
-      }
-    },
-    {
-      "model": "2652",
-      "mkt": "Raider 16 HX B2WF",
-      "cpu": "ARL-HX 55W",
-      "gpu": "RTX 5060",
-      "npm": "顏春梅",
-      "stage": "MP",
-      "status": "0",
-      "highlight": "NA",
-      "mp_sort": "2026/02/26",
-      "orig_idx": 422,
-      "dates": {
-        "Kickoff": "2025/09/09",
-        "DVT-start": "2025/10/20",
-        "EVT-start": "2025/12/08",
-        "MVT-start": "2026/01/15",
-        "BTO ready": "2026/01/10",
-        "ATS-start": "2026/02/04",
-        "MP": "2026/02/26"
-      }
-    },
-    {
-      "model": "2652",
-      "mkt": "Raider 16 HX B2WF",
-      "cpu": "ARL-HX refresh 55W",
-      "gpu": "RTX 5060",
-      "npm": "顏春梅",
-      "stage": "BTO-",
-      "status": "",
-      "highlight": "SKU目前沒有訂單.可以follow RTX5060 ATS做ATS CR",
-      "mp_sort": "2026/02/14",
-      "orig_idx": 423,
-      "dates": {
-        "Kickoff": "2025/09/09",
-        "DVT-start": "2025/10/20",
-        "EVT-start": "2025/12/08",
-        "MVT-start": "2026/01/15",
-        "BTO ready": "2026/01/10",
-        "ATS-start": "2026/02/04",
-        "MP": "2026/02/14"
-      }
-    },
-    {
-      "model": "2652",
-      "mkt": "Raider 16 HX B2WG",
-      "cpu": "ARL-HX 55W",
-      "gpu": "RTX 5070",
       "npm": "顏春梅",
       "stage": "BTO-",
       "status": "",
@@ -8388,9 +8561,9 @@
     },
     {
       "model": "2652",
-      "mkt": "Raider 16 HX B2WG",
+      "mkt": "Raider 16 HX B2WE",
       "cpu": "ARL-HX refresh 55W",
-      "gpu": "RTX 5070",
+      "gpu": "RTX 5050",
       "npm": "顏春梅",
       "stage": "BTO-",
       "status": "",
@@ -8409,6 +8582,94 @@
     },
     {
       "model": "2652",
+      "mkt": "Raider 16 HX B2WF",
+      "cpu": "ARL-HX 55W",
+      "gpu": "RTX 5060",
+      "npm": "顏春梅",
+      "stage": "MP",
+      "status": "0",
+      "highlight": "NA",
+      "mp_sort": "2026/02/26",
+      "orig_idx": 426,
+      "dates": {
+        "Kickoff": "2025/09/09",
+        "DVT-start": "2025/10/20",
+        "EVT-start": "2025/12/08",
+        "MVT-start": "2026/01/15",
+        "BTO ready": "2026/01/10",
+        "ATS-start": "2026/02/04",
+        "MP": "2026/02/26"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "2652",
+      "mkt": "Raider 16 HX B2WF",
+      "cpu": "ARL-HX refresh 55W",
+      "gpu": "RTX 5060",
+      "npm": "顏春梅",
+      "stage": "BTO-",
+      "status": "",
+      "highlight": "SKU目前沒有訂單.可以follow RTX5060 ATS做ATS CR",
+      "mp_sort": "2026/02/14",
+      "orig_idx": 427,
+      "dates": {
+        "Kickoff": "2025/09/09",
+        "DVT-start": "2025/10/20",
+        "EVT-start": "2025/12/08",
+        "MVT-start": "2026/01/15",
+        "BTO ready": "2026/01/10",
+        "ATS-start": "2026/02/04",
+        "MP": "2026/02/14"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "2652",
+      "mkt": "Raider 16 HX B2WG",
+      "cpu": "ARL-HX 55W",
+      "gpu": "RTX 5070",
+      "npm": "顏春梅",
+      "stage": "BTO-",
+      "status": "",
+      "highlight": "SKU目前沒有訂單.可以follow RTX5060 ATS做ATS CR",
+      "mp_sort": "2026/02/14",
+      "orig_idx": 428,
+      "dates": {
+        "Kickoff": "2025/09/09",
+        "DVT-start": "2025/10/20",
+        "EVT-start": "2025/12/08",
+        "MVT-start": "2026/01/15",
+        "BTO ready": "2026/01/10",
+        "ATS-start": "2026/02/04",
+        "MP": "2026/02/14"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "2652",
+      "mkt": "Raider 16 HX B2WG",
+      "cpu": "ARL-HX refresh 55W",
+      "gpu": "RTX 5070",
+      "npm": "顏春梅",
+      "stage": "BTO-",
+      "status": "",
+      "highlight": "SKU目前沒有訂單.可以follow RTX5060 ATS做ATS CR",
+      "mp_sort": "2026/02/14",
+      "orig_idx": 429,
+      "dates": {
+        "Kickoff": "2025/09/09",
+        "DVT-start": "2025/10/20",
+        "EVT-start": "2025/12/08",
+        "MVT-start": "2026/01/15",
+        "BTO ready": "2026/01/10",
+        "ATS-start": "2026/02/04",
+        "MP": "2026/02/14"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "2652",
       "mkt": "Raider 16 HX B2WGX",
       "cpu": "ARL-HX 55W",
       "gpu": "RTX 5070",
@@ -8417,14 +8678,15 @@
       "status": "0",
       "highlight": "N/A",
       "mp_sort": "2026/04/16",
-      "orig_idx": 426,
+      "orig_idx": 430,
       "dates": {
         "Kickoff": "2026/01/12",
         "MVT-start": "2026/02/27",
         "BTO ready": "2026/03/13",
         "ATS-start": "2026/04/10",
         "MP": "2026/04/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2652",
@@ -8436,14 +8698,15 @@
       "status": "leveage ARL-HX 直接MP",
       "highlight": "N/A",
       "mp_sort": "2026/04/16",
-      "orig_idx": 427,
+      "orig_idx": 431,
       "dates": {
         "Kickoff": "2026/01/12",
         "MVT-start": "2026/02/27",
         "BTO ready": "2026/03/13",
         "ATS-start": "2026/04/10",
         "MP": "2026/04/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2653",
@@ -8455,7 +8718,7 @@
       "status": "",
       "highlight": "無單色KB",
       "mp_sort": "2026/03/31",
-      "orig_idx": 428,
+      "orig_idx": 432,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/22",
@@ -8476,7 +8739,7 @@
       "status": "CR工單：26PN031784C 9S7-265343-042 27；26PN027940C 9S7-265343-023 30",
       "highlight": "NA",
       "mp_sort": "2026/04/16",
-      "orig_idx": 429,
+      "orig_idx": 433,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/20",
@@ -8485,7 +8748,8 @@
         "BTO ready": "2026/02/13",
         "ATS-start": "2026/04/10",
         "MP": "2026/04/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2653",
@@ -8497,7 +8761,7 @@
       "status": "",
       "highlight": "無單色KB",
       "mp_sort": "2026/03/31",
-      "orig_idx": 430,
+      "orig_idx": 434,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/22",
@@ -8506,7 +8770,8 @@
         "BTO ready": "2026/02/20",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/31"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2653",
@@ -8518,7 +8783,7 @@
       "status": "CR工單：26PN029805C 9S7-265343-014 50 i9-14900HX+RTX 5060",
       "highlight": "NA",
       "mp_sort": "2026/04/09",
-      "orig_idx": 431,
+      "orig_idx": 435,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/20",
@@ -8527,7 +8792,8 @@
         "BTO ready": "2026/02/13",
         "ATS-start": "2026/03/19",
         "MP": "2026/04/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2653",
@@ -8539,7 +8805,7 @@
       "status": "",
       "highlight": "無單色KB",
       "mp_sort": "2026/03/31",
-      "orig_idx": 432,
+      "orig_idx": 436,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/22",
@@ -8548,7 +8814,8 @@
         "BTO ready": "2026/02/20",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/31"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2653",
@@ -8560,7 +8827,7 @@
       "status": "ATS工單：26PN029804A 9S7-265343-002 100 i7-14650HX+RTX 5070",
       "highlight": "NA",
       "mp_sort": "2026/04/09",
-      "orig_idx": 433,
+      "orig_idx": 437,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/20",
@@ -8569,7 +8836,8 @@
         "BTO ready": "2026/02/13",
         "ATS-start": "2026/03/19",
         "MP": "2026/04/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2653",
@@ -8581,14 +8849,15 @@
       "status": "",
       "highlight": "follow Crosshair 16 HX MLG Edition E14WGK",
       "mp_sort": "2026/06/09",
-      "orig_idx": 434,
+      "orig_idx": 438,
       "dates": {
         "Kickoff": "2026/03/27",
         "MVT-start": "2026/05/20",
         "BTO ready": "2026/04/30",
         "ATS-start": "2026/05/29",
         "MP": "2026/06/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2653",
@@ -8600,14 +8869,15 @@
       "status": "",
       "highlight": "follow Crosshair 16 HX MLG Edition E14WGK",
       "mp_sort": "2026/06/09",
-      "orig_idx": 435,
+      "orig_idx": 439,
       "dates": {
         "Kickoff": "2026/03/27",
         "MVT-start": "2026/05/20",
         "BTO ready": "2026/04/30",
         "ATS-start": "2026/05/29",
         "MP": "2026/06/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2653",
@@ -8619,14 +8889,15 @@
       "status": "報價單未確定，BTO暫未開放",
       "highlight": "1. 報價單未確定，BTO暫未開放 2. 2653 MLG A & B side膠粒預計交期@5/11，成型307 預計5/21 for MVT 3.Take risk , 首批成型3K套 4.5/28 MVT測試與ATS同步進行，TTM pull in至 6/9 5.MVT 驗證 , if issue , waive or 增加輔料for short term",
       "mp_sort": "2026/06/09",
-      "orig_idx": 436,
+      "orig_idx": 440,
       "dates": {
         "Kickoff": "2026/03/27",
         "MVT-start": "2026/05/20",
         "BTO ready": "2026/04/30",
         "ATS-start": "2026/05/29",
         "MP": "2026/06/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265K",
@@ -8638,7 +8909,7 @@
       "status": "0",
       "highlight": "SRRC未取證，影響時間TBD",
       "mp_sort": "2026/03/31",
-      "orig_idx": 437,
+      "orig_idx": 441,
       "dates": {
         "Kickoff": "2025/10/15",
         "DVT-start": "2025/11/17",
@@ -8647,7 +8918,8 @@
         "BTO ready": "2026/02/13",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/31"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265K",
@@ -8659,7 +8931,7 @@
       "status": "0",
       "highlight": "SRRC未取證，影響時間TBD",
       "mp_sort": "2026/03/31",
-      "orig_idx": 438,
+      "orig_idx": 442,
       "dates": {
         "Kickoff": "2025/10/15",
         "DVT-start": "2025/11/17",
@@ -8668,7 +8940,8 @@
         "BTO ready": "2026/02/13",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/31"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265K",
@@ -8680,7 +8953,7 @@
       "status": "",
       "highlight": "無出貨需求，MVT on hold",
       "mp_sort": "2026/03/31",
-      "orig_idx": 439,
+      "orig_idx": 443,
       "dates": {
         "Kickoff": "2025/10/15",
         "DVT-start": "2025/11/17",
@@ -8689,89 +8962,14 @@
         "BTO ready": "2026/02/27",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/31"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265K",
       "mkt": "Raider A16 HX B9WH",
       "cpu": "FRG-HX3D 55W",
       "gpu": "RTX 5070Ti",
-      "npm": "梅燕",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "無業務報價，MVT on hold",
-      "mp_sort": "2026/05/29",
-      "orig_idx": 440,
-      "dates": {
-        "Kickoff": "2025/10/15",
-        "MVT-start": "2026/03/21",
-        "BTO ready": "2026/04/20",
-        "ATS-start": "2026/05/19",
-        "MP": "2026/05/29"
-      }
-    },
-    {
-      "model": "265K",
-      "mkt": "Raider A16 HX B9WH",
-      "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5070Ti",
-      "npm": "梅燕",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "無業務報價，MVT on hold",
-      "mp_sort": "2026/05/29",
-      "orig_idx": 441,
-      "dates": {
-        "Kickoff": "2025/10/15",
-        "MVT-start": "2026/03/21",
-        "BTO ready": "2026/04/20",
-        "ATS-start": "2026/05/19",
-        "MP": "2026/05/29"
-      }
-    },
-    {
-      "model": "265K",
-      "mkt": "Raider A16 HX B9WI",
-      "cpu": "FRG-HX3D 55W",
-      "gpu": "RTX 5080",
-      "npm": "梅燕",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "無業務報價，MVT on hold",
-      "mp_sort": "2026/05/29",
-      "orig_idx": 442,
-      "dates": {
-        "Kickoff": "2025/10/15",
-        "MVT-start": "2026/03/21",
-        "BTO ready": "2026/04/20",
-        "ATS-start": "2026/05/19",
-        "MP": "2026/05/29"
-      }
-    },
-    {
-      "model": "265K",
-      "mkt": "Raider A16 HX B9WI",
-      "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5080",
-      "npm": "梅燕",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "無業務報價，MVT on hold",
-      "mp_sort": "2026/05/29",
-      "orig_idx": 443,
-      "dates": {
-        "Kickoff": "2025/10/15",
-        "MVT-start": "2026/03/21",
-        "BTO ready": "2026/04/20",
-        "ATS-start": "2026/05/19",
-        "MP": "2026/05/29"
-      }
-    },
-    {
-      "model": "265K",
-      "mkt": "Raider A16 HX B9WJ",
-      "cpu": "FRG-HX3D 55W",
-      "gpu": "RTX 5090",
       "npm": "梅燕",
       "stage": "Pending",
       "status": "",
@@ -8788,9 +8986,9 @@
     },
     {
       "model": "265K",
-      "mkt": "Raider A16 HX B9WJ",
+      "mkt": "Raider A16 HX B9WH",
       "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5090",
+      "gpu": "RTX 5070Ti",
       "npm": "梅燕",
       "stage": "Pending",
       "status": "",
@@ -8806,6 +9004,86 @@
       }
     },
     {
+      "model": "265K",
+      "mkt": "Raider A16 HX B9WI",
+      "cpu": "FRG-HX3D 55W",
+      "gpu": "RTX 5080",
+      "npm": "梅燕",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "無業務報價，MVT on hold",
+      "mp_sort": "2026/05/29",
+      "orig_idx": 446,
+      "dates": {
+        "Kickoff": "2025/10/15",
+        "MVT-start": "2026/03/21",
+        "BTO ready": "2026/04/20",
+        "ATS-start": "2026/05/19",
+        "MP": "2026/05/29"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265K",
+      "mkt": "Raider A16 HX B9WI",
+      "cpu": "FRG-HX 55W",
+      "gpu": "RTX 5080",
+      "npm": "梅燕",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "無業務報價，MVT on hold",
+      "mp_sort": "2026/05/29",
+      "orig_idx": 447,
+      "dates": {
+        "Kickoff": "2025/10/15",
+        "MVT-start": "2026/03/21",
+        "BTO ready": "2026/04/20",
+        "ATS-start": "2026/05/19",
+        "MP": "2026/05/29"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265K",
+      "mkt": "Raider A16 HX B9WJ",
+      "cpu": "FRG-HX3D 55W",
+      "gpu": "RTX 5090",
+      "npm": "梅燕",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "無業務報價，MVT on hold",
+      "mp_sort": "2026/05/29",
+      "orig_idx": 448,
+      "dates": {
+        "Kickoff": "2025/10/15",
+        "MVT-start": "2026/03/21",
+        "BTO ready": "2026/04/20",
+        "ATS-start": "2026/05/19",
+        "MP": "2026/05/29"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265K",
+      "mkt": "Raider A16 HX B9WJ",
+      "cpu": "FRG-HX 55W",
+      "gpu": "RTX 5090",
+      "npm": "梅燕",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "無業務報價，MVT on hold",
+      "mp_sort": "2026/05/29",
+      "orig_idx": 449,
+      "dates": {
+        "Kickoff": "2025/10/15",
+        "MVT-start": "2026/03/21",
+        "BTO ready": "2026/04/20",
+        "ATS-start": "2026/05/19",
+        "MP": "2026/05/29"
+      },
+      "mp_changed": true
+    },
+    {
       "model": "265L",
       "mkt": "Crosshair A16 HX E8WEK",
       "cpu": "DRG-HX 55W",
@@ -8815,7 +9093,7 @@
       "status": "",
       "highlight": "1. SRRC未取證，影響時間TBD;KCC ready@5/28，MP 4/30，Gap 4W",
       "mp_sort": "2026/04/30",
-      "orig_idx": 446,
+      "orig_idx": 450,
       "dates": {
         "Kickoff": "2025/10/22",
         "DVT-start": "2025/12/10",
@@ -8824,7 +9102,8 @@
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/22",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -8836,7 +9115,7 @@
       "status": "ATS SMT @4/22",
       "highlight": "同Crosshair A16 HX E8WEK",
       "mp_sort": "2026/04/30",
-      "orig_idx": 447,
+      "orig_idx": 451,
       "dates": {
         "Kickoff": "2025/10/22",
         "DVT-start": "2025/12/10",
@@ -8845,7 +9124,8 @@
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/22",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -8857,7 +9137,7 @@
       "status": "ATS SMT @4/22",
       "highlight": "同Crosshair A16 HX E8WEK",
       "mp_sort": "2026/04/30",
-      "orig_idx": 448,
+      "orig_idx": 452,
       "dates": {
         "Kickoff": "2025/10/22",
         "DVT-start": "2025/12/10",
@@ -8866,7 +9146,8 @@
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/22",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -8878,14 +9159,15 @@
       "status": "MVT 測試中",
       "highlight": "NA",
       "mp_sort": "2026/05/29",
-      "orig_idx": 449,
+      "orig_idx": 453,
       "dates": {
         "Kickoff": "2025/12/30",
         "MVT-start": "2026/03/21",
         "BTO ready": "2026/04/23",
         "ATS-start": "2026/05/19",
         "MP": "2026/05/29"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -8895,82 +9177,6 @@
       "npm": "朱欣怡",
       "stage": "Pending",
       "status": "2026/1/12 會議通知pending FRG",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 450,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 HX E9WEK",
-      "cpu": "FRG-HX3D 55W",
-      "gpu": "RTX 5050",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 451,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 HX E9WFK",
-      "cpu": "FRG-HX3D 55W",
-      "gpu": "RTX 5060",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 452,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 HX E9WFK",
-      "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5060",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 453,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 HX E9WGK",
-      "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5070",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
       "highlight": "NA",
       "mp_sort": "2026/06/28",
       "orig_idx": 454,
@@ -8984,6 +9190,85 @@
     },
     {
       "model": "265L",
+      "mkt": "Crosshair A16 HX E9WEK",
+      "cpu": "FRG-HX3D 55W",
+      "gpu": "RTX 5050",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 455,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      }
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 HX E9WFK",
+      "cpu": "FRG-HX3D 55W",
+      "gpu": "RTX 5060",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 456,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 HX E9WFK",
+      "cpu": "FRG-HX 55W",
+      "gpu": "RTX 5060",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 457,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 HX E9WGK",
+      "cpu": "FRG-HX 55W",
+      "gpu": "RTX 5070",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 458,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
       "mkt": "Crosshair A16 HX E9WGK",
       "cpu": "FRG-HX3D 55W",
       "gpu": "RTX 5070",
@@ -8992,7 +9277,7 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/06/28",
-      "orig_idx": 455,
+      "orig_idx": 459,
       "dates": {
         "Kickoff": "2025/10/22",
         "MVT-start": "2026/04/20",
@@ -9011,7 +9296,7 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/04/30",
-      "orig_idx": 456,
+      "orig_idx": 460,
       "dates": {
         "Kickoff": "2025/10/22",
         "DVT-start": "2025/12/10",
@@ -9020,7 +9305,8 @@
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/20",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -9032,7 +9318,7 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/04/30",
-      "orig_idx": 457,
+      "orig_idx": 461,
       "dates": {
         "Kickoff": "2025/10/22",
         "DVT-start": "2025/12/10",
@@ -9041,7 +9327,8 @@
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/20",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -9053,7 +9340,7 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/04/30",
-      "orig_idx": 458,
+      "orig_idx": 462,
       "dates": {
         "Kickoff": "2025/10/22",
         "DVT-start": "2025/12/10",
@@ -9062,89 +9349,14 @@
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/20",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
       "mkt": "Crosshair A16 Max HX E9WEK",
       "cpu": "FRG-HX3D 55W",
       "gpu": "RTX 5050",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 459,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WEK",
-      "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5050",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 460,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WFK",
-      "cpu": "FRG-HX3D 55W",
-      "gpu": "RTX 5060",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 461,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WFK",
-      "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5060",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 462,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WGSK",
-      "cpu": "FRG-HX3D 55W",
-      "gpu": "RTX 5070",
       "npm": "朱欣怡",
       "stage": "Pending",
       "status": "",
@@ -9161,9 +9373,9 @@
     },
     {
       "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WGSK",
+      "mkt": "Crosshair A16 Max HX E9WEK",
       "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5070",
+      "gpu": "RTX 5050",
       "npm": "朱欣怡",
       "stage": "Pending",
       "status": "",
@@ -9179,6 +9391,86 @@
       }
     },
     {
+      "model": "265L",
+      "mkt": "Crosshair A16 Max HX E9WFK",
+      "cpu": "FRG-HX3D 55W",
+      "gpu": "RTX 5060",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 465,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 Max HX E9WFK",
+      "cpu": "FRG-HX 55W",
+      "gpu": "RTX 5060",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 466,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 Max HX E9WGSK",
+      "cpu": "FRG-HX3D 55W",
+      "gpu": "RTX 5070",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 467,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 Max HX E9WGSK",
+      "cpu": "FRG-HX 55W",
+      "gpu": "RTX 5070",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 468,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
       "model": "15MM",
       "mkt": "Vector A16 HX A8WHG",
       "cpu": "DRG-HX 55W",
@@ -9188,7 +9480,7 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/07/31",
-      "orig_idx": 465,
+      "orig_idx": 469,
       "dates": {
         "Kickoff": "2024/12/24",
         "DVT-start": "2025/03/01",
@@ -9197,7 +9489,8 @@
         "BTO ready": "2025/06/18",
         "ATS-start": "2025/07/21",
         "MP": "2025/07/31"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15MM",
@@ -9209,7 +9502,7 @@
       "status": "0",
       "highlight": "無",
       "mp_sort": "2025/07/31",
-      "orig_idx": 466,
+      "orig_idx": 470,
       "dates": {
         "Kickoff": "2024/12/24",
         "DVT-start": "2025/03/01",
@@ -9218,7 +9511,8 @@
         "BTO ready": "2025/06/18",
         "ATS-start": "2025/07/21",
         "MP": "2025/07/31"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15MM",
@@ -9230,7 +9524,7 @@
       "status": "0",
       "highlight": "未有報價,BTO暫未開放",
       "mp_sort": "2025/07/31",
-      "orig_idx": 467,
+      "orig_idx": 471,
       "dates": {
         "Kickoff": "2024/12/24",
         "DVT-start": "2025/03/01",
@@ -9239,7 +9533,8 @@
         "BTO ready": "2025/06/18",
         "ATS-start": "2025/07/20",
         "MP": "2025/07/31"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15MM",
@@ -9251,14 +9546,15 @@
       "status": "MVT 测试中，业务暂无出货需求，BTO未开",
       "highlight": "无",
       "mp_sort": "2025/10/22",
-      "orig_idx": 468,
+      "orig_idx": 472,
       "dates": {
         "Kickoff": "2024/12/24",
         "MVT-start": "2025/07/29",
         "BTO ready": "2025/09/18",
         "ATS-start": "2025/10/12",
         "MP": "2025/10/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15MM",
@@ -9270,14 +9566,15 @@
       "status": "MVT 测试中，业务暂无出货需求，BTO未开",
       "highlight": "無",
       "mp_sort": "2025/10/22",
-      "orig_idx": 469,
+      "orig_idx": 473,
       "dates": {
         "Kickoff": "2024/12/24",
         "MVT-start": "2025/07/29",
         "BTO ready": "2025/09/18",
         "ATS-start": "2025/10/12",
         "MP": "2025/10/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15MM",
@@ -9289,14 +9586,15 @@
       "status": "MVT 测试中，业务暂无出货需求，BTO未开",
       "highlight": "無",
       "mp_sort": "2025/10/22",
-      "orig_idx": 470,
+      "orig_idx": 474,
       "dates": {
         "Kickoff": "2024/12/24",
         "MVT-start": "2025/07/29",
         "BTO ready": "2025/09/18",
         "ATS-start": "2025/10/12",
         "MP": "2025/10/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1833",
@@ -9308,14 +9606,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2026/03/07",
-      "orig_idx": 471,
+      "orig_idx": 475,
       "dates": {
         "Kickoff": "2025/06/20",
         "MVT-start": "2025/12/23",
         "BTO ready": "2026/01/09",
         "ATS-start": "2026/02/25",
         "MP": "2026/03/07"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1833",
@@ -9327,14 +9626,15 @@
       "status": "-2",
       "highlight": "3/21入庫",
       "mp_sort": "2026/03/21",
-      "orig_idx": 472,
+      "orig_idx": 476,
       "dates": {
         "Kickoff": "2025/06/20",
         "MVT-start": "2025/12/23",
         "BTO ready": "2026/01/09",
         "ATS-start": "2026/03/13",
         "MP": "2026/03/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1833",
@@ -9346,14 +9646,15 @@
       "status": "0",
       "highlight": "BTO未開",
       "mp_sort": "2026/03/07",
-      "orig_idx": 473,
+      "orig_idx": 477,
       "dates": {
         "Kickoff": "2025/06/20",
         "MVT-start": "2025/12/23",
         "BTO ready": "2026/01/09",
         "ATS-start": "2026/02/25",
         "MP": "2026/03/07"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2631",
@@ -9365,7 +9666,7 @@
       "status": "+16",
       "highlight": "過年後安排ATS重工,2/25入庫",
       "mp_sort": "2026/02/25",
-      "orig_idx": 474,
+      "orig_idx": 478,
       "dates": {
         "Kickoff": "2025/05/07",
         "DVT-start": "2025/06/18",
@@ -9386,7 +9687,7 @@
       "status": "+16",
       "highlight": "過年後安排ATS重工,2/25入庫",
       "mp_sort": "2026/02/25",
-      "orig_idx": 475,
+      "orig_idx": 479,
       "dates": {
         "Kickoff": "2025/05/07",
         "DVT-start": "2025/06/18",
@@ -9407,7 +9708,7 @@
       "status": "0",
       "highlight": "BTO未開放",
       "mp_sort": "2026/02/09",
-      "orig_idx": 476,
+      "orig_idx": 480,
       "dates": {
         "Kickoff": "2025/05/07",
         "DVT-start": "2025/06/18",
@@ -9416,7 +9717,8 @@
         "BTO ready": "2025/12/26",
         "ATS-start": "2026/01/27",
         "MP": "2026/02/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2632",
@@ -9428,7 +9730,7 @@
       "status": "0",
       "highlight": "BTO未開放",
       "mp_sort": "2026/02/09",
-      "orig_idx": 477,
+      "orig_idx": 481,
       "dates": {
         "Kickoff": "2025/05/07",
         "DVT-start": "2025/07/07",
@@ -9437,7 +9739,8 @@
         "BTO ready": "2025/12/26",
         "ATS-start": "2026/01/27",
         "MP": "2026/02/09"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2632",
@@ -9449,7 +9752,7 @@
       "status": "+16",
       "highlight": "過年後安排ATS重工,2/25入庫",
       "mp_sort": "2026/02/25",
-      "orig_idx": 478,
+      "orig_idx": 482,
       "dates": {
         "Kickoff": "2025/05/07",
         "DVT-start": "2025/07/07",
@@ -9458,7 +9761,8 @@
         "BTO ready": "2025/12/26",
         "ATS-start": "2026/01/27",
         "MP": "2026/02/25"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2632",
@@ -9470,7 +9774,7 @@
       "status": "+16",
       "highlight": "過年後安排ATS重工,2/25入庫",
       "mp_sort": "2026/02/25",
-      "orig_idx": 479,
+      "orig_idx": 483,
       "dates": {
         "Kickoff": "2025/05/07",
         "DVT-start": "2025/07/07",
@@ -9479,7 +9783,8 @@
         "BTO ready": "2025/12/26",
         "ATS-start": "2026/01/27",
         "MP": "2026/02/25"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2632",
@@ -9491,14 +9796,15 @@
       "status": "+5",
       "highlight": "工廠排程C/R ASSY @4/18",
       "mp_sort": "2026/04/22",
-      "orig_idx": 480,
+      "orig_idx": 484,
       "dates": {
         "Kickoff": "2025/12/30",
         "MVT-start": "2026/03/10",
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/18",
         "MP": "2026/04/22"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2634",
@@ -9510,7 +9816,7 @@
       "status": "",
       "highlight": "",
       "mp_sort": "2027/01/08",
-      "orig_idx": 481,
+      "orig_idx": 485,
       "dates": {
         "Kickoff": "2026/05/22",
         "DVT-start": "2026/07/21",
@@ -9519,7 +9825,8 @@
         "BTO ready": "2026/11/27",
         "ATS-start": "2026/12/29",
         "MP": "2027/01/08"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15FM",
@@ -9531,14 +9838,15 @@
       "status": "0",
       "highlight": "業務沒需求",
       "mp_sort": "2025/06/30",
-      "orig_idx": 482,
+      "orig_idx": 486,
       "dates": {
         "Kickoff": "2025/02/18",
         "MVT-start": "2025/04/17",
         "BTO ready": "2025/04/30",
         "ATS-start": "2025/06/23",
         "MP": "2025/06/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15FM",
@@ -9550,14 +9858,15 @@
       "status": "-18",
       "highlight": "根據生管排程,C/R重工於6/30入庫",
       "mp_sort": "2025/06/30",
-      "orig_idx": 483,
+      "orig_idx": 487,
       "dates": {
         "Kickoff": "2025/02/18",
         "MVT-start": "2025/04/17",
         "BTO ready": "2025/04/30",
         "ATS-start": "2025/06/23",
         "MP": "2025/06/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9569,7 +9878,7 @@
       "status": "",
       "highlight": "2/2上線, WHQL 2/23取得, 中間有3週GAP,需call-help",
       "mp_sort": "2026/02/14",
-      "orig_idx": 484,
+      "orig_idx": 488,
       "dates": {
         "Kickoff": "2025/09/22",
         "BTO ready": "2026/01/09",
@@ -9587,7 +9896,7 @@
       "status": "",
       "highlight": "plan 2/2 ATS start, WHQL 2/9取得, 中間有7天的GAP",
       "mp_sort": "2026/02/14",
-      "orig_idx": 485,
+      "orig_idx": 489,
       "dates": {
         "Kickoff": "2025/09/22",
         "BTO ready": "2025/12/22",
@@ -9605,13 +9914,14 @@
       "status": "",
       "highlight": "plan 2/2 ATS start, WHQL 2/9取得, 中間有7天的GAP",
       "mp_sort": "2026/02/14",
-      "orig_idx": 486,
+      "orig_idx": 490,
       "dates": {
         "Kickoff": "2025/09/22",
         "BTO ready": "2025/12/26",
         "ATS-start": "2026/02/02",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9623,13 +9933,14 @@
       "status": "",
       "highlight": "2/2上線, WHQL 2/23取得, 中間有3週GAP,需call-help",
       "mp_sort": "2026/02/14",
-      "orig_idx": 487,
+      "orig_idx": 491,
       "dates": {
         "Kickoff": "2025/09/22",
         "BTO ready": "2026/01/09",
         "ATS-start": "2026/02/02",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9641,13 +9952,14 @@
       "status": "",
       "highlight": "plan 2/2 ATS start, WHQL 2/9取得, 中間有7天的GAP",
       "mp_sort": "2026/02/14",
-      "orig_idx": 488,
+      "orig_idx": 492,
       "dates": {
         "Kickoff": "2025/09/22",
         "BTO ready": "2025/12/22",
         "ATS-start": "2026/02/02",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9659,13 +9971,14 @@
       "status": "",
       "highlight": "plan 2/2 ATS start, WHQL 2/9取得, 中間有7天的GAP",
       "mp_sort": "2026/02/14",
-      "orig_idx": 489,
+      "orig_idx": 493,
       "dates": {
         "Kickoff": "2025/09/22",
         "BTO ready": "2025/12/26",
         "ATS-start": "2026/02/02",
         "MP": "2026/02/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9677,14 +9990,15 @@
       "status": "0",
       "highlight": "排程原因",
       "mp_sort": "2026/03/27",
-      "orig_idx": 490,
+      "orig_idx": 494,
       "dates": {
         "Kickoff": "2025/09/30",
         "MVT-start": "2025/12/24",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9696,14 +10010,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/03/27",
-      "orig_idx": 491,
+      "orig_idx": 495,
       "dates": {
         "Kickoff": "2025/09/30",
         "MVT-start": "2025/12/24",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9715,14 +10030,15 @@
       "status": "0",
       "highlight": "NA",
       "mp_sort": "2026/03/27",
-      "orig_idx": 492,
+      "orig_idx": 496,
       "dates": {
         "Kickoff": "2025/09/30",
         "MVT-start": "2025/12/24",
         "BTO ready": "2026/01/05",
         "ATS-start": "2026/03/20",
         "MP": "2026/03/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9734,14 +10050,15 @@
       "status": "",
       "highlight": "廠商提供的樣品印刷色彩落差較大，重新打樣中，預計4/30簽樣，5/20進料",
       "mp_sort": "2026/05/30",
-      "orig_idx": 493,
+      "orig_idx": 497,
       "dates": {
         "Kickoff": "2025/11/21",
         "MVT-start": "2026/02/27",
         "BTO ready": "2026/03/02",
         "ATS-start": "2026/05/20",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9753,13 +10070,14 @@
       "status": "",
       "highlight": "leverage Titan 18 HX Dragon Edition A2WH",
       "mp_sort": "2026/05/30",
-      "orig_idx": 494,
+      "orig_idx": 498,
       "dates": {
         "Kickoff": "2025/11/21",
         "BTO ready": "2026/03/02",
         "ATS-start": "2026/05/20",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -9771,13 +10089,14 @@
       "status": "",
       "highlight": "leverage Titan 18 HX Dragon Edition A2WH",
       "mp_sort": "2026/05/30",
-      "orig_idx": 495,
+      "orig_idx": 499,
       "dates": {
         "Kickoff": "2025/11/21",
         "BTO ready": "2026/03/02",
         "ATS-start": "2026/05/20",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15K1",
@@ -9789,33 +10108,15 @@
       "status": "-3",
       "highlight": "NA",
       "mp_sort": "2026/01/27",
-      "orig_idx": 496,
+      "orig_idx": 500,
       "dates": {
         "Kickoff": "2025/12/10",
         "MVT-start": "2025/12/26",
         "BTO ready": "2025/12/29",
         "ATS-start": "2026/01/22",
         "MP": "2026/01/27"
-      }
-    },
-    {
-      "model": "15K1",
-      "mkt": "Cyborg 15 Black Edition A13UDO",
-      "cpu": "RPL-H 45W",
-      "gpu": "RTX 3050",
-      "npm": "梅燕",
-      "stage": "Design",
-      "status": "",
-      "highlight": ".",
-      "mp_sort": "2026/06/30",
-      "orig_idx": 497,
-      "dates": {
-        "Kickoff": "2026/04/21",
-        "MVT-start": "2026/05/25",
-        "BTO ready": "2026/05/29",
-        "ATS-start": "2026/06/20",
-        "MP": "2026/06/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15K1",
@@ -9827,7 +10128,7 @@
       "status": "-3",
       "highlight": "NA",
       "mp_sort": "2026/01/27",
-      "orig_idx": 498,
+      "orig_idx": 501,
       "dates": {
         "Kickoff": "2025/12/10",
         "MVT-start": "2025/12/26",
@@ -9846,32 +10147,13 @@
       "status": "-3",
       "highlight": "NA",
       "mp_sort": "2026/01/27",
-      "orig_idx": 499,
+      "orig_idx": 502,
       "dates": {
         "Kickoff": "2025/12/10",
         "MVT-start": "2025/12/26",
         "BTO ready": "2025/12/29",
         "ATS-start": "2026/01/22",
         "MP": "2026/01/27"
-      }
-    },
-    {
-      "model": "15K1",
-      "mkt": "Cyborg 15 Black Edition A13VEO",
-      "cpu": "RPL-H 45W",
-      "gpu": "RTX 4050",
-      "npm": "梅燕",
-      "stage": "Design",
-      "status": "",
-      "highlight": ".",
-      "mp_sort": "2026/06/30",
-      "orig_idx": 500,
-      "dates": {
-        "Kickoff": "2026/04/21",
-        "MVT-start": "2026/05/25",
-        "BTO ready": "2026/05/29",
-        "ATS-start": "2026/06/20",
-        "MP": "2026/06/30"
       }
     },
     {
@@ -9884,14 +10166,15 @@
       "status": "-3",
       "highlight": "NA",
       "mp_sort": "2026/01/27",
-      "orig_idx": 501,
+      "orig_idx": 503,
       "dates": {
         "Kickoff": "2025/12/10",
         "MVT-start": "2025/12/26",
         "BTO ready": "2025/12/29",
         "ATS-start": "2026/01/22",
         "MP": "2026/01/27"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15K1",
@@ -9903,52 +10186,15 @@
       "status": "-3",
       "highlight": "NA",
       "mp_sort": "2026/01/27",
-      "orig_idx": 502,
+      "orig_idx": 504,
       "dates": {
         "Kickoff": "2025/12/10",
         "MVT-start": "2025/12/26",
         "BTO ready": "2025/12/29",
         "ATS-start": "2026/01/22",
         "MP": "2026/01/27"
-      }
-    },
-    {
-      "model": "15K1",
-      "mkt": "Cyborg 15 Black Edition A2UDXO",
-      "cpu": "RPL-H refresh 45W",
-      "gpu": "RTX 3050",
-      "npm": "梅燕",
-      "stage": "Design",
-      "status": "",
-      "highlight": ".",
-      "mp_sort": "2026/06/30",
-      "orig_idx": 503,
-      "dates": {
-        "Kickoff": "2026/04/21",
-        "MVT-start": "2026/05/25",
-        "BTO ready": "2026/05/29",
-        "ATS-start": "2026/06/20",
-        "MP": "2026/06/30"
-      }
-    },
-    {
-      "model": "15K1",
-      "mkt": "Cyborg 15 Black Edition A2VEO",
-      "cpu": "RPL-H refresh 45W",
-      "gpu": "RTX 4050",
-      "npm": "梅燕",
-      "stage": "Design",
-      "status": "",
-      "highlight": ".",
-      "mp_sort": "2026/06/30",
-      "orig_idx": 504,
-      "dates": {
-        "Kickoff": "2026/04/21",
-        "MVT-start": "2026/05/25",
-        "BTO ready": "2026/05/29",
-        "ATS-start": "2026/06/20",
-        "MP": "2026/06/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15Q4",
@@ -10396,7 +10642,7 @@
       "npm": "蔡東宏",
       "stage": "Design",
       "status": "follow Katana 15 HX C14WFK",
-      "highlight": "進入MVT stage前先確認業務是否也有GDDR7 8GB的出貨需求, 若有, 則需額外增加 MVT 機台給 RD 測試。",
+      "highlight": ".",
       "mp_sort": "2026/08/30",
       "orig_idx": 527,
       "dates": {
@@ -10410,13 +10656,13 @@
     },
     {
       "model": "15T3",
-      "mkt": "Katana 15 HX C14WGKX",
+      "mkt": "Katana 15 HX C14WGXK",
       "cpu": "RPL-HX refresh 55W",
       "gpu": "RTX 5070",
       "npm": "蔡東宏",
       "stage": "Design",
-      "status": "預計4/24@0A layout start",
-      "highlight": "",
+      "status": "0A layout中",
+      "highlight": "1.Color Plan未定案影響開模,schedule待定案後確認 2.進入MVT 前先確認業務是否有GDDR7 8GB的出貨需求, 若有, 則需額外增加 MVT 機台給 RD 測試。",
       "mp_sort": "2026/08/30",
       "orig_idx": 528,
       "dates": {
@@ -16361,5 +16607,5 @@
       }
     }
   ],
-  "buildTime": "2026/04/27 08:59:11"
+  "buildTime": "2026/04/27 16:33:20"
 }
