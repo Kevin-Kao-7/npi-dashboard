@@ -175,6 +175,8 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 <div class="stats" id="statsContainer"></div>
 
 <div class="filters">
+  <label>Model:</label>
+  <div class="ms-wrap" id="msModel"></div>
   <label>Stage:</label>
   <div class="ms-wrap" id="msStage"></div>
   <label>CPU:</label>
@@ -10603,8 +10605,7 @@ const DATA = {
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
         "MP": "2026/08/30"
-      },
-      "mp_changed": true
+      }
     },
     {
       "model": "15T3",
@@ -16537,8 +16538,7 @@ const DATA = {
         "BTO ready": "2026/04/09",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/23"
-      },
-      "mp_changed": true
+      }
     },
     {
       "model": "1T91",
@@ -16580,7 +16580,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/24 18:00:01"
+  "buildTime": "2026/04/27 08:26:58"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16608,7 +16608,7 @@ const TOTAL_MONTHS = MONTHS.length;
 const CELL_W = 36;
 
 // Default filter: show Study/Kickoff/Design/DVT/EVT/MVT/ATS, MP Year 2026+2027
-let activeStages=new Set(['Design','DVT','EVT','MVT','ATS','Study']), filterCpuVals=new Set(), filterGpuVals=new Set(), filterYearVals=new Set(['2026','2027']), filterMktVals=new Set(), filterSearchVal='';
+let activeStages=new Set(['Design','DVT','EVT','MVT','ATS','Study']), filterModelVals=new Set(), filterCpuVals=new Set(), filterGpuVals=new Set(), filterYearVals=new Set(['2026','2027']), filterMktVals=new Set(), filterSearchVal='';
 let sortKey='model'; // 'model' or 'mp'
 let expandedModels = new Set();
 
@@ -16643,6 +16643,7 @@ function getFilteredGroups(){
   for(const [model, rows] of Object.entries(allGroups)){
     // Filter: if any row matches, include the group
     const filtered = rows.filter(r=>{
+      if(filterModelVals.size>0 && !filterModelVals.has(r.model)) return false;
       if(activeStages.size>0 && !activeStages.has(r.stage)) return false;
       if(filterCpuVals.size>0 && !filterCpuVals.has(r.cpu)) return false;
       if(filterGpuVals.size>0 && !filterGpuVals.has(r.gpu)) return false;
@@ -16794,9 +16795,12 @@ function updateMsComponent(id){
 
 function initFilters(){
   const cpuItems=[...new Set(DATA.records.map(r=>r.cpu).filter(Boolean))].sort();
+
   const gpuItems=[...new Set(DATA.records.map(r=>r.gpu).filter(Boolean))].sort();
   const mpYears=[...new Set(DATA.records.map(r=>r.mp_sort).filter(Boolean).map(d=>d.substring(0,4)))].sort();
   const mktItems=[...new Set(DATA.records.map(r=>r.mkt.split(' ')[0]).filter(Boolean))].sort();
+  const modelItems=[...new Set(DATA.records.map(r=>r.model).filter(Boolean))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+  createMsDropdown('msModel',modelItems,filterModelVals,()=>filterModelVals);
   createMsDropdown('msStage',ACTIVE_STAGES,activeStages,()=>activeStages);
   createMsDropdown('msCpu',cpuItems,filterCpuVals,()=>filterCpuVals);
   createMsDropdown('msGpu',gpuItems,filterGpuVals,()=>filterGpuVals);
@@ -16813,8 +16817,8 @@ function initFilters(){
 }
 
 function resetFilters(){
-  activeStages=new Set(['Design','DVT','EVT','MVT','ATS','Study']);filterCpuVals.clear();filterGpuVals.clear();filterYearVals=new Set(['2026','2027']);filterMktVals.clear();filterSearchVal='';sortKey='model';
-  updateMsComponent('msStage');updateMsComponent('msCpu');updateMsComponent('msGpu');updateMsComponent('msYear');updateMsComponent('msMkt');
+  activeStages=new Set(['Design','DVT','EVT','MVT','ATS','Study']);filterModelVals.clear();filterCpuVals.clear();filterGpuVals.clear();filterYearVals=new Set(['2026','2027']);filterMktVals.clear();filterSearchVal='';sortKey='model';
+  updateMsComponent('msModel');updateMsComponent('msStage');updateMsComponent('msCpu');updateMsComponent('msGpu');updateMsComponent('msYear');updateMsComponent('msMkt');
   document.getElementById('filterSearch').value='';
   document.getElementById('sortModel').classList.add('active');
   document.getElementById('sortMP').classList.remove('active');
