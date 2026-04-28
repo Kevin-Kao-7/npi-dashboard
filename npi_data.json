@@ -11660,7 +11660,7 @@
       "npm": "倪嬌嬌",
       "stage": "EVT",
       "status": "EVT DQA test start@4/23",
-      "highlight": "1. Schedule update follow NV chip 2. 報價單focus on 2.8K panel, panel with N1 platform的驗證follow其他leading customer在走, 待確認TTM具體影響後update",
+      "highlight": "一.物料 1)2.8K panel: N1驗證Follow其他Leading customer, 2623預計量產交料時間10/E ETD, 與Plan ATS 9/1 Gap 2 mouths; 14T3預計量產交料時間待Samsung回復中, Target 8/E ETD meet ATS. 二. NPI issue 1)Schedule更新Follow NV chip(PS: week of 6/14 MP: Sep 26)",
       "mp_sort": "2026/09/14",
       "orig_idx": 591,
       "dates": {
@@ -16308,7 +16308,7 @@
       "npm": "楊淑賢",
       "stage": "MVT",
       "status": "MVT DQA test4/15-4/29",
-      "highlight": "1.請RD support MVT debug@5/7 2.包材落摔fail,待確認機構卡扣能否改善,行銷包材增加泡棉後能否pass;若4/24決定,包材交期5/M;否則ATS 時間會依包材確定結果延後相應時間3.CCC認證預計5/E,若機殼樣品條燃燒結果fail,會再延後",
+      "highlight": "Gating  物料       1)Packing :包材落摔fail, Packing solution確定@4/27. 持續追蹤   NPI issue      1)Mura > 100 Lux , waive申請      2) ME locK更新後不開機 .RD debugging.      3) 3C認證要到5/E,中國區出貨受影響",
       "mp_sort": "2026/05/23",
       "orig_idx": 826,
       "dates": {
@@ -16361,5 +16361,5 @@
       }
     }
   ],
-  "buildTime": "2026/04/28 09:01:14"
+  "buildTime": "2026/04/28 11:34:50"
 }
