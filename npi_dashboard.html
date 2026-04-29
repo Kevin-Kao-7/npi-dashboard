@@ -143,6 +143,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:#444;border-radius:3px}
 </style>
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
 </head>
 <body>
 
@@ -194,7 +195,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
   <button class="sort-btn" id="sortMP" onclick="setSort('mp')">MP Date</button>
   <button class="sort-btn" id="sortMkt" onclick="setSort('mkt')">MKT</button>
   <button class="reset-btn" onclick="resetFilters()">Reset</button>
-  <a href="npi_dashboard.xlsx" download="NPI_Dashboard.xlsx" class="sort-btn" style="margin-left:8px;background:#2F5496;color:#fff;border-color:#2F5496;text-decoration:none;display:inline-block">⬇ Excel</a>
+  <button class="sort-btn" style="margin-left:8px;background:#2F5496;color:#fff;border-color:#2F5496" onclick="exportFilteredExcel()">⬇ Excel</button>
 </div>
 
 <div class="gantt-section">
@@ -16581,7 +16582,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/29 13:51:57"
+  "buildTime": "2026/04/29 14:10:41"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16912,6 +16913,109 @@ function renderBarsHtml(r){
     if(tl>=0&&tl<TOTAL_MONTHS*CELL_W) h+=`<div class="today-line" style="left:${tl}px"></div>`;
   }
   return h;
+}
+
+function exportFilteredExcel(){
+  // 获取当前筛选+排序后的数据
+  const groups = getFilteredGroups();
+  const sorted = getSortedGroups(groups);
+
+  const dk = ["Kickoff","DVT-start","EVT-start","MVT-start","BTO ready","ATS-start","MP"];
+  const headers = ["No.","Model","MKT Name","Stage","CPU","GPU","NPM",...dk,"Status","Highlight"];
+
+  const wb = XLSX.utils.book_new();
+  const ws_data = [headers];
+
+  let no = 1;
+  const childRowSet = new Set(); // 子行在 ws_data 中的索引（含表头，1-based）
+  const modelMergeInfo = [];     // {startRow, count} 用于 Model 列合并
+
+  for(const [model, rows] of sorted){
+    const groupStartRow = ws_data.length; // 含表头的行号
+    for(let i = 0; i < rows.length; i++){
+      const r = rows[i];
+      const dates = r.dates || {};
+      const row = [
+        no,
+        r.model || '',
+        r.mkt || '',
+        r.stage || '',
+        r.cpu || '',
+        r.gpu || '',
+        r.npm || '',
+        dates['Kickoff'] || '',
+        dates['DVT-start'] || '',
+        dates['EVT-start'] || '',
+        dates['MVT-start'] || '',
+        dates['BTO ready'] || '',
+        dates['ATS-start'] || '',
+        dates['MP'] || '',
+        r.status || '',
+        r.highlight || ''
+      ];
+      ws_data.push(row);
+      if(i > 0) childRowSet.add(ws_data.length - 1); // 含表头的行索引
+      no++;
+    }
+    if(rows.length > 1){
+      modelMergeInfo.push({startRow: groupStartRow, count: rows.length});
+    }
+  }
+
+  const ws = XLSX.utils.aoa_to_sheet(ws_data);
+
+  // 列宽 & H~M 列（第8~13列，0-indexed: 7~12）折叠
+  ws['!cols'] = [
+    {wch:5},{wch:10},{wch:35},{wch:8},{wch:28},{wch:38},{wch:10},
+    {wch:12},{wch:12},{wch:12},{wch:12},{wch:12},{wch:12},{wch:12},{wch:8},{wch:50}
+  ];
+  // H~M 列折叠并默认隐藏
+  for(let c = 7; c <= 12; c++){
+    ws['!cols'][c].hidden = true;
+    ws['!cols'][c].level = 1;
+  }
+
+  // 行属性：表头 + 子行折叠
+  ws['!rows'] = [];
+  ws['!rows'][0] = {hpt: 20}; // 表头
+  for(let r = 1; r < ws_data.length; r++){
+    if(childRowSet.has(r)){
+      ws['!rows'][r] = {hidden: true, level: 1, hpt: 18};
+    } else {
+      ws['!rows'][r] = {hpt: 20};
+    }
+  }
+
+  // Model 列合并（同 Model 多行时合并 No. 和 Model 列）
+  const merges = [];
+  for(const m of modelMergeInfo){
+    // No. 列 (c=0) 和 Model 列 (c=1) 合并
+    merges.push({s:{r:m.startRow, c:0}, e:{r:m.startRow+m.count-1, c:0}});
+    merges.push({s:{r:m.startRow, c:1}, e:{r:m.startRow+m.count-1, c:1}});
+  }
+  if(merges.length > 0) ws['!merges'] = merges;
+
+  // 大纲属性：汇总行在上方（相当于 openpyxl summaryBelow=False）
+  ws['!outline'] = {above: true};
+
+  // 冻结首行
+  ws['!views'] = [{state:'frozen', ySplit:1}];
+
+  // 自动筛选
+  const lastCol = XLSX.utils.encode_col(headers.length - 1);
+  ws['!autofilter'] = {ref: `A1:${lastCol}${ws_data.length - 1}`};
+
+  XLSX.utils.book_append_sheet(wb, ws, "NPI Dashboard");
+
+  // 生成文件名：带日期和筛选行数
+  const now = new Date();
+  const dateStr = now.getFullYear() +
+    String(now.getMonth()+1).padStart(2,'0') +
+    String(now.getDate()).padStart(2,'0');
+  const totalRows = no - 1;
+  const fname = `NPI_Dashboard_${dateStr}_${totalRows}rows.xlsx`;
+
+  XLSX.writeFile(wb, fname, {cellStyles: true});
 }
 
 function renderGantt(){
