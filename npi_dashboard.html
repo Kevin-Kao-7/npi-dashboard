@@ -194,7 +194,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
   <button class="sort-btn" id="sortMP" onclick="setSort('mp')">MP Date</button>
   <button class="sort-btn" id="sortMkt" onclick="setSort('mkt')">MKT</button>
   <button class="reset-btn" onclick="resetFilters()">Reset</button>
-  <button class="sort-btn" onclick="exportExcel()" style="margin-left:8px;background:#2F5496;color:#fff;border-color:#2F5496">⬇ Excel</button>
+  <a href="npi_dashboard.xlsx" download="NPI_Dashboard.xlsx" class="sort-btn" style="margin-left:8px;background:#2F5496;color:#fff;border-color:#2F5496;text-decoration:none;display:inline-block">⬇ Excel</a>
 </div>
 
 <div class="gantt-section">
@@ -16581,7 +16581,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/29 13:41:10"
+  "buildTime": "2026/04/29 13:48:34"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16934,6 +16934,11 @@ async function doExportExcelJS(headers,rows){
   ws.properties.defaultRowHeight=18;
   ws.properties.outlineProperties={summaryBelow:false};
 
+  // Set H~M columns outlineLevel for grouping (col 8~13: Kickoff~ATS-start)
+  for(let c=8;c<=13;c++){
+    ws.getColumn(c).outlineLevel=1;
+  }
+
   // Auto-filter
   ws.autoFilter={from:'A1',to:`${String.fromCharCode(65+headers.length-1)}1`};
 
@@ -16973,8 +16978,8 @@ async function doExportExcelJS(headers,rows){
 
       zip.file('xl/worksheets/sheet1.xml',xml);
     }
-    // Regenerate with same structure - no extra compression to avoid corruption
-    const patchedBuf=await zip.generateAsync({type:'arraybuffer'});
+    // Regenerate - use STORE for small files, DEFLATE for large ones (like original xlsx)
+    const patchedBuf=await zip.generateAsync({type:'arraybuffer',compression:'DEFLATE',compressionOptions:{level:6}});
     const blob=new Blob([patchedBuf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
     const url=URL.createObjectURL(blob);
     const a=document.createElement('a');
