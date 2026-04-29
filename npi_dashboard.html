@@ -16581,7 +16581,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/29 11:05:10"
+  "buildTime": "2026/04/29 11:16:43"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16878,13 +16878,8 @@ async function doExportExcelJS(headers,rows){
   });
   headerRow.height=22;
 
-  // Set column widths & outline level for G~M columns (Kickoff~MP, col 8~14)
-  ws.columns=colWidths.map((w,i)=>{
-    const colDef={width:w};
-    // G(col8)~M(col14) are the date columns, set outlineLevel=1 & hidden for default collapsed
-    if(i>=7 && i<=13){colDef.outlineLevel=1;colDef.hidden=true;}
-    return colDef;
-  });
+  // Set column widths
+  ws.columns=colWidths.map(w=>({width:w}));
 
   // Stage colors mapping
   const stageColors={
@@ -16918,11 +16913,11 @@ async function doExportExcelJS(headers,rows){
       r.getCell(2).font={bold:true,size:11};
       r.height=20;
     }else{
-      // Child row: indented model name, apply outline level for grouping
+      // Child row: indented model name, apply outline level & hidden for default collapsed
       r.getCell(2).font={size:10,color:{argb:'FF666666'}};
       r.getCell(2).alignment={indent:2,vertical:'middle'};
-      // Excel row grouping: set outline level
       r.outlineLevel=1;
+      r.hidden=true;
     }
 
     // Alternating row background for readability
@@ -16940,6 +16935,13 @@ async function doExportExcelJS(headers,rows){
   ws.properties.outlineLevelCol=1;
   ws.properties.defaultRowHeight=18;
   ws.properties.outlineProperties={summaryBelow:false,summaryRight:false};
+
+  // Set G~M columns (col 8~14) outlineLevel & hidden for default collapsed
+  for(let c=8;c<=14;c++){
+    const col=ws.getColumn(c);
+    col.outlineLevel=1;
+    col.hidden=true;
+  }
 
   // Auto-filter
   ws.autoFilter={from:'A1',to:`${String.fromCharCode(65+headers.length-1)}1`};
