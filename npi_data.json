@@ -5939,18 +5939,18 @@
       "cpu": "RMB 100 45W",
       "gpu": "RTX 5050",
       "npm": "蔡東宏",
-      "stage": "Pending",
+      "stage": "MVT",
       "status": "同Cyborg A15 Max C1WG",
       "highlight": "同Cyborg A15 Max C1WG",
-      "mp_sort": "2026/03/18",
+      "mp_sort": "2026/07/06",
       "orig_idx": 300,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/17",
         "EVT-start": "2026/01/09",
         "BTO ready": "2026/02/06",
-        "ATS-start": "2026/03/06",
-        "MP": "2026/03/18"
+        "ATS-start": "2026/06/26",
+        "MP": "2026/07/06"
       }
     },
     {
@@ -5959,18 +5959,18 @@
       "cpu": "RMB 100 45W",
       "gpu": "RTX 5060",
       "npm": "蔡東宏",
-      "stage": "Pending",
+      "stage": "MVT",
       "status": "同Cyborg A15 Max C1WG",
       "highlight": "同Cyborg A15 Max C1WG",
-      "mp_sort": "2026/03/18",
+      "mp_sort": "2026/07/06",
       "orig_idx": 301,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/17",
         "EVT-start": "2026/01/09",
         "BTO ready": "2026/02/06",
-        "ATS-start": "2026/03/06",
-        "MP": "2026/03/18"
+        "ATS-start": "2026/06/26",
+        "MP": "2026/07/06"
       }
     },
     {
@@ -5979,18 +5979,18 @@
       "cpu": "RMB 100 45W",
       "gpu": "RTX 5050",
       "npm": "蔡東宏",
-      "stage": "Pending",
+      "stage": "MVT",
       "status": "同Cyborg A15 Max C1WG",
       "highlight": "同Cyborg A15 Max C1WG",
-      "mp_sort": "2026/03/18",
+      "mp_sort": "2026/07/06",
       "orig_idx": 302,
       "dates": {
         "Kickoff": "2025/10/03",
         "DVT-start": "2025/11/17",
         "EVT-start": "2026/01/09",
         "BTO ready": "2026/02/06",
-        "ATS-start": "2026/03/06",
-        "MP": "2026/03/18"
+        "ATS-start": "2026/06/26",
+        "MP": "2026/07/06"
       }
     },
     {
@@ -5999,18 +5999,18 @@
       "cpu": "RMB 100 45W",
       "gpu": "RTX 5060",
       "npm": "蔡東宏",
-      "stage": "Pending",
+      "stage": "MVT",
       "status": "同Cyborg A15 Max C1WG",
       "highlight": "同Cyborg A15 Max C1WG",
-      "mp_sort": "2026/03/18",
+      "mp_sort": "2026/07/06",
       "orig_idx": 303,
       "dates": {
         "Kickoff": "2025/10/03",
         "DVT-start": "2025/11/17",
         "EVT-start": "2026/01/09",
         "BTO ready": "2026/02/06",
-        "ATS-start": "2026/03/06",
-        "MP": "2026/03/18"
+        "ATS-start": "2026/06/26",
+        "MP": "2026/07/06"
       }
     },
     {
@@ -6019,18 +6019,18 @@
       "cpu": "RMB 100 45W",
       "gpu": "RTX 5070",
       "npm": "蔡東宏",
-      "stage": "Pending",
-      "status": "3/10: Project pending, 並關閉BTO",
-      "highlight": "3/10: Project pending, 並關閉BTO",
-      "mp_sort": "2026/03/18",
+      "stage": "MVT",
+      "status": "依CPU WW 26進廠進行 ATS",
+      "highlight": "採購l持續協助pull in CPU交期, 如有提前會更新ATS時間",
+      "mp_sort": "2026/07/06",
       "orig_idx": 304,
       "dates": {
         "Kickoff": "2025/10/03",
         "DVT-start": "2025/11/17",
         "EVT-start": "2026/01/09",
         "BTO ready": "2026/02/06",
-        "ATS-start": "2026/03/06",
-        "MP": "2026/03/18"
+        "ATS-start": "2026/06/26",
+        "MP": "2026/07/06"
       }
     },
     {
@@ -12281,8 +12281,8 @@
       "gpu": "N/A",
       "npm": "杜晨光",
       "stage": "MVT",
-      "status": "MVT debug中，,Base on CPU&Adapter 交料時間安排 ATS上線",
-      "highlight": "1.Schedule：因CPU& Adapter 缺料（Adapter 預計5/8 交料），ATS 預抓5/9 Start,5/E TTM ，備料：CPU&adapter 持續Tracking 備料交期",
+      "status": "MVT debug中，,Base on 物料Ready時間安排 ATS上線",
+      "highlight": "備料：因鍵盤絲印需要廠商印刷，齊料時間5/15,持續 Tracking 物料交期",
       "mp_sort": "2026/05/21",
       "orig_idx": 622,
       "dates": {
@@ -12456,8 +12456,8 @@
       "gpu": "N/A",
       "npm": "杜晨光",
       "stage": "MVT",
-      "status": "MVT debug中，Base  on CPU&Adapter 交期安排ATS",
-      "highlight": "1.Schedule：因CPU& Adapter 缺料（Adapter 預計5/8 交料），ATS 預抓5/9 Start,5/E TTM ，備料：CPU&adapter 持續Tracking 備料交期",
+      "status": "MVT debug中，Base  on 物料Ready時間安排ATS",
+      "highlight": "備料：因鍵盤絲印需要廠商印刷，齊料時間5/15,持續 Tracking 物料交期",
       "mp_sort": "2026/05/21",
       "orig_idx": 631,
       "dates": {
@@ -13433,8 +13433,8 @@
       "gpu": "N/A",
       "npm": "杜晨光",
       "stage": "DVT",
-      "status": "4/24 試產物料轉運微步，待物料到料後安排MVT試產，",
-      "highlight": "Schedule：因Memory  MOQ 限制，4/24安排轉運CPU/Wlan，原計劃4/17延後到4/E,delay 10天 ，對Schedule影響待微步評估 Wlan 備料： MOQ 6K+10K ,L/T 12W 預計7/10 ，與原計劃6/15 ATS ，Gap 25天 ，待採購確認是否有Pull in機會",
+      "status": "4/27 試產物料轉運微步，待物料到料後安排MVT試產，",
+      "highlight": "物料 1)WLAN ETA@7/17 , gap 32d 2)adaptor ETA@7/20,gap 35d ，2）AVAP ，微步暫未建立code，影響adaptor/電腦包/Mouse,需微步盡快建立Vendercode for備料，認證：需微步協助盡快安排C E Report在6/B ready,滿足6/E TTM",
       "mp_sort": "2026/06/25",
       "orig_idx": 680,
       "dates": {
@@ -13454,7 +13454,7 @@
       "npm": "杜晨光",
       "stage": "DVT",
       "status": "4/24 試產物料轉運微步，待物料到料後安排MVT試產",
-      "highlight": "Schedule：因Memory  MOQ 限制，4/24安排轉運CPU/Wlan，原計劃4/17延後到4/E,delay 10天 ，對Schedule影響待微步評估 Wlan 備料： MOQ 6K+10K ,L/T 12W 預計7/10 ，與原計劃6/15 ATS ，Gap 25天 ，待採購確認是否有Pull in機會",
+      "highlight": "物料 1)WLAN ETA@7/17 , gap 32d 2)adaptor ETA@7/20,gap 35d ，2）AVAP ，微步暫未建立code，影響adaptor/電腦包/Mouse,需微步盡快建立Vendercode for備料，認證：需微步協助盡快安排C E Report在6/B ready,滿足6/E TTM",
       "mp_sort": "2026/06/25",
       "orig_idx": 681,
       "dates": {
@@ -16361,5 +16361,5 @@
       }
     }
   ],
-  "buildTime": "2026/04/28 18:00:02"
+  "buildTime": "2026/04/29 09:00:02"
 }
