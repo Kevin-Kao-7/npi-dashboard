@@ -16581,7 +16581,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/29 09:00:02"
+  "buildTime": "2026/04/29 11:00:43"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16878,8 +16878,13 @@ async function doExportExcelJS(headers,rows){
   });
   headerRow.height=22;
 
-  // Set column widths
-  ws.columns=colWidths.map(w=>({width:w}));
+  // Set column widths & outline level for G~M columns (Kickoff~MP, col 8~14)
+  ws.columns=colWidths.map((w,i)=>{
+    const colDef={width:w};
+    // G(col8)~M(col14) are the date columns, set outlineLevel=1 for collapsible grouping
+    if(i>=7 && i<=13) colDef.outlineLevel=1;
+    return colDef;
+  });
 
   // Stage colors mapping
   const stageColors={
@@ -16932,8 +16937,9 @@ async function doExportExcelJS(headers,rows){
 
   // Set worksheet outline properties
   ws.properties.outlineLevelRow=1;
+  ws.properties.outlineLevelCol=1;
   ws.properties.defaultRowHeight=18;
-  ws.properties.outlineProperties={summaryBelow:false};
+  ws.properties.outlineProperties={summaryBelow:false,summaryRight:false};
 
   // Auto-filter
   ws.autoFilter={from:'A1',to:`${String.fromCharCode(65+headers.length-1)}1`};
