@@ -349,6 +349,17 @@ body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sa
 .badge-m{{background:var(--mvt)}}.badge-M{{background:var(--mp)}}
 /* 空状态 */
 .empty{{text-align:center;padding:60px 20px;color:var(--text2);font-size:14px}}
+/* ── 统计栏 ── */
+.stats-bar{{display:flex;gap:12px;padding:12px 24px;background:var(--bg2);border-bottom:1px solid var(--border);flex-wrap:wrap;align-items:center}}
+.stat-item{{display:flex;align-items:center;gap:6px;background:var(--bg3);padding:6px 14px;border-radius:6px;border:1px solid var(--border)}}
+.stat-label{{font-size:12px;color:var(--text2);font-weight:500}}
+.stat-num{{font-size:16px;font-weight:700;min-width:20px;text-align:center}}
+.stat-item.stat-model .stat-num{{color:#4472C4}}
+.stat-item.stat-Design .stat-num{{color:#00B0F0}}
+.stat-item.stat-DVT .stat-num{{color:#7030A0}}
+.stat-item.stat-EVT .stat-num{{color:#ED7D31}}
+.stat-item.stat-MVT .stat-num{{color:#FF4444}}
+.stat-item.stat-ATS .stat-num{{color:#70AD47}}
 /* ── 详情模态框 ── */
 .modal-overlay{{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9000;justify-content:center;align-items:center;padding:16px}}
 .modal-overlay.active{{display:flex}}
@@ -383,6 +394,14 @@ body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sa
   <div class="top-bar">
     <h1>NPI Search Dashboard</h1>
     <span class="stats" id="statsInfo"></span>
+  </div>
+  <div class="stats-bar" id="statsBar">
+    <div class="stat-item stat-model"><span class="stat-label">Model</span><span class="stat-num" id="statModel">0</span></div>
+    <div class="stat-item stat-Design"><span class="stat-label">Design</span><span class="stat-num" id="statDesign">0</span></div>
+    <div class="stat-item stat-DVT"><span class="stat-label">DVT</span><span class="stat-num" id="statDVT">0</span></div>
+    <div class="stat-item stat-EVT"><span class="stat-label">EVT</span><span class="stat-num" id="statEVT">0</span></div>
+    <div class="stat-item stat-MVT"><span class="stat-label">MVT</span><span class="stat-num" id="statMVT">0</span></div>
+    <div class="stat-item stat-ATS"><span class="stat-label">ATS</span><span class="stat-num" id="statATS">0</span></div>
   </div>
   <div class="filter-bar">
     <div class="filter-col">
@@ -492,6 +511,30 @@ function msChange(id){{
 function escAttr(s){{return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}}
 function escHtml(s){{return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}}
 
+// ── 统计 ──
+function updateStats(){{
+  const activeStages=['Design','DVT','EVT','MVT','ATS','m','M'];
+  const filtered=getFilteredRecords();
+  // Model统计：active stage中Model去重
+  const modelSet=new Set();
+  let design=0,dvt=0,evt=0,mvt=0,ats=0;
+  filtered.forEach(r=>{{
+    const s=(r.stage||'').trim();
+    if(activeStages.includes(s))modelSet.add(r.model);
+    if(s==='Design')design++;
+    if(s==='DVT')dvt++;
+    if(s==='EVT')evt++;
+    if(s==='MVT'||s==='m')mvt++;
+    if(s==='ATS')ats++;
+  }});
+  document.getElementById('statModel').textContent=modelSet.size;
+  document.getElementById('statDesign').textContent=design;
+  document.getElementById('statDVT').textContent=dvt;
+  document.getElementById('statEVT').textContent=evt;
+  document.getElementById('statMVT').textContent=mvt;
+  document.getElementById('statATS').textContent=ats;
+}}
+
 // ── 搜索 ──
 function onSearchChange(){{
   searchModelVal=document.getElementById('searchModel').value.trim();
@@ -527,6 +570,7 @@ function renderList(){{
     empty.style.display='none';
     table.style.display='none';
     document.getElementById('statsInfo').textContent='Total: '+DATA.records.length;
+    updateStats();
     return;
   }}
 
@@ -534,6 +578,7 @@ function renderList(){{
   const sorted=getSortedRecords(filtered);
   table.style.display='';
   document.getElementById('statsInfo').textContent='Total: '+DATA.records.length+' | Showing: '+sorted.length;
+  updateStats();
 
   if(!sorted.length){{tbody.innerHTML='';empty.style.display='block';return;}}
   empty.style.display='none';
