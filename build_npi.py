@@ -545,11 +545,28 @@ function updateStats(){{
 
 // ── 统计点击筛选 ──
 function onStatClick(stage){{
+  if(stage==='model'){{
+    // Model 按钮：重置所有筛选，回到默认状态
+    statStageFilter='';
+    filterModelVals=new Set();
+    filterMktVals=new Set();
+    searchModelVal='';
+    searchMktVal='';
+    document.getElementById('searchModel').value='';
+    document.getElementById('searchMkt').value='';
+    document.getElementById('modelMsBtn').textContent='All Models';
+    document.getElementById('mktMsBtn').textContent='All MKT';
+    // 重置下拉复选框
+    document.querySelectorAll('#modelMsDd input[type=checkbox],#mktMsDd input[type=checkbox]').forEach(c=>c.checked=false);
+    document.querySelectorAll('.stat-item').forEach(el=>el.classList.remove('active'));
+    renderList();
+    return;
+  }}
   if(statStageFilter===stage){{statStageFilter='';}}else{{statStageFilter=stage;}}
   // 更新 active 样式
   document.querySelectorAll('.stat-item').forEach(el=>el.classList.remove('active'));
   if(statStageFilter){{
-    const cls=statStageFilter==='model'?'stat-model':'stat-'+statStageFilter;
+    const cls='stat-'+statStageFilter;
     document.querySelector('.stat-item.'+cls).classList.add('active');
   }}
   renderList();
@@ -573,9 +590,7 @@ function getFilteredRecords(){{
     if(searchModelVal){{const q=searchModelVal.toLowerCase();if(!r.model.toLowerCase().includes(q))return false;}}
     if(searchMktVal){{const q=searchMktVal.toLowerCase();if(!r.mkt.toLowerCase().includes(q))return false;}}
     // 统计栏筛选
-    if(statStageFilter==='model'){{
-      if(!activeStages.includes((r.stage||'').trim()))return false;
-    }} else if(statStageFilter==='MVT'){{
+    if(statStageFilter==='MVT'){{
       const s=(r.stage||'').trim();
       if(s!=='MVT'&&s!=='m')return false;
     }} else if(statStageFilter){{
