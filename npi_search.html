@@ -79,6 +79,9 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 .stat-item.stat-EVT .stat-num{color:#ED7D31}
 .stat-item.stat-MVT .stat-num{color:#FF4444}
 .stat-item.stat-ATS .stat-num{color:#70AD47}
+.stat-item{cursor:pointer;transition:background .15s,box-shadow .15s}
+.stat-item:hover{background:rgba(68,114,196,.12)}
+.stat-item.active{box-shadow:inset 0 0 0 2px currentColor}
 /* ── 详情模态框 ── */
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9000;justify-content:center;align-items:center;padding:16px}
 .modal-overlay.active{display:flex}
@@ -115,12 +118,12 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
     <span class="stats" id="statsInfo"></span>
   </div>
   <div class="stats-bar" id="statsBar">
-    <div class="stat-item stat-model"><span class="stat-label">Model</span><span class="stat-num" id="statModel">0</span></div>
-    <div class="stat-item stat-Design"><span class="stat-label">Design</span><span class="stat-num" id="statDesign">0</span></div>
-    <div class="stat-item stat-DVT"><span class="stat-label">DVT</span><span class="stat-num" id="statDVT">0</span></div>
-    <div class="stat-item stat-EVT"><span class="stat-label">EVT</span><span class="stat-num" id="statEVT">0</span></div>
-    <div class="stat-item stat-MVT"><span class="stat-label">MVT</span><span class="stat-num" id="statMVT">0</span></div>
-    <div class="stat-item stat-ATS"><span class="stat-label">ATS</span><span class="stat-num" id="statATS">0</span></div>
+    <div class="stat-item stat-model" onclick="onStatClick('model')"><span class="stat-label">Model</span><span class="stat-num" id="statModel">0</span></div>
+    <div class="stat-item stat-Design" onclick="onStatClick('Design')"><span class="stat-label">Design</span><span class="stat-num" id="statDesign">0</span></div>
+    <div class="stat-item stat-DVT" onclick="onStatClick('DVT')"><span class="stat-label">DVT</span><span class="stat-num" id="statDVT">0</span></div>
+    <div class="stat-item stat-EVT" onclick="onStatClick('EVT')"><span class="stat-label">EVT</span><span class="stat-num" id="statEVT">0</span></div>
+    <div class="stat-item stat-MVT" onclick="onStatClick('MVT')"><span class="stat-label">MVT</span><span class="stat-num" id="statMVT">0</span></div>
+    <div class="stat-item stat-ATS" onclick="onStatClick('ATS')"><span class="stat-label">ATS</span><span class="stat-num" id="statATS">0</span></div>
   </div>
   <div class="filter-title">NPI Select and Search</div>
   <div class="filter-bar">
@@ -16530,7 +16533,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/30 17:06:33"
+  "buildTime": "2026/04/30 17:20:33"
 };
 
 // ── 密码 ──
@@ -16548,6 +16551,7 @@ let filterModelVals=new Set();
 let filterMktVals=new Set();
 let searchModelVal='';
 let searchMktVal='';
+let statStageFilter='';
 
 // ── 多选下拉 ──
 function getUniqueModels(){return [...new Set(DATA.records.map(r=>r.model))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));}
@@ -16589,6 +16593,8 @@ function msChange(id){
   const btn=document.getElementById(id+'MsBtn');
   const total=id==='model'?getUniqueModels().length:getUniqueMkts().length;
   btn.textContent=vals.size===0?(id==='model'?'All Models':'All MKT'):vals.size+' selected';
+  statStageFilter='';
+  document.querySelectorAll('.stat-item').forEach(el=>el.classList.remove('active'));
   renderList();
 }
 
@@ -16619,20 +16625,44 @@ function updateStats(){
   document.getElementById('statATS').textContent=ats;
 }
 
+// ── 统计点击筛选 ──
+function onStatClick(stage){
+  if(statStageFilter===stage){statStageFilter='';}else{statStageFilter=stage;}
+  // 更新 active 样式
+  document.querySelectorAll('.stat-item').forEach(el=>el.classList.remove('active'));
+  if(statStageFilter){
+    const cls=statStageFilter==='model'?'stat-model':'stat-'+statStageFilter;
+    document.querySelector('.stat-item.'+cls).classList.add('active');
+  }
+  renderList();
+}
+
 // ── 搜索 ──
 function onSearchChange(){
   searchModelVal=document.getElementById('searchModel').value.trim();
   searchMktVal=document.getElementById('searchMkt').value.trim();
+  statStageFilter='';
+  document.querySelectorAll('.stat-item').forEach(el=>el.classList.remove('active'));
   renderList();
 }
 
 // ── 过滤+排序 ──
 function getFilteredRecords(){
+  const activeStages=['Design','DVT','EVT','MVT','ATS','m','M'];
   return DATA.records.filter(r=>{
     if(filterModelVals.size>0&&!filterModelVals.has(r.model))return false;
     if(filterMktVals.size>0&&!filterMktVals.has(r.mkt.split(' ')[0]))return false;
     if(searchModelVal){const q=searchModelVal.toLowerCase();if(!r.model.toLowerCase().includes(q))return false;}
     if(searchMktVal){const q=searchMktVal.toLowerCase();if(!r.mkt.toLowerCase().includes(q))return false;}
+    // 统计栏筛选
+    if(statStageFilter==='model'){
+      if(!activeStages.includes((r.stage||'').trim()))return false;
+    } else if(statStageFilter==='MVT'){
+      const s=(r.stage||'').trim();
+      if(s!=='MVT'&&s!=='m')return false;
+    } else if(statStageFilter){
+      if((r.stage||'').trim()!==statStageFilter)return false;
+    }
     return true;
   });
 }
@@ -16644,7 +16674,7 @@ function getSortedRecords(recs){
 
 // ── 渲染列表 ──
 function renderList(){
-  const hasFilter=filterModelVals.size>0||filterMktVals.size>0||searchModelVal||searchMktVal;
+  const hasFilter=filterModelVals.size>0||filterMktVals.size>0||searchModelVal||searchMktVal||statStageFilter;
   const tbody=document.getElementById('listBody');
   const empty=document.getElementById('emptyMsg');
   const table=document.querySelector('.list-table');
