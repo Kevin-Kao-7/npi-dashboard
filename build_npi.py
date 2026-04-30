@@ -310,6 +310,7 @@ body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sa
 .top-bar h1{{font-size:20px;color:#fff;font-weight:600}}
 .top-bar .stats{{font-size:14px;color:var(--text2)}}
 /* ── 筛选区 ── */
+.filter-title{{padding:12px 24px 0;font-size:16px;font-weight:600;color:#fff;letter-spacing:.5px;background:var(--bg2)}}
 .filter-bar{{background:var(--bg2);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;gap:24px}}
 .filter-col{{flex:1;display:flex;flex-direction:column;gap:10px}}
 .filter-col label{{font-size:14px;color:var(--text2);font-weight:600;margin-bottom:2px}}
@@ -392,7 +393,7 @@ body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sa
 <!-- 主体 -->
 <div id="mainApp" style="display:none">
   <div class="top-bar">
-    <h1>NPI Search Dashboard</h1>
+    <h1>NPI Statistic</h1>
     <span class="stats" id="statsInfo"></span>
   </div>
   <div class="stats-bar" id="statsBar">
@@ -403,6 +404,7 @@ body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sa
     <div class="stat-item stat-MVT"><span class="stat-label">MVT</span><span class="stat-num" id="statMVT">0</span></div>
     <div class="stat-item stat-ATS"><span class="stat-label">ATS</span><span class="stat-num" id="statATS">0</span></div>
   </div>
+  <div class="filter-title">NPI Select and Search</div>
   <div class="filter-bar">
     <div class="filter-col">
       <label>Model</label>
@@ -569,7 +571,7 @@ function renderList(){{
     tbody.innerHTML='';
     empty.style.display='none';
     table.style.display='none';
-    document.getElementById('statsInfo').textContent='Total: '+DATA.records.length;
+    document.getElementById('statsInfo').textContent='Updated: '+DATA.buildTime;
     updateStats();
     return;
   }}
@@ -577,7 +579,7 @@ function renderList(){{
   const filtered=getFilteredRecords();
   const sorted=getSortedRecords(filtered);
   table.style.display='';
-  document.getElementById('statsInfo').textContent='Total: '+DATA.records.length+' | Showing: '+sorted.length;
+  document.getElementById('statsInfo').textContent='Updated: '+DATA.buildTime;
   updateStats();
 
   if(!sorted.length){{tbody.innerHTML='';empty.style.display='block';return;}}
