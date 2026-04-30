@@ -2,6 +2,7 @@
 NPI Dashboard 自动更新脚本
 检查 Excel 是否有更新，有则自动构建 Dashboard 并推送到 GitHub。
 用于 Windows 任务计划程序定时执行。
+更新时通过 Server酱 推送微信通知。
 """
 
 import os
@@ -9,6 +10,9 @@ import sys
 import json
 import subprocess
 import datetime
+import urllib.request
+import urllib.parse
+import urllib.error
 
 # ── 路径配置 ──
 PROJECT_DIR = r"C:\Users\msipm\WorkBuddy\20260422080636"
@@ -23,6 +27,11 @@ LOG_FILE = os.path.join(PROJECT_DIR, "auto_update.log")
 # 代理配置
 PROXY = "http://127.0.0.1:7890"
 
+# ── 微信通知配置（Server酱）──
+# 获取 SendKey: https://sct.ftqq.com 登录 → Key & API → 复制 SendKey
+# 留空则不发送通知
+SERVERCHAN_SENDKEY = "SCT341965T0bkxFqUAb2j77VhWLryApdI7"
+
 
 def log(msg):
     """写日志到文件和控制台"""
@@ -34,6 +43,32 @@ def log(msg):
             f.write(line + "\n")
     except Exception:
         pass
+
+
+def send_wechat_notify(title, desp=""):
+    """通过 Server酱 发送微信通知"""
+    if not SERVERCHAN_SENDKEY:
+        log("未配置 Server酱 SendKey，跳过微信通知。")
+        return False
+    try:
+        url = f"https://sctapi.ftqq.com/{SERVERCHAN_SENDKEY}.send"
+        data = urllib.parse.urlencode({
+            "title": title,
+            "desp": desp,
+        }).encode("utf-8")
+        req = urllib.request.Request(url, data=data, method="POST")
+        req.add_header("Content-Type", "application/x-www-form-urlencoded")
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            if result.get("code") == 0:
+                log("微信通知发送成功！")
+                return True
+            else:
+                log(f"微信通知发送失败: {result.get('message', '未知错误')}")
+                return False
+    except Exception as e:
+        log(f"微信通知发送异常: {e}")
+        return False
 
 
 def get_excel_mtime():
@@ -94,7 +129,7 @@ def run_git_push():
 
     # git add
     r = subprocess.run(
-        [GIT_EXE, "add", "npi_dashboard.html", "npi_data.json"],
+        [GIT_EXE, "add", "npi_dashboard.html", "npi_search.html", "npi_dashboard.xlsx", "npi_data.json"],
         cwd=PROJECT_DIR, capture_output=True, text=True, env=env, encoding="utf-8", errors="replace"
     )
     if r.returncode != 0:
@@ -157,16 +192,34 @@ def main():
     log(f"检测到 Excel 有更新！开始构建...")
     if not run_build():
         log("构建失败，终止流程。")
+        send_wechat_notify(
+            "❌ NPI Dashboard 构建失败",
+            f"Excel 检测到更新，但构建失败。\n\n**Excel 修改时间**: {excel_time_str}"
+        )
         sys.exit(1)
 
     # 4. 推送到 GitHub
-    if not run_git_push():
+    push_ok = run_git_push()
+    if not push_ok:
         log("推送失败，Dashboard 已本地更新但未同步到 GitHub。")
         # 仍然保存状态，避免重复构建
-    else:
-        log("全部完成！")
 
-    # 5. 保存状态
+    # 5. 发送微信通知
+    if push_ok:
+        send_wechat_notify(
+            "✅ NPI Dashboard 已更新",
+            f"检测到 Excel 有更新，Dashboard 已自动构建并推送到 GitHub。\n\n"
+            f"**Excel 修改时间**: {excel_time_str}\n\n"
+            f"[查看 Dashboard](https://kabonka.github.io/npi-dashboard/)"
+        )
+    else:
+        send_wechat_notify(
+            "⚠️ NPI Dashboard 本地已更新，GitHub 推送失败",
+            f"Excel 检测到更新，Dashboard 已本地构建，但推送到 GitHub 失败。\n\n"
+            f"**Excel 修改时间**: {excel_time_str}"
+        )
+
+    # 6. 保存状态
     save_state(excel_mtime)
     log(f"已记录 Excel 修改时间: {excel_time_str}")
 
