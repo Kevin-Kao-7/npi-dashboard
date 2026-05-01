@@ -68,7 +68,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .gantt-legend-dot{width:12px;height:8px;border-radius:2px;flex-shrink:0}
 .gantt-scroll{overflow-x:auto}
 
-.gantt-table{width:100%;border-collapse:collapse;min-width:1200px}
+.gantt-table{border-collapse:collapse}
 .gantt-table thead th{position:sticky;top:0;z-index:5;background:var(--bg3);font-size:10px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.4px;padding:6px 8px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;user-select:none}
 .gantt-table thead th.sortable{cursor:pointer}
 .gantt-table thead th.sortable:hover{color:#fff}
@@ -76,11 +76,11 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .gantt-table thead th.sortable.asc .sort-arrow,.gantt-table thead th.sortable.desc .sort-arrow{opacity:1}
 
 /* Sticky fixed columns */
-.gantt-table thead th.col-model{position:sticky;left:0;z-index:10;min-width:80px}
-.gantt-table thead th.col-toggle{position:sticky;left:80px;z-index:10;min-width:30px;width:30px;text-align:center;padding:0}
-.gantt-table thead th.col-stage{position:sticky;left:110px;z-index:10;min-width:65px}
-.gantt-table thead th.col-mkt{position:sticky;left:175px;z-index:10;min-width:200px}
-.gantt-table thead th.col-mp{position:sticky;left:375px;z-index:10;min-width:85px}
+.gantt-table thead th.col-model{position:sticky;left:0;z-index:10;width:80px;min-width:80px;max-width:80px}
+.gantt-table thead th.col-toggle{position:sticky;left:80px;z-index:10;width:30px;min-width:30px;max-width:30px;text-align:center;padding:0}
+.gantt-table thead th.col-stage{position:sticky;left:110px;z-index:10;width:65px;min-width:65px;max-width:65px}
+.gantt-table thead th.col-mkt{position:sticky;left:175px;z-index:10;width:200px;min-width:200px;max-width:200px}
+.gantt-table thead th.col-mp{position:sticky;left:375px;z-index:10;width:85px;min-width:85px;max-width:85px}
 
 .gantt-table tbody tr{border-bottom:1px solid rgba(255,255,255,.03);transition:.15s}
 .gantt-table tbody tr:hover{background:rgba(255,255,255,.03)}
@@ -89,7 +89,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .gantt-table tbody tr.child-row td{color:var(--text2);font-size:11px}
 
 .gantt-table tbody td{padding:6px 8px;font-size:11px;white-space:nowrap;vertical-align:middle}
-.gantt-table tbody td.col-model{position:sticky;left:0;z-index:3;background:var(--bg2);font-weight:600;color:#fff}
+.gantt-table tbody td.col-model{position:sticky;left:0;z-index:3;background:var(--bg2);font-weight:600;color:#fff;max-width:80px;overflow:hidden;text-overflow:ellipsis}
 .gantt-table tbody tr:hover td.col-model{background:var(--bg3)}
 .gantt-table tbody td.col-model.mp-changed{background:#4a2020;animation:mp-pulse 1.5s ease-in-out infinite}
 .gantt-table tbody tr:hover td.col-model.mp-changed{background:#5a2a2a}
@@ -97,11 +97,11 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .gantt-table tbody td.col-toggle{position:sticky;left:80px;z-index:3;background:var(--bg2);text-align:center;padding:0;cursor:pointer;font-size:14px;color:var(--text2);user-select:none}
 .gantt-table tbody td.col-toggle:hover{color:#fff}
 .gantt-table tbody tr:hover td.col-toggle{background:var(--bg3)}
-.gantt-table tbody td.col-stage{position:sticky;left:110px;z-index:3;background:var(--bg2)}
+.gantt-table tbody td.col-stage{position:sticky;left:110px;z-index:3;background:var(--bg2);max-width:65px;overflow:hidden;text-overflow:ellipsis}
 .gantt-table tbody tr:hover td.col-stage{background:var(--bg3)}
 .gantt-table tbody td.col-mkt{position:sticky;left:175px;z-index:3;background:var(--bg2);max-width:200px;overflow:hidden;text-overflow:ellipsis}
 .gantt-table tbody tr:hover td.col-mkt{background:var(--bg3)}
-.gantt-table tbody td.col-mp{position:sticky;left:375px;z-index:3;background:var(--bg2);font-variant-numeric:tabular-nums}
+.gantt-table tbody td.col-mp{position:sticky;left:375px;z-index:3;background:var(--bg2);font-variant-numeric:tabular-nums;max-width:85px;overflow:hidden;text-overflow:ellipsis}
 .gantt-table tbody tr:hover td.col-mp{background:var(--bg3)}
 
 .badge{display:inline-block;padding:1px 7px;border-radius:3px;font-size:10px;font-weight:600;color:#fff}
@@ -207,6 +207,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
     <div class="gantt-legend" id="ganttLegend"></div>
     <div class="gantt-scroll">
       <table class="gantt-table">
+        <colgroup id="ganttColgroup"></colgroup>
         <thead id="ganttThead"></thead>
         <tbody id="ganttTbody"></tbody>
       </table>
@@ -4759,8 +4760,7 @@ const DATA = {
         "BTO ready": "2026/05/20",
         "ATS-start": "2026/06/05",
         "MP": "2026/06/15"
-      },
-      "mp_changed": true
+      }
     },
     {
       "model": "15K1",
@@ -4779,8 +4779,7 @@ const DATA = {
         "BTO ready": "2026/05/20",
         "ATS-start": "2026/06/05",
         "MP": "2026/06/15"
-      },
-      "mp_changed": true
+      }
     },
     {
       "model": "15K1",
@@ -4799,8 +4798,7 @@ const DATA = {
         "BTO ready": "2026/05/20",
         "ATS-start": "2026/06/05",
         "MP": "2026/06/15"
-      },
-      "mp_changed": true
+      }
     },
     {
       "model": "15K1",
@@ -4819,8 +4817,7 @@ const DATA = {
         "BTO ready": "2026/05/20",
         "ATS-start": "2026/06/05",
         "MP": "2026/06/15"
-      },
-      "mp_changed": true
+      }
     },
     {
       "model": "15M3",
@@ -16586,7 +16583,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/04/29 18:00:05"
+  "buildTime": "2026/05/01 08:13:30"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16605,8 +16602,28 @@ const LEGEND_ITEMS = [
 ];
 
 const MONTHS = [];
-let dd = new Date(2024,10,1);
-while(dd <= new Date(2026,9,1)){
+// 动态计算时间轴范围：从所有记录中找最早和最晚的日期
+let _minDate = null, _maxDate = null;
+DATA.records.forEach(r=>{
+  for(const k of Object.keys(r.dates||{})){
+    const v = r.dates[k];
+    if(!v) continue;
+    // 手动解析 YYYY/MM/DD，避免浏览器兼容性问题
+    const parts = v.split('/');
+    if(parts.length < 2) continue;
+    const d = new Date(parseInt(parts[0]), parseInt(parts[1])-1, parseInt(parts[2]||1));
+    if(isNaN(d.getTime())) continue;
+    if(!_minDate || d < _minDate) _minDate = d;
+    if(!_maxDate || d > _maxDate) _maxDate = d;
+  }
+});
+if(!_minDate) _minDate = new Date(2024,10,1);
+if(!_maxDate) _maxDate = new Date(2026,9,1);
+// 从最早日期往前多留2个月，最晚日期往后多留3个月
+const _start = new Date(_minDate.getFullYear(), _minDate.getMonth()-2, 1);
+const _end   = new Date(_maxDate.getFullYear(), _maxDate.getMonth()+3, 1);
+let dd = _start;
+while(dd <= _end){
   MONTHS.push({y:dd.getFullYear(),m:dd.getMonth()+1});
   dd = new Date(dd.getFullYear(),dd.getMonth()+1,1);
 }
@@ -16883,7 +16900,7 @@ function renderBarsHtml(r){
   let h='';
   for(let i=0;i<TOTAL_MONTHS;i++){
     const left=i*CELL_W;
-    const bg=MONTHS[i].y===2024?'rgba(68,114,196,.06)':MONTHS[i].y===2025?'rgba(112,173,71,.06)':'rgba(237,125,49,.06)';
+    const bg=MONTHS[i].y%2===0?'rgba(68,114,196,.06)':'rgba(112,173,71,.06)';
     h+=`<div style="position:absolute;left:${left}px;top:0;width:${CELL_W}px;height:100%;border-right:1px solid rgba(255,255,255,.03);background:${bg}"></div>`;
   }
   // Build month->segments map for horizontal splitting
@@ -17035,6 +17052,21 @@ function renderGantt(){
   // Year spans
   const yearSpans={};
   MONTHS.forEach((m,i)=>{if(!yearSpans[m.y])yearSpans[m.y]={count:0};yearSpans[m.y].count++});
+
+  // Colgroup: 固定左侧列宽度
+  let colH='';
+  colH+='<col style="width:80px;min-width:80px;max-width:80px">';  // Model
+  colH+='<col style="width:30px;min-width:30px;max-width:30px">';  // Toggle
+  colH+='<col style="width:65px;min-width:65px;max-width:65px">';  // Stage
+  colH+='<col style="width:200px;min-width:200px;max-width:200px">'; // MKT
+  colH+='<col style="width:85px;min-width:85px;max-width:85px">';  // MP
+  for(let i=0;i<MONTHS.length;i++) colH+=`<col style="width:${CELL_W}px;min-width:${CELL_W}px">`;
+  document.getElementById('ganttColgroup').innerHTML=colH;
+
+  // 动态计算表格最小宽度：固定列(460) + 月份列(月份数*CELL_W)
+  const tableMinW = 460 + MONTHS.length * CELL_W;
+  const ganttTable = document.querySelector('.gantt-table');
+  ganttTable.style.minWidth = Math.max(tableMinW, 1200) + 'px';
 
   let thH='<tr>';
   thH+='<th class="col-model">Model</th>';
