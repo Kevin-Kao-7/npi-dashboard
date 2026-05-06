@@ -12514,8 +12514,7 @@ const DATA = {
         "BTO ready": "2026/03/16",
         "ATS-start": "2026/05/15",
         "MP": "2026/05/30"
-      },
-      "mp_changed": true
+      }
     },
     {
       "model": "15S1",
@@ -16584,7 +16583,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/05/06 10:06:53"
+  "buildTime": "2026/05/06 10:11:33"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16940,8 +16939,8 @@ function renderBarsHtml(r){
 // 将 status/highlight 按序号"数字."换行（Excel用\n）
 function fmtCellText(text){
   if(!text) return '';
-  if(!/\d+\./.test(text)) return text;
-  const parts = text.split(/\s+(?=\d+\.)/).map(s=>s.trim()).filter(s=>s);
+  if(!/\d+\.[^\d]/.test(text)) return text;
+  const parts = text.split(/(?:[\s]+|(?<=。))(?=\d+\.[^\d])/).map(s=>s.trim()).filter(s=>s);
   return parts.length > 1 ? parts.join('\n') : text;
 }
 

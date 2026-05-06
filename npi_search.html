@@ -12464,8 +12464,7 @@ const DATA = {
         "BTO ready": "2026/03/16",
         "ATS-start": "2026/05/15",
         "MP": "2026/05/30"
-      },
-      "mp_changed": true
+      }
     },
     {
       "model": "15S1",
@@ -16534,7 +16533,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/05/06 10:06:53"
+  "buildTime": "2026/05/06 10:11:34"
 };
 
 // ── 密码 ──
@@ -16753,10 +16752,10 @@ document.getElementById('detailModal').addEventListener('click',function(e){
 // ── 排版工具：有"数字."就换行分段，否则原样输出 ──
 function formatSectionText(text){
   if(!text)return 'N/A';
-  // 检测是否包含 "数字." 模式（如 1. 2. 10.）
-  if(!/\d+\./.test(text))return escHtml(text);
-  // 按 "空格+数字." 或 "行首数字." 分割，每段 trim 后保留序号
-  const parts=text.split(/\s+(?=\d+\.)/).map(s=>s.trim()).filter(s=>s);
+  // 检测是否含有效序号（数字. 后面不是数字，避免 7.0 被切）
+  if(!/\d+\.[^\d]/.test(text))return escHtml(text);
+  // 按 (空格 | 中文句号后) 跟着「数字.非数字」分割
+  const parts=text.split(/(?:[\s]+|(?<=。))(?=\d+\.[^\d])/).map(s=>s.trim()).filter(s=>s);
   if(parts.length<=1)return escHtml(text);
   return parts.map(p=>'<div style="margin-bottom:6px">'+escHtml(p)+'</div>').join('');
 }
