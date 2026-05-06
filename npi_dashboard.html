@@ -17177,22 +17177,30 @@ function showTooltip(e,model,idx){
 }
 function hideTooltip(){document.getElementById('tooltip').style.display='none'}
 
+function escHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function formatSectionText(text){
+  if(!text)return 'N/A';
+  if(!/\d+\.[^\d]/.test(text))return escHtml(text);
+  const parts=text.split(/(?:[\s]+|(?<=。))(?=\d+\.[^\d])/).map(s=>s.trim()).filter(s=>s);
+  if(parts.length<=1)return escHtml(text);
+  return parts.map(p=>'<div style="margin-bottom:6px">'+escHtml(p)+'</div>').join('');
+}
 function showDetailByIdx(idx){
   const r=DATA.records.find(x=>x.orig_idx===idx);
   if(!r)return;
   const overlay=document.getElementById('detailOverlay');
   const panel=document.getElementById('detailPanel');
   let h=`<span class="dp-close" onclick="closeDetail()">&times;</span>`;
-  h+=`<h2>${r.model}</h2><div class="dp-mkt">${r.mkt}</div>`;
+  h+=`<h2>${escHtml(r.model)}</h2><div class="dp-mkt">${escHtml(r.mkt)}</div>`;
   h+=`<div class="dp-grid">`;
-  h+=`<div class="dp-field"><div class="dp-field-label">Stage</div><div class="dp-field-value"><span class="badge badge-${r.stage.toLowerCase()}">${r.stage}</span></div></div>`;
-  h+=`<div class="dp-field"><div class="dp-field-label">NPM</div><div class="dp-field-value">${r.npm||'-'}</div></div>`;
-  h+=`<div class="dp-field"><div class="dp-field-label">CPU</div><div class="dp-field-value">${r.cpu||'-'}</div></div>`;
-  h+=`<div class="dp-field"><div class="dp-field-label">GPU</div><div class="dp-field-value">${r.gpu||'-'}</div></div>`;
-  for(const k of DATE_KEYS) h+=`<div class="dp-field"><div class="dp-field-label">${k}</div><div class="dp-field-value">${r.dates[k]||'-'}</div></div>`;
+  h+=`<div class="dp-field"><div class="dp-field-label">Stage</div><div class="dp-field-value"><span class="badge badge-${r.stage.toLowerCase()}">${escHtml(r.stage)}</span></div></div>`;
+  h+=`<div class="dp-field"><div class="dp-field-label">NPM</div><div class="dp-field-value">${escHtml(r.npm||'-')}</div></div>`;
+  h+=`<div class="dp-field"><div class="dp-field-label">CPU</div><div class="dp-field-value">${escHtml(r.cpu||'-')}</div></div>`;
+  h+=`<div class="dp-field"><div class="dp-field-label">GPU</div><div class="dp-field-value">${escHtml(r.gpu||'-')}</div></div>`;
+  for(const k of DATE_KEYS) h+=`<div class="dp-field"><div class="dp-field-label">${escHtml(k)}</div><div class="dp-field-value">${escHtml(r.dates[k]||'-')}</div></div>`;
   h+='</div>';
-  if(r.status)h+=`<div class="dp-section"><h3>Current Status</h3><div class="dp-text">${r.status}</div></div>`;
-  if(r.highlight&&r.highlight!=='.')h+=`<div class="dp-section"><h3>Highlight</h3><div class="dp-text">${r.highlight}</div></div>`;
+  if(r.status)h+=`<div class="dp-section"><h3>Current Status</h3><div class="dp-text">${formatSectionText(r.status)}</div></div>`;
+  if(r.highlight&&r.highlight!=='.')h+=`<div class="dp-section"><h3>Highlight</h3><div class="dp-text">${formatSectionText(r.highlight)}</div></div>`;
   panel.innerHTML=h;
   overlay.style.display='block';panel.style.display='block';
 }
