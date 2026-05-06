@@ -16533,7 +16533,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/05/06 08:30:49"
+  "buildTime": "2026/05/06 08:37:59"
 };
 
 // ── 密码 ──
@@ -16751,10 +16751,10 @@ function formatSectionText(text){
   if(!text)return 'N/A';
   // 检测是否包含 "数字." 模式（如 1. 2. 10.）
   if(!/\d+\./.test(text))return escHtml(text);
-  // 以 "数字." 为分隔符切割，保留序号
-  const parts=text.split(/(?=\d+\.)/).map(s=>s.trim()).filter(s=>s);
+  // 按 "空格+数字." 或 "行首数字." 分割，每段 trim 后保留序号
+  const parts=text.split(/\s+(?=\d+\.)/).map(s=>s.trim()).filter(s=>s);
   if(parts.length<=1)return escHtml(text);
-  return parts.map(p=>'<div style="margin-bottom:4px">'+escHtml(p)+'</div>').join('');
+  return parts.map(p=>'<div style="margin-bottom:6px">'+escHtml(p)+'</div>').join('');
 }
 
 function generateDetailHTML(r){
