@@ -16994,6 +16994,8 @@ function exportFilteredExcel(){
   const ws = XLSX.utils.aoa_to_sheet(ws_data);
 
   // Status(col14) 和 Highlight(col15) 有序号内容时换行 + wrapText
+  // 先收集需要调高行高的行信息，等 ws['!rows'] 初始化后再写入
+  const rowHeightMap = new Map(); // ri -> lineCount
   for(let ri = 1; ri < ws_data.length; ri++){
     const statusVal = fmtCellText(ws_data[ri][14]);
     const hlVal     = fmtCellText(ws_data[ri][15]);
@@ -17007,14 +17009,12 @@ function exportFilteredExcel(){
       const addr = XLSX.utils.encode_cell({r: ri, c: 15});
       ws[addr] = {v: hlVal, t:'s', s:{alignment:{wrapText:true,vertical:'top'}}};
     }
-    // 如有换行，调高行高
     if(hasNlS || hasNlH){
       const lineCount = Math.max(
         (statusVal.match(/\n/g)||[]).length + 1,
         (hlVal.match(/\n/g)||[]).length + 1
       );
-      if(!ws['!rows'][ri]) ws['!rows'][ri] = {};
-      ws['!rows'][ri].hpt = Math.max(ws['!rows'][ri].hpt || 18, lineCount * 16);
+      rowHeightMap.set(ri, lineCount);
     }
   }
 
@@ -17038,6 +17038,10 @@ function exportFilteredExcel(){
     } else {
       ws['!rows'][r] = {hpt: 20};
     }
+  }
+  // 写入换行行的行高（ws['!rows'] 已初始化）
+  for(const [ri, lineCount] of rowHeightMap){
+    ws['!rows'][ri].hpt = Math.max(ws['!rows'][ri].hpt || 18, lineCount * 16);
   }
 
   // Model 列合并（同 Model 多行时合并 No. 和 Model 列）
