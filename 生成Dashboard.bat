@@ -15,7 +15,7 @@ echo.
 
 :: 2. Git 提交
 echo [2/3] 正在提交到本地仓库...
-"C:\Program Files\Git\cmd\git.exe" add npi_dashboard.html npi_data.json
+"C:\Program Files\Git\cmd\git.exe" add npi_dashboard.html npi_search.html npi_dashboard.xlsx npi_data.json
 "C:\Program Files\Git\cmd\git.exe" commit -m "auto update %date% %time%" --quiet 2>nul
 if errorlevel 1 (
     echo 没有变更需要提交
