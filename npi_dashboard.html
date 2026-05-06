@@ -16583,7 +16583,7 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/05/06 09:00:02"
+  "buildTime": "2026/05/06 09:58:36"
 };
 
 const STAGE_ORDER = ['Design','DVT','EVT','MVT','ATS','Study','Pending','BTO-','ATS-','MP'];
@@ -16936,6 +16936,14 @@ function renderBarsHtml(r){
   return h;
 }
 
+// 将 status/highlight 按序号"数字."换行（Excel用\n）
+function fmtCellText(text){
+  if(!text) return '';
+  if(!/\d+\./.test(text)) return text;
+  const parts = text.split(/\s+(?=\d+\.)/).map(s=>s.trim()).filter(s=>s);
+  return parts.length > 1 ? parts.join('\n') : text;
+}
+
 function exportFilteredExcel(){
   // 获取当前筛选+排序后的数据
   const groups = getFilteredGroups();
@@ -16984,6 +16992,31 @@ function exportFilteredExcel(){
   }
 
   const ws = XLSX.utils.aoa_to_sheet(ws_data);
+
+  // Status(col14) 和 Highlight(col15) 有序号内容时换行 + wrapText
+  for(let ri = 1; ri < ws_data.length; ri++){
+    const statusVal = fmtCellText(ws_data[ri][14]);
+    const hlVal     = fmtCellText(ws_data[ri][15]);
+    const hasNlS = statusVal.includes('\n');
+    const hasNlH = hlVal.includes('\n');
+    if(hasNlS){
+      const addr = XLSX.utils.encode_cell({r: ri, c: 14});
+      ws[addr] = {v: statusVal, t:'s', s:{alignment:{wrapText:true,vertical:'top'}}};
+    }
+    if(hasNlH){
+      const addr = XLSX.utils.encode_cell({r: ri, c: 15});
+      ws[addr] = {v: hlVal, t:'s', s:{alignment:{wrapText:true,vertical:'top'}}};
+    }
+    // 如有换行，调高行高
+    if(hasNlS || hasNlH){
+      const lineCount = Math.max(
+        (statusVal.match(/\n/g)||[]).length + 1,
+        (hlVal.match(/\n/g)||[]).length + 1
+      );
+      if(!ws['!rows'][ri]) ws['!rows'][ri] = {};
+      ws['!rows'][ri].hpt = Math.max(ws['!rows'][ri].hpt || 18, lineCount * 16);
+    }
+  }
 
   // 列宽 & H~M 列（第8~13列，0-indexed: 7~12）折叠
   ws['!cols'] = [
