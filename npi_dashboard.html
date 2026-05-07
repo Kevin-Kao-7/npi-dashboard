@@ -6005,8 +6005,8 @@ while(dd <= _end){
 const TOTAL_MONTHS = MONTHS.length;
 const CELL_W = 36;
 
-// Default filter: show Study/Kickoff/Design/DVT/EVT/MVT/ATS, MP Year 2026+2027
-let activeStages=new Set(['Design','DVT','EVT','MVT','ATS','Study']), filterModelVals=new Set(), filterCpuVals=new Set(), filterGpuVals=new Set(), filterYearVals=new Set(['2026','2027']), filterMktVals=new Set(), filterSearchVal='';
+// Default filter: show Design/DVT/EVT/MVT/ATS, MP Year 2026+2027
+let activeStages=new Set(['Design','DVT','EVT','MVT','ATS']), filterModelVals=new Set(), filterCpuVals=new Set(), filterGpuVals=new Set(), filterYearVals=new Set(['2026','2027']), filterMktVals=new Set(), filterSearchVal='';
 let sortKey='model'; // 'model' or 'mp'
 let expandedModels = new Set();
 
@@ -6215,7 +6215,7 @@ function initFilters(){
 }
 
 function resetFilters(){
-  activeStages=new Set(['Design','DVT','EVT','MVT','ATS','Study']);filterModelVals.clear();filterCpuVals.clear();filterGpuVals.clear();filterYearVals=new Set(['2026','2027']);filterMktVals.clear();filterSearchVal='';sortKey='model';
+  activeStages=new Set(['Design','DVT','EVT','MVT','ATS']);filterModelVals.clear();filterCpuVals.clear();filterGpuVals.clear();filterYearVals=new Set(['2026','2027']);filterMktVals.clear();filterSearchVal='';sortKey='model';
   updateMsComponent('msModel');updateMsComponent('msStage');updateMsComponent('msCpu');updateMsComponent('msGpu');updateMsComponent('msYear');updateMsComponent('msMkt');
   document.getElementById('filterSearch').value='';
   document.getElementById('sortModel').classList.add('active');
