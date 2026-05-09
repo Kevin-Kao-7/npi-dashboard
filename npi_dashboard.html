@@ -125,19 +125,22 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 .tooltip .tt-label{color:var(--text2);min-width:60px}
 .tooltip .tt-val{color:var(--text)}
 
-.detail-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:50;display:none}
-.detail-panel{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:24px;min-width:460px;max-width:650px;max-height:80vh;overflow-y:auto;z-index:51;display:none}
-.detail-panel .dp-close{position:absolute;top:12px;right:16px;font-size:20px;cursor:pointer;color:var(--text2)}
-.detail-panel .dp-close:hover{color:#fff}
-.detail-panel h2{font-size:16px;color:#fff;margin-bottom:3px}
-.detail-panel .dp-mkt{font-size:12px;color:var(--text2);margin-bottom:14px}
-.detail-panel .dp-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
-.detail-panel .dp-field{background:var(--bg3);border-radius:6px;padding:8px 12px}
-.detail-panel .dp-field-label{font-size:10px;color:var(--text2);margin-bottom:1px}
-.detail-panel .dp-field-value{font-size:12px;color:var(--text)}
-.detail-panel .dp-section{margin-bottom:12px}
-.detail-panel .dp-section h3{font-size:11px;color:var(--text2);margin-bottom:4px;text-transform:uppercase;letter-spacing:.4px}
-.detail-panel .dp-text{font-size:12px;color:var(--text);line-height:1.5;white-space:pre-wrap}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9000;justify-content:center;align-items:center;padding:16px}
+.modal-overlay.active{display:flex}
+.modal-box{background:var(--bg);border:1px solid var(--border);border-radius:10px;width:100%;max-width:560px;max-height:90vh;overflow-y:auto;position:relative;box-shadow:0 8px 32px rgba(0,0,0,.5)}
+.modal-close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--text2);font-size:24px;cursor:pointer;line-height:1;z-index:10}
+.modal-close:hover{color:#fff}
+.modal-body{padding:24px}
+.modal-body .hdr{margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.modal-body .hdr h2{color:#fff;font-size:20px;font-weight:600;margin-bottom:4px}
+.modal-body .hdr .mkt{color:var(--text2);font-size:13px}
+.modal-body .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.modal-body .field{background:var(--bg3);padding:12px;border-radius:6px;border:1px solid var(--border)}
+.modal-body .field-label{font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.modal-body .field-value{font-size:14px;color:var(--text);font-weight:500}
+.modal-body .section{margin-bottom:16px}
+.modal-body .section-title{font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.modal-body .section-body{background:var(--bg3);padding:12px;border-radius:6px;border:1px solid var(--border);font-size:13px;line-height:1.6;word-break:break-word}
 
 ::-webkit-scrollbar{width:5px;height:5px}
 ::-webkit-scrollbar-track{background:transparent}
@@ -196,8 +199,12 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-ap
 </div>
 
 <div class="tooltip" id="tooltip"></div>
-<div class="detail-overlay" id="detailOverlay"></div>
-<div class="detail-panel" id="detailPanel"></div>
+<div class="modal-overlay" id="detailModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeDetail()">&times;</button>
+    <div class="modal-body" id="detailBody"></div>
+  </div>
+</div>
 
 <script>
 const DATA = {
@@ -2200,27 +2207,26 @@ function formatSectionText(text){
 function showDetailByIdx(idx){
   const r=DATA.records.find(x=>x.orig_idx===idx);
   if(!r)return;
-  const overlay=document.getElementById('detailOverlay');
-  const panel=document.getElementById('detailPanel');
-  let h=`<span class="dp-close" onclick="closeDetail()">&times;</span>`;
-  h+=`<h2>${escHtml(r.model)}</h2><div class="dp-mkt">${escHtml(r.mkt)}</div>`;
-  h+=`<div class="dp-grid">`;
-  h+=`<div class="dp-field"><div class="dp-field-label">Stage</div><div class="dp-field-value"><span class="badge badge-${r.stage.toLowerCase()}">${escHtml(r.stage)}</span></div></div>`;
-  h+=`<div class="dp-field"><div class="dp-field-label">NPM</div><div class="dp-field-value">${escHtml(r.npm||'-')}</div></div>`;
-  h+=`<div class="dp-field"><div class="dp-field-label">CPU</div><div class="dp-field-value">${escHtml(r.cpu||'-')}</div></div>`;
-  h+=`<div class="dp-field"><div class="dp-field-label">GPU</div><div class="dp-field-value">${escHtml(r.gpu||'-')}</div></div>`;
-  for(const k of DATE_KEYS) h+=`<div class="dp-field"><div class="dp-field-label">${escHtml(k)}</div><div class="dp-field-value">${escHtml(r.dates[k]||'-')}</div></div>`;
+  let h=`<div class="hdr"><h2>${escHtml(r.model)}</h2><div class="mkt">${escHtml(r.mkt)}</div></div>`;
+  h+=`<div class="grid">`;
+  h+=`<div class="field"><div class="field-label">Stage</div><div class="field-value"><span class="badge badge-${r.stage.toLowerCase()}">${escHtml(r.stage)}</span></div></div>`;
+  h+=`<div class="field"><div class="field-label">NPM</div><div class="field-value">${escHtml(r.npm||'-')}</div></div>`;
+  h+=`<div class="field"><div class="field-label">CPU</div><div class="field-value">${escHtml(r.cpu||'-')}</div></div>`;
+  h+=`<div class="field"><div class="field-label">GPU</div><div class="field-value">${escHtml(r.gpu||'-')}</div></div>`;
+  for(const k of DATE_KEYS) h+=`<div class="field"><div class="field-label">${escHtml(k)}</div><div class="field-value">${escHtml(r.dates[k]||'-')}</div></div>`;
   h+='</div>';
-  if(r.status)h+=`<div class="dp-section"><h3>Current Status</h3><div class="dp-text">${formatSectionText(r.status)}</div></div>`;
-  if(r.highlight&&r.highlight!=='.')h+=`<div class="dp-section"><h3>Highlight</h3><div class="dp-text">${formatSectionText(r.highlight)}</div></div>`;
-  panel.innerHTML=h;
-  overlay.style.display='block';panel.style.display='block';
+  if(r.status)h+=`<div class="section"><div class="section-title">Current Status</div><div class="section-body">${formatSectionText(r.status)}</div></div>`;
+  if(r.highlight&&r.highlight!=='.')h+=`<div class="section"><div class="section-title">Highlight</div><div class="section-body">${formatSectionText(r.highlight)}</div></div>`;
+  document.getElementById('detailBody').innerHTML=h;
+  document.getElementById('detailModal').classList.add('active');
 }
 function closeDetail(){
-  document.getElementById('detailOverlay').style.display='none';
-  document.getElementById('detailPanel').style.display='none';
+  document.getElementById('detailModal').classList.remove('active');
+  document.body.style.overflow='';
 }
-document.getElementById('detailOverlay').addEventListener('click',closeDetail);
+document.getElementById('detailModal').addEventListener('click',function(e){
+  if(e.target===this)closeDetail();
+});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail()});
 
 renderStats();renderLegend();initFilters();renderGantt();
