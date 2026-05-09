@@ -1670,8 +1670,9 @@ function getGrouped(){
     if(!map[r.model]) map[r.model] = [];
     map[r.model].push(r);
   });
-  // For each group, sort by mp_sort then orig_idx, first = parent
-  Object.values(map).forEach(arr=>arr.sort((a,b)=>a.mp_sort.localeCompare(b.mp_sort)||a.orig_idx-b.orig_idx));
+  // For each group, sort by mp_sort then highlight length desc then orig_idx, first = parent
+  const hlLen = r => (r.highlight && r.highlight !== '.') ? r.highlight.length : 0;
+  Object.values(map).forEach(arr=>arr.sort((a,b)=>a.mp_sort.localeCompare(b.mp_sort) || hlLen(b)-hlLen(a) || a.orig_idx-b.orig_idx));
   return map;
 }
 
