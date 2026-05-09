@@ -4,7 +4,7 @@ const LOGIN_PAGE = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device=device-width, initial-scale=1">
 <title>NPI Dashboard - Login</title>
 <style>
 * { margin:0; padding:0; box-sizing: border-box; }
@@ -117,6 +117,20 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
 </body>
 </html>`;
 
+// Simple in-memory token store (per edge function instance)
+// In production, use a consistent hash approach
+function makeToken(password: string): string {
+  // Create a simple hash-like token (not cryptographic, but obscures the password)
+  const str = `npi:${password}`;
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+  return btoa(String(hash));
+}
+
 export default async (request: Request, context: Context) => {
   const password = Netlify.env.get('BASIC_PASSWORD');
 
@@ -132,13 +146,12 @@ export default async (request: Request, context: Context) => {
     try {
       const body = await request.json() as { password: string };
       if (body.password === password) {
-        // Set a simple auth cookie
-        const cookieVal = btoa(`auth:${password}`);
+        const token = makeToken(password);
         return new Response(JSON.stringify({ success: true }), {
           status: 200,
           headers: {
             'Content-Type': 'application/json',
-            'Set-Cookie': `npi_auth=${cookieVal}; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=86400`,
+            'Set-Cookie': `npi_auth=${token}; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=86400`,
           },
         });
       }
@@ -154,9 +167,9 @@ export default async (request: Request, context: Context) => {
   const authCookieMatch = cookie.match(/npi_auth=([^;]+)/);
   if (authCookieMatch) {
     try {
-      const decoded = atob(authCookieMatch[1]);
-      const storedPass = decoded.replace('auth:', '');
-      if (storedPass === password) {
+      const token = atob(authCookieMatch[1]);
+      const expectedToken = makeToken(password);
+      if (authCookieMatch[1] === expectedToken) {
         return await context.next();
       }
     } catch {}
