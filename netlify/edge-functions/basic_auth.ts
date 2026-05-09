@@ -7,7 +7,7 @@ const LOGIN_PAGE = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NPI Dashboard - Login</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin:0; padding:0; box-sizing: border-box; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
@@ -82,20 +82,17 @@ body {
 <body>
 <div class="login-card">
   <h1>NPI Dashboard</h1>
-  <p>Please enter your credentials</p>
-  <div class="error-msg" id="error">Invalid username or password</div>
+  <p>Enter password to continue</p>
+  <div class="error-msg" id="error">Incorrect password</div>
   <form id="loginForm">
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username" autocomplete="username" required>
     <label for="password">Password</label>
-    <input type="password" id="password" name="password" autocomplete="current-password" required>
+    <input type="password" id="password" name="password" autocomplete="current-password" required autofocus>
     <button type="submit">Sign In</button>
   </form>
 </div>
 <script>
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
   const errEl = document.getElementById('error');
   errEl.style.display = 'none';
@@ -104,12 +101,13 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     const resp = await fetch('/__auth', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
+      body: JSON.stringify({ password })
     });
     if (resp.ok) {
       window.location.reload();
     } else {
       errEl.style.display = 'block';
+      document.getElementById('password').value = '';
     }
   } catch (err) {
     errEl.style.display = 'block';
@@ -119,21 +117,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
 </body>
 </html>`;
 
-function makeCookieValue(username: string, password: string): string {
-  // Simple hash - not cryptographic, but sufficient for session cookie
-  const str = `${username}:${password}`;
-  const encoder = new TextEncoder();
-  const data = encoder.encode(str);
-  // Use a simple base64 approach
-  let binary = '';
-  for (let i = 0; i < data.length; i++) {
-    binary += String.fromCharCode(data[i]);
-  }
-  return btoa(binary);
-}
-
 export default async (request: Request, context: Context) => {
-  const username = Netlify.env.get('BASIC_USERNAME') || 'admin';
   const password = Netlify.env.get('BASIC_PASSWORD');
 
   // If no password configured, allow all access
@@ -146,9 +130,10 @@ export default async (request: Request, context: Context) => {
   // Handle login API endpoint
   if (url.pathname === '/__auth' && request.method === 'POST') {
     try {
-      const body = await request.json() as { username: string; password: string };
-      if (body.username === username && body.password === password) {
-        const cookieVal = makeCookieValue(username, password);
+      const body = await request.json() as { password: string };
+      if (body.password === password) {
+        // Set a simple auth cookie
+        const cookieVal = btoa(`auth:${password}`);
         return new Response(JSON.stringify({ success: true }), {
           status: 200,
           headers: {
@@ -170,9 +155,8 @@ export default async (request: Request, context: Context) => {
   if (authCookieMatch) {
     try {
       const decoded = atob(authCookieMatch[1]);
-      const [user, pass] = decoded.split(':');
-      if (user === username && pass === password) {
-        // Authenticated, serve the actual content
+      const storedPass = decoded.replace('auth:', '');
+      if (storedPass === password) {
         return await context.next();
       }
     } catch {}
