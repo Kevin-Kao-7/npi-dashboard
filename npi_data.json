@@ -27,7 +27,7 @@
       "npm": "梅燕",
       "stage": "Design",
       "status": "同Cyborg 15 Black Edition A13UDO",
-      "highlight": "1. AU*456Pcs1st MP 5/30出貨 2.VN *190Pcs  gating  認證ready 6/B , 3.KH *120Pcs  gating  Core 3 100U CPU缺料,5/11 出貨，5/17 到微步  4.TH *360Pcs gating  認證未ready，需進口商盡快提供資料，預抓5/15 資料ready，+3W 拿證6/5          5.CPU/B&S物料 5/7已安排DHL快遞,微步確認需要5/10 到料才可滿足5/E 的MP規劃，持續追蹤, (PIC: PMC、微步） 6.KB: 4/24 weibu 收到訂單 安排對應鍵盤語言絲印，預計最快交期5/15，持續跟進微步 Pull-in 進度 (PIC: 微步) 7. 泰國認證：需業務推動進口商配合盡快處理認證所需資料，預抓5/15 資料ready，+3W 拿證6/5，，PIC sales/進口商            8. 馬來西亞認證：（Achieva）進口商WIFI 模組持證證書失效/進口商盡快提供認證所需資料，進口商 SIRIM 持證報告重辦 2 W～4W，资料ready後 + 5 周拿證，預計 7/M 拿證，PIC sales/進口商/weibu",
+      "highlight": "同Cyborg 15 Black Edition A13UDO",
       "mp_sort": "2026/06/15",
       "orig_idx": 1,
       "dates": {
@@ -124,7 +124,7 @@
       "npm": "蔡東宏",
       "stage": "ATS",
       "status": "預計5/19 ATS Assy 26PN047606A*100",
-      "highlight": "1.NPI issue:Modern Standby 手動喚醒後,鍵盤無功能,fail rate:1/960,新版BIOS測試中,預計今天下午有結果 2.備料:KB shielding交期@5/15,KB交期採購物管push中",
+      "highlight": "1.備料:KB shielding交期@5/15,KB物料 採購物管追蹤交期中",
       "mp_sort": "2026/05/29",
       "orig_idx": 6,
       "dates": {
@@ -1120,9 +1120,9 @@
       "cpu": "RMB 100 35W",
       "gpu": "N/A",
       "npm": "杜晨光",
-      "stage": "DVT",
-      "status": "預計5/7安排MVT試產，RD Sample 5/11 ETD",
-      "highlight": "物料  WLAN：( 目標5/E ETA* 10K , 6K TBD , keep posting (PIC: 採購) ADP ： 需pull-in到06/15  PIC:微步/PUR ， 認證Risk      CE需加急處理, 06/06 ready 才能meet 06/30 PH出貨 PIC:Weibu",
+      "stage": "MVT",
+      "status": "預計5/7安排MVT試產，RD Sample 5/13 ETD",
+      "highlight": "1.物料 WLAN：5/28 ETA* 10K , 6K TBD ,  Adapter ：目標16K， 需pull-in到06/15  ETA 2.認證  CE需加急處理, 06/06 ready 才能meet 06/30 PH出貨",
       "mp_sort": "2026/06/25",
       "orig_idx": 57,
       "dates": {
@@ -1132,7 +1132,8 @@
         "BTO ready": "2026/05/15",
         "ATS-start": "2026/06/15",
         "MP": "2026/06/25"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "26VL",
@@ -1140,9 +1141,9 @@
       "cpu": "RMB 100 35W",
       "gpu": "N/A",
       "npm": "杜晨光",
-      "stage": "DVT",
-      "status": "預計5/7安排MVT試產，RD Sample 5/11 ETD",
-      "highlight": "物料  WLAN：( 目標5/E ETA* 10K , 6K TBD , keep posting (PIC: 採購) ADP ： 需pull-in到06/15  PIC:微步/PUR ， 認證Risk      CE需加急處理, 06/06 ready 才能meet 06/30 PH出貨 PIC:Weibu",
+      "stage": "MVT",
+      "status": "預計5/7安排MVT試產，RD Sample 5/13ETD",
+      "highlight": "1.物料 WLAN：5/28 ETA* 10K , 6K TBD ,  Adapter ：目標16K， 需pull-in到06/15  ETA 2.認證  CE需加急處理, 06/06 ready 才能meet 06/30 PH出貨",
       "mp_sort": "2026/06/25",
       "orig_idx": 58,
       "dates": {
@@ -1152,7 +1153,8 @@
         "BTO ready": "2026/05/15",
         "ATS-start": "2026/06/15",
         "MP": "2026/06/25"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "14U3",
@@ -1181,9 +1183,9 @@
       "cpu": "ARL-H 45W",
       "gpu": "Intel® Arc™ Graphics",
       "npm": "李文欽",
-      "stage": "MVT",
-      "status": "DQA測試中",
-      "highlight": "1. Schedule: DQA預計5/8測試完成,Schedule暫不影響,ATS待業務正式下單後確認上線時間",
+      "stage": "ATS",
+      "status": "等業務訂單安排ATS",
+      "highlight": "1. Schedule: 等業務訂單安排ATS",
       "mp_sort": "2026/05/21",
       "orig_idx": 60,
       "dates": {
@@ -1192,7 +1194,8 @@
         "BTO ready": "2026/04/24",
         "ATS-start": "2026/05/09",
         "MP": "2026/05/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15Q1",
@@ -1251,99 +1254,24 @@
       }
     },
     {
-      "model": "17U1",
-      "mkt": "Venture 17 AI A2HMGO",
-      "cpu": "ARL-H 45W",
-      "gpu": "Intel® Arc™ Graphics",
-      "npm": "顧曉琴",
-      "stage": "MVT",
-      "status": "DQA 測試中",
-      "highlight": "1. Schedule: DQA預計5/8測試完成,Schedule暫不影響,ATS待業務正式下單後確認上線時間",
-      "mp_sort": "2026/05/21",
-      "orig_idx": 64,
-      "dates": {
-        "Kickoff": "2026/04/21",
-        "MVT-start": "2026/04/27",
-        "BTO ready": "2026/04/27",
-        "ATS-start": "2026/05/09",
-        "MP": "2026/05/21"
-      }
-    },
-    {
-      "model": "17U1",
-      "mkt": "VenturePro 17 AI A2HUDXG",
-      "cpu": "ARL-H 45W",
-      "gpu": "RTX 3050 (35W+10W)/ GDDR6 6GB",
-      "npm": "顧曉琴",
-      "stage": "ATS-",
-      "status": "BTO已開,無業務訂單",
-      "highlight": "NA",
-      "mp_sort": "2025/07/10",
-      "orig_idx": 65,
-      "dates": {
-        "Kickoff": "2025/05/29",
-        "MVT-start": "2025/06/09",
-        "BTO ready": "2025/06/06",
-        "ATS-start": "2025/07/07",
-        "MP": "2025/07/10"
-      }
-    },
-    {
-      "model": "17U1",
-      "mkt": "VenturePro 17 AI A2HVEG",
-      "cpu": "ARL-H 45W",
-      "gpu": "RTX 4050 (35W+10W)/ GDDR6 6GB",
-      "npm": "顧曉琴",
-      "stage": "MP",
-      "status": "0",
-      "highlight": "NA",
-      "mp_sort": "2025/07/12",
-      "orig_idx": 66,
-      "dates": {
-        "Kickoff": "2025/05/29",
-        "MVT-start": "2025/06/09",
-        "BTO ready": "2025/06/06",
-        "ATS-start": "2025/07/07",
-        "MP": "2025/07/12"
-      }
-    },
-    {
-      "model": "17U1",
-      "mkt": "VenturePro 17 AI A2HVEG",
-      "cpu": "ARL-H 45W",
-      "gpu": "RTX 4050 (35W+10W)/ GDDR6 6GB",
-      "npm": "顧曉琴",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "N/A",
-      "mp_sort": "2025/04/15",
-      "orig_idx": 67,
-      "dates": {
-        "Kickoff": "2025/05/29",
-        "MVT-start": "2025/02/06",
-        "BTO ready": "2025/03/10",
-        "ATS-start": "2025/04/01",
-        "MP": "2025/04/15"
-      }
-    },
-    {
       "model": "2611",
       "mkt": "Venture 16 AI A2HMGO",
       "cpu": "ARL-H 45W",
       "gpu": "Intel® Arc™ Graphics",
       "npm": "李文欽",
-      "stage": "MVT",
-      "status": "DQA 驗證中",
-      "highlight": "1. Schedule: DQA預計5/8測試完成,Schedule暫不影響,ATS待業務正式下單後確認上線時間",
+      "stage": "ATS",
+      "status": "等業務訂單安排ATS",
+      "highlight": "1. schedule: 等業務訂單安排ATS",
       "mp_sort": "2026/05/21",
-      "orig_idx": 68,
+      "orig_idx": 64,
       "dates": {
         "Kickoff": "2026/04/21",
         "MVT-start": "2026/04/27",
         "BTO ready": "2026/04/24",
         "ATS-start": "2026/05/09",
         "MP": "2026/05/21"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2611",
@@ -1355,14 +1283,15 @@
       "status": "-105",
       "highlight": "1. GPU缺料 2. 原US訂單無法上線改ATS訂單 3. FHD camera 卻料",
       "mp_sort": "2025/06/06",
-      "orig_idx": 69,
+      "orig_idx": 65,
       "dates": {
         "Kickoff": "2025/02/14",
         "MVT-start": "2025/03/24",
         "BTO ready": "2025/03/21",
         "ATS-start": "2025/05/26",
         "MP": "2025/06/06"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2611",
@@ -1374,14 +1303,15 @@
       "status": "-105",
       "highlight": "1. GPU缺料 2. 原US訂單無法上線改ATS訂單 3. FHD camera 卻料",
       "mp_sort": "2025/06/06",
-      "orig_idx": 70,
+      "orig_idx": 66,
       "dates": {
         "Kickoff": "2025/02/14",
         "MVT-start": "2025/03/24",
         "BTO ready": "2025/03/21",
         "ATS-start": "2025/05/26",
         "MP": "2025/06/06"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "26U3",
@@ -1393,7 +1323,7 @@
       "status": "1. DQA客驗進行中. 2. QA客驗於5/8開始.",
       "highlight": "None.",
       "mp_sort": "2026/05/13",
-      "orig_idx": 71,
+      "orig_idx": 67,
       "dates": {
         "Kickoff": "2025/10/01",
         "DVT-start": "2025/11/17",
@@ -1402,7 +1332,8 @@
         "BTO ready": "2026/02/26",
         "ATS-start": "2026/04/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1T91",
@@ -1411,19 +1342,20 @@
       "gpu": "N/A",
       "npm": "楊淑賢",
       "stage": "MVT",
-      "status": "MVT DQA test4/15-4/29，debug end@5/7",
+      "status": "ATS SMT預抓5/14, ASSY 5/15",
       "highlight": "1.物料：三合一包材包材廠商回復交期5/18,請採購追蹤交期中 2. 認證：3C認證測試battery cable輸出功率大於15W,待提供50cm延長線測試;機構殼燃燒測試fail,中國區出貨受影響,拿到CCC認證時間預計6月初.",
       "mp_sort": "2026/05/26",
-      "orig_idx": 72,
+      "orig_idx": 68,
       "dates": {
         "Kickoff": "2025/11/06",
         "DVT-start": "2025/12/16",
         "EVT-start": "2026/01/31",
         "MVT-start": "2026/04/02",
         "BTO ready": "2026/04/09",
-        "ATS-start": "2026/05/15",
+        "ATS-start": "2026/05/14",
         "MP": "2026/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1T91",
@@ -1435,13 +1367,14 @@
       "status": "大禮包包材follow 12XE",
       "highlight": "follow 12XE",
       "mp_sort": "2026/05/26",
-      "orig_idx": 73,
+      "orig_idx": 69,
       "dates": {
         "Kickoff": "2025/11/06",
         "BTO ready": "2026/04/09",
         "ATS-start": "2026/05/14",
         "MP": "2026/05/26"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1T91",
@@ -1453,7 +1386,7 @@
       "status": "暫無業務需求，未開放BTO",
       "highlight": "follow 12xe",
       "mp_sort": "2026/05/23",
-      "orig_idx": 74,
+      "orig_idx": 70,
       "dates": {
         "Kickoff": "2025/11/06",
         "DVT-start": "2025/12/16",
@@ -1462,8 +1395,9 @@
         "BTO ready": "2026/04/08",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/23"
-      }
+      },
+      "mp_changed": true
     }
   ],
-  "buildTime": "2026/05/08 18:00:01"
+  "buildTime": "2026/05/09 09:00:01"
 }
