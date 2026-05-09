@@ -2207,16 +2207,24 @@ function formatSectionText(text){
 function showDetailByIdx(idx){
   const r=DATA.records.find(x=>x.orig_idx===idx);
   if(!r)return;
+  const stage=r.stage||'';
+  const stageColors={Kickoff:'#4472C4',Design:'#00B0F0',DVT:'#7030A0',EVT:'#ED7D31',MVT:'#FF4444',ATS:'#70AD47',Study:'#FFC000',MP:'#FF69B4',m:'#FF4444',M:'#FF69B4'};
+  const stageColor=stageColors[stage]||'#888';
+  let timelineH='';
+  const dk=['Kickoff','DVT-start','EVT-start','MVT-start','BTO ready','ATS-start','MP'];
+  dk.forEach(k=>{
+    if(r.dates&&r.dates[k])timelineH+='<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #2e3345"><span style="color:#8a8fa8;font-size:12px">'+escHtml(k)+'</span><span style="color:#e0e0e0;font-size:12px">'+escHtml(r.dates[k])+'</span></div>';
+  });
   let h=`<div class="hdr"><h2>${escHtml(r.model)}</h2><div class="mkt">${escHtml(r.mkt)}</div></div>`;
   h+=`<div class="grid">`;
-  h+=`<div class="field"><div class="field-label">Stage</div><div class="field-value"><span class="badge badge-${r.stage.toLowerCase()}">${escHtml(r.stage)}</span></div></div>`;
+  h+=`<div class="field"><div class="field-label">Stage</div><div class="field-value"><span class="badge" style="background:${stageColor}">${escHtml(stage)}</span></div></div>`;
   h+=`<div class="field"><div class="field-label">NPM</div><div class="field-value">${escHtml(r.npm||'-')}</div></div>`;
   h+=`<div class="field"><div class="field-label">CPU</div><div class="field-value">${escHtml(r.cpu||'-')}</div></div>`;
   h+=`<div class="field"><div class="field-label">GPU</div><div class="field-value">${escHtml(r.gpu||'-')}</div></div>`;
-  for(const k of DATE_KEYS) h+=`<div class="field"><div class="field-label">${escHtml(k)}</div><div class="field-value">${escHtml(r.dates[k]||'-')}</div></div>`;
   h+='</div>';
   if(r.status)h+=`<div class="section"><div class="section-title">Current Status</div><div class="section-body">${formatSectionText(r.status)}</div></div>`;
   if(r.highlight&&r.highlight!=='.')h+=`<div class="section"><div class="section-title">Highlight</div><div class="section-body">${formatSectionText(r.highlight)}</div></div>`;
+  if(timelineH)h+=`<div class="section"><div class="section-title">Timeline</div><div class="section-body" style="padding:8px 12px">${timelineH}</div></div>`;
   document.getElementById('detailBody').innerHTML=h;
   document.getElementById('detailModal').classList.add('active');
 }
