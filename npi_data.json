@@ -316,7 +316,7 @@
     {
       "model": "265L",
       "mkt": "Crosshair A16 HX E9WFK",
-      "cpu": "FRG-HX 55W",
+      "cpu": "FRG-HX3D 55W",
       "gpu": "RTX 5060",
       "npm": "朱欣怡",
       "stage": "Pending",
@@ -335,7 +335,7 @@
     {
       "model": "265L",
       "mkt": "Crosshair A16 HX E9WFK",
-      "cpu": "FRG-HX3D 55W",
+      "cpu": "FRG-HX 55W",
       "gpu": "RTX 5060",
       "npm": "朱欣怡",
       "stage": "Pending",
@@ -391,6 +391,66 @@
     },
     {
       "model": "265L",
+      "mkt": "Crosshair A16 HX MLG Edition E8WEK",
+      "cpu": "DRG-HX",
+      "gpu": "RTX 5070",
+      "npm": "朱欣怡",
+      "stage": "Design",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/07/06",
+      "orig_idx": 20,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/06/02",
+        "BTO ready": "2026/05/26",
+        "ATS-start": "2026/06/26",
+        "MP": "2026/07/06"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 HX MLG Edition E8WFK",
+      "cpu": "DRG-HX",
+      "gpu": "RTX 5070",
+      "npm": "朱欣怡",
+      "stage": "Design",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/07/06",
+      "orig_idx": 21,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/06/02",
+        "BTO ready": "2026/05/26",
+        "ATS-start": "2026/06/26",
+        "MP": "2026/07/06"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 HX MLG Edition E8WGK",
+      "cpu": "DRG-HX",
+      "gpu": "RTX 5070",
+      "npm": "朱欣怡",
+      "stage": "Design",
+      "status": "",
+      "highlight": "",
+      "mp_sort": "2026/07/06",
+      "orig_idx": 22,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/06/02",
+        "BTO ready": "2026/05/26",
+        "ATS-start": "2026/06/26",
+        "MP": "2026/07/06"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
       "mkt": "Crosshair A16 Max HX E8WEK",
       "cpu": "DRG-HX 55W",
       "gpu": "RTX 5050",
@@ -399,7 +459,7 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/04/30",
-      "orig_idx": 20,
+      "orig_idx": 23,
       "dates": {
         "Kickoff": "2025/10/22",
         "DVT-start": "2025/12/10",
@@ -408,7 +468,8 @@
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/20",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -420,7 +481,7 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/04/30",
-      "orig_idx": 21,
+      "orig_idx": 24,
       "dates": {
         "Kickoff": "2025/10/22",
         "DVT-start": "2025/12/10",
@@ -429,7 +490,8 @@
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/20",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -441,7 +503,7 @@
       "status": "",
       "highlight": "NA",
       "mp_sort": "2026/04/30",
-      "orig_idx": 22,
+      "orig_idx": 25,
       "dates": {
         "Kickoff": "2025/10/22",
         "DVT-start": "2025/12/10",
@@ -450,70 +512,14 @@
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/20",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
       "mkt": "Crosshair A16 Max HX E9WEK",
       "cpu": "FRG-HX3D 55W",
       "gpu": "RTX 5050",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 23,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WEK",
-      "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5050",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 24,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WFK",
-      "cpu": "FRG-HX3D 55W",
-      "gpu": "RTX 5060",
-      "npm": "朱欣怡",
-      "stage": "Pending",
-      "status": "",
-      "highlight": "NA",
-      "mp_sort": "2026/06/28",
-      "orig_idx": 25,
-      "dates": {
-        "Kickoff": "2025/10/22",
-        "MVT-start": "2026/04/20",
-        "BTO ready": "2026/05/19",
-        "ATS-start": "2026/06/18",
-        "MP": "2026/06/28"
-      }
-    },
-    {
-      "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WFK",
-      "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5060",
       "npm": "朱欣怡",
       "stage": "Pending",
       "status": "",
@@ -530,9 +536,9 @@
     },
     {
       "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WGSK",
+      "mkt": "Crosshair A16 Max HX E9WEK",
       "cpu": "FRG-HX 55W",
-      "gpu": "RTX 5070",
+      "gpu": "RTX 5050",
       "npm": "朱欣怡",
       "stage": "Pending",
       "status": "",
@@ -549,9 +555,9 @@
     },
     {
       "model": "265L",
-      "mkt": "Crosshair A16 Max HX E9WGSK",
+      "mkt": "Crosshair A16 Max HX E9WFK",
       "cpu": "FRG-HX3D 55W",
-      "gpu": "RTX 5070",
+      "gpu": "RTX 5060",
       "npm": "朱欣怡",
       "stage": "Pending",
       "status": "",
@@ -567,6 +573,234 @@
       }
     },
     {
+      "model": "265L",
+      "mkt": "Crosshair A16 Max HX E9WFK",
+      "cpu": "FRG-HX 55W",
+      "gpu": "RTX 5060",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 29,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 Max HX E9WGSK",
+      "cpu": "FRG-HX 55W",
+      "gpu": "RTX 5070",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 30,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "265L",
+      "mkt": "Crosshair A16 Max HX E9WGSK",
+      "cpu": "FRG-HX3D 55W",
+      "gpu": "RTX 5070",
+      "npm": "朱欣怡",
+      "stage": "Pending",
+      "status": "",
+      "highlight": "NA",
+      "mp_sort": "2026/06/28",
+      "orig_idx": 31,
+      "dates": {
+        "Kickoff": "2025/10/22",
+        "MVT-start": "2026/04/20",
+        "BTO ready": "2026/05/19",
+        "ATS-start": "2026/06/18",
+        "MP": "2026/06/28"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Crosshair 18 Max B14WE",
+      "cpu": "RPL-HX refresh 55W",
+      "gpu": "RTX 5050",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中",
+      "highlight": "N/A",
+      "mp_sort": "2026/12/07",
+      "orig_idx": 32,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "DVT-start": "2026/06/23",
+        "EVT-start": "2026/08/24",
+        "MVT-start": "2026/10/20",
+        "BTO ready": "2026/11/02",
+        "ATS-start": "2026/11/28",
+        "MP": "2026/12/07"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Crosshair 18 Max B14WF",
+      "cpu": "RPL-HX refresh 55W",
+      "gpu": "RTX 5060",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中",
+      "highlight": "N/A",
+      "mp_sort": "2026/12/07",
+      "orig_idx": 33,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "DVT-start": "2026/06/23",
+        "EVT-start": "2026/08/24",
+        "MVT-start": "2026/10/20",
+        "BTO ready": "2026/11/02",
+        "ATS-start": "2026/11/28",
+        "MP": "2026/12/07"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Crosshair 18 Max B14WG",
+      "cpu": "RPL-HX refresh 55W",
+      "gpu": "RTX 5070",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中",
+      "highlight": "N/A",
+      "mp_sort": "2026/12/07",
+      "orig_idx": 34,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "DVT-start": "2026/06/23",
+        "EVT-start": "2026/08/24",
+        "MVT-start": "2026/10/20",
+        "BTO ready": "2026/11/02",
+        "ATS-start": "2026/11/28",
+        "MP": "2026/12/07"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Crosshair 18 Max B14WGX",
+      "cpu": "RPL-HX refresh 55W",
+      "gpu": "RTX 5070",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中",
+      "highlight": "N/A",
+      "mp_sort": "2026/12/07",
+      "orig_idx": 35,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "DVT-start": "2026/06/23",
+        "EVT-start": "2026/08/24",
+        "MVT-start": "2026/10/20",
+        "BTO ready": "2026/11/02",
+        "ATS-start": "2026/11/28",
+        "MP": "2026/12/07"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Crosshair 18 Max B2WE",
+      "cpu": "RPL-HX Next 55W",
+      "gpu": "RTX 5050",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中，共板RPL HX Refresh, 待RPL HX Next QS sample WW49到料後安排MVT",
+      "highlight": "N/A",
+      "mp_sort": "2027/01/30",
+      "orig_idx": 36,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/12/08",
+        "BTO ready": "2026/12/30",
+        "ATS-start": "2027/01/19",
+        "MP": "2027/01/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Crosshair 18 Max B2WF",
+      "cpu": "RPL-HX Next 55W",
+      "gpu": "RTX 5060",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中，共板RPL HX Refresh, 待RPL HX Next QS sample WW49到料後安排MVT",
+      "highlight": "N/A",
+      "mp_sort": "2027/01/30",
+      "orig_idx": 37,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/12/08",
+        "BTO ready": "2026/12/30",
+        "ATS-start": "2027/01/19",
+        "MP": "2027/01/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Crosshair 18 Max B2WG",
+      "cpu": "RPL-HX Next 55W",
+      "gpu": "RTX 5070",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中，共板RPL HX Refresh, 待RPL HX Next QS sample WW49到料後安排MVT",
+      "highlight": "N/A",
+      "mp_sort": "2027/01/30",
+      "orig_idx": 38,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/12/08",
+        "BTO ready": "2026/12/30",
+        "ATS-start": "2027/01/19",
+        "MP": "2027/01/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Crosshair 18 Max B2WGX",
+      "cpu": "RPL-HX Next 55W",
+      "gpu": "RTX 5070",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中，共板RPL HX Refresh, 待RPL HX Next QS sample WW49到料後安排MVT",
+      "highlight": "N/A",
+      "mp_sort": "2027/01/30",
+      "orig_idx": 39,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/12/08",
+        "BTO ready": "2026/12/30",
+        "ATS-start": "2027/01/19",
+        "MP": "2027/01/30"
+      },
+      "mp_changed": true
+    },
+    {
       "model": "2634",
       "mkt": "Stealth 16",
       "cpu": "NVL-H 45W",
@@ -576,7 +810,7 @@
       "status": "",
       "highlight": ".",
       "mp_sort": "2027/01/08",
-      "orig_idx": 29,
+      "orig_idx": 40,
       "dates": {
         "Kickoff": "2026/05/22",
         "DVT-start": "2026/07/21",
@@ -585,7 +819,8 @@
         "BTO ready": "2026/11/27",
         "ATS-start": "2026/12/29",
         "MP": "2027/01/08"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -597,14 +832,15 @@
       "status": "",
       "highlight": "備料：1.包材印刷還需小幅度調整，行銷已請廠商打樣與量產同步進行，預計25號第一批交料，持續pull in 2.包材環測發現外表與內部存在水漬，廠商預計5/7提供新樣品，DQA預計5/9出複測結果",
       "mp_sort": "2026/05/30",
-      "orig_idx": 30,
+      "orig_idx": 41,
       "dates": {
         "Kickoff": "2025/11/21",
         "MVT-start": "2026/02/27",
         "BTO ready": "2026/03/02",
         "ATS-start": "2026/05/20",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -616,13 +852,14 @@
       "status": "",
       "highlight": "leverage Titan 18 HX Dragon Edition A2WH",
       "mp_sort": "2026/05/30",
-      "orig_idx": 31,
+      "orig_idx": 42,
       "dates": {
         "Kickoff": "2025/11/21",
         "BTO ready": "2026/03/02",
         "ATS-start": "2026/05/20",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -634,13 +871,14 @@
       "status": "",
       "highlight": "leverage Titan 18 HX Dragon Edition A2WH",
       "mp_sort": "2026/05/30",
-      "orig_idx": 32,
+      "orig_idx": 43,
       "dates": {
         "Kickoff": "2025/11/21",
         "BTO ready": "2026/03/02",
         "ATS-start": "2026/05/20",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -652,14 +890,15 @@
       "status": "預計5/8 ATS C/R Assy@26PN045660C*50pcs",
       "highlight": "NA",
       "mp_sort": "2026/05/13",
-      "orig_idx": 33,
+      "orig_idx": 44,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -671,14 +910,15 @@
       "status": "同Cyborg 15 C13WEO",
       "highlight": "NA",
       "mp_sort": "2026/05/13",
-      "orig_idx": 34,
+      "orig_idx": 45,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -690,14 +930,15 @@
       "status": "待業務通知開BTO",
       "highlight": "待業務通知開BTO",
       "mp_sort": "2026/05/16",
-      "orig_idx": 35,
+      "orig_idx": 46,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -709,14 +950,15 @@
       "status": "待業務通知開BTO",
       "highlight": "待業務通知開BTO",
       "mp_sort": "2026/05/16",
-      "orig_idx": 36,
+      "orig_idx": 47,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -728,14 +970,15 @@
       "status": "同Cyborg 15 C13WEO",
       "highlight": "NA",
       "mp_sort": "2026/05/13",
-      "orig_idx": 37,
+      "orig_idx": 48,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -747,14 +990,15 @@
       "status": "同Cyborg 15 C13WEO",
       "highlight": "NA",
       "mp_sort": "2026/05/13",
-      "orig_idx": 38,
+      "orig_idx": 49,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -766,14 +1010,15 @@
       "status": "同Cyborg 15 C13WEO",
       "highlight": "NA",
       "mp_sort": "2026/05/13",
-      "orig_idx": 39,
+      "orig_idx": 50,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -785,14 +1030,15 @@
       "status": "待業務通知開BTO",
       "highlight": "待業務通知開BTO",
       "mp_sort": "2026/05/16",
-      "orig_idx": 40,
+      "orig_idx": 51,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -804,14 +1050,15 @@
       "status": "待業務通知開BTO",
       "highlight": "待業務通知開BTO",
       "mp_sort": "2026/05/16",
-      "orig_idx": 41,
+      "orig_idx": 52,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -823,14 +1070,15 @@
       "status": "待業務通知開BTO",
       "highlight": "待業務通知開BTO",
       "mp_sort": "2026/05/16",
-      "orig_idx": 42,
+      "orig_idx": 53,
       "dates": {
         "Kickoff": "2026/03/03",
         "MVT-start": "2026/03/30",
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -842,14 +1090,15 @@
       "status": "預計5/20 試組,5/21 ID hand carry 3台並於 5/25 當週在公司內部展出(ID 玻璃屋)",
       "highlight": "備料:森田薄膜預計5/14到大智,A件有可能無法依原時程5/18進廠,採購追蹤交期中",
       "mp_sort": "2026/06/18",
-      "orig_idx": 43,
+      "orig_idx": 54,
       "dates": {
         "Kickoff": "2026/04/08",
         "MVT-start": "2026/05/15",
         "BTO ready": "2026/05/08",
         "ATS-start": "2026/06/05",
         "MP": "2026/06/18"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15TK",
@@ -861,7 +1110,7 @@
       "status": "同Cyborg A15 Max C1WG",
       "highlight": "同Cyborg A15 Max C1WG",
       "mp_sort": "2026/05/29",
-      "orig_idx": 44,
+      "orig_idx": 55,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/17",
@@ -869,7 +1118,8 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/05/18",
         "MP": "2026/05/29"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15TK",
@@ -881,7 +1131,7 @@
       "status": "預計5/19 C/R Assy 26PN047605C*50",
       "highlight": "同Cyborg A15 Max C1WG",
       "mp_sort": "2026/05/29",
-      "orig_idx": 45,
+      "orig_idx": 56,
       "dates": {
         "Kickoff": "2025/10/17",
         "DVT-start": "2025/11/17",
@@ -889,7 +1139,134 @@
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/05/18",
         "MP": "2026/05/29"
-      }
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Cyborg 18 Max A14WE",
+      "cpu": "RPL-HX refresh 55W",
+      "gpu": "RTX 5050",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中",
+      "highlight": "N/A",
+      "mp_sort": "2026/11/30",
+      "orig_idx": 57,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "DVT-start": "2026/06/23",
+        "EVT-start": "2026/08/24",
+        "MVT-start": "2026/10/12",
+        "BTO ready": "2026/11/02",
+        "ATS-start": "2026/11/21",
+        "MP": "2026/11/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Cyborg 18 Max A14WF",
+      "cpu": "RPL-HX refresh 55W",
+      "gpu": "RTX 5060",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中",
+      "highlight": "N/A",
+      "mp_sort": "2026/11/30",
+      "orig_idx": 58,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "DVT-start": "2026/06/23",
+        "EVT-start": "2026/08/24",
+        "MVT-start": "2026/10/12",
+        "BTO ready": "2026/11/02",
+        "ATS-start": "2026/11/21",
+        "MP": "2026/11/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Cyborg 18 Max A14WG",
+      "cpu": "RPL-HX refresh 55W",
+      "gpu": "RTX 5070",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中",
+      "highlight": "N/A",
+      "mp_sort": "2026/11/30",
+      "orig_idx": 59,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "DVT-start": "2026/06/23",
+        "EVT-start": "2026/08/24",
+        "MVT-start": "2026/10/12",
+        "BTO ready": "2026/11/02",
+        "ATS-start": "2026/11/21",
+        "MP": "2026/11/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Cyborg 18 Max A2WE",
+      "cpu": "RPL-HX Next 55W",
+      "gpu": "RTX 5050",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中，共板RPL HX Refresh, 待RPL HX Next QS sample WW49到料後安排MVT",
+      "highlight": "N/A",
+      "mp_sort": "2027/01/30",
+      "orig_idx": 60,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/12/08",
+        "BTO ready": "2026/12/30",
+        "ATS-start": "2027/01/19",
+        "MP": "2027/01/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Cyborg 18 Max A2WF",
+      "cpu": "RPL-HX Next 55W",
+      "gpu": "RTX 5060",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中，共板RPL HX Refresh, 待RPL HX Next QS sample WW49到料後安排MVT",
+      "highlight": "N/A",
+      "mp_sort": "2027/01/30",
+      "orig_idx": 61,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/12/08",
+        "BTO ready": "2026/12/30",
+        "ATS-start": "2027/01/19",
+        "MP": "2027/01/30"
+      },
+      "mp_changed": true
+    },
+    {
+      "model": "1861",
+      "mkt": "Cyborg 18 Max A2WG",
+      "cpu": "RPL-HX Next 55W",
+      "gpu": "RTX 5070",
+      "npm": "顧曉琴",
+      "stage": "Design",
+      "status": "0A layout進行中，共板RPL HX Refresh, 待RPL HX Next QS sample WW49到料後安排MVT",
+      "highlight": "N/A",
+      "mp_sort": "2027/01/30",
+      "orig_idx": 62,
+      "dates": {
+        "Kickoff": "2026/05/08",
+        "MVT-start": "2026/12/08",
+        "BTO ready": "2026/12/30",
+        "ATS-start": "2027/01/19",
+        "MP": "2027/01/30"
+      },
+      "mp_changed": true
     },
     {
       "model": "15T3",
@@ -901,7 +1278,7 @@
       "status": "同Katana 15 HX C14WGXK",
       "highlight": "同Katana 15 HX C14WGXK",
       "mp_sort": "2026/08/30",
-      "orig_idx": 46,
+      "orig_idx": 63,
       "dates": {
         "Kickoff": "2026/04/20",
         "DVT-start": "2026/06/02",
@@ -909,7 +1286,8 @@
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
         "MP": "2026/08/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T3",
@@ -921,7 +1299,7 @@
       "status": "同Katana 15 HX C14WGXK",
       "highlight": "同Katana 15 HX C14WGXK",
       "mp_sort": "2026/08/30",
-      "orig_idx": 47,
+      "orig_idx": 64,
       "dates": {
         "Kickoff": "2026/04/20",
         "DVT-start": "2026/06/02",
@@ -929,7 +1307,8 @@
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
         "MP": "2026/08/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T3",
@@ -941,7 +1320,7 @@
       "status": "同Katana 15 HX C14WGXK",
       "highlight": "同Katana 15 HX C14WGXK",
       "mp_sort": "2026/08/30",
-      "orig_idx": 48,
+      "orig_idx": 65,
       "dates": {
         "Kickoff": "2026/04/20",
         "DVT-start": "2026/06/02",
@@ -949,7 +1328,8 @@
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
         "MP": "2026/08/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T3",
@@ -961,7 +1341,7 @@
       "status": "0A layout中",
       "highlight": "1. Schedule: 因C件是新廠商新開模,計畫進行二次MVT組裝, 確保問題都能在ATS前fix, 暫定MVT1 @7/16, 量產時間暫不影響",
       "mp_sort": "2026/08/30",
-      "orig_idx": 49,
+      "orig_idx": 66,
       "dates": {
         "Kickoff": "2026/04/20",
         "DVT-start": "2026/06/02",
@@ -969,7 +1349,8 @@
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
         "MP": "2026/08/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "14T3",
@@ -979,9 +1360,9 @@
       "npm": "倪嬌嬌",
       "stage": "EVT",
       "status": "EVT DQA test start@4/23",
-      "highlight": "1.備料: panel驗證FHD+ and 2.8K, 其中 2.8K panel 驗證Follow其他Leading customer, 預計量產交料時間待Samsung回復中@5/8",
+      "highlight": "1.備料: panel驗證FHD+ and 2.8K, 其中 2.8K panel 驗證Follow其他Leading customer, 需Samsung確認是否可Support並提供預計量產交料時間, 5/11等待Samsung的進一步確認",
       "mp_sort": "2026/09/14",
-      "orig_idx": 50,
+      "orig_idx": 67,
       "dates": {
         "Kickoff": "2025/04/30",
         "DVT-start": "2025/09/01",
@@ -990,7 +1371,8 @@
         "BTO ready": "2026/08/03",
         "ATS-start": "2026/09/01",
         "MP": "2026/09/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2621",
@@ -1002,7 +1384,7 @@
       "status": "MVT測試中",
       "highlight": "1.PWM IC來料異常，導致系統有hang的風險， a.台北的機台已重工完成。MSIK機台預計周五會收到料，請工廠協助重工。已寄出for NV/MSFT的樣品，請廠商快遞回台重工，待後續安排。 b.因此issue，DQA需重新安排long run與複測部分會當機的問題。 2.battery life power break down，更新WLAN driver與PD FW後耗電有進步，MCU及USB retimer仍分析中，同時也請EC fine tune中。",
       "mp_sort": "2026/08/14",
-      "orig_idx": 51,
+      "orig_idx": 68,
       "dates": {
         "Kickoff": "2024/11/25",
         "DVT-start": "2025/01/20",
@@ -1011,7 +1393,8 @@
         "BTO ready": "2026/04/13",
         "ATS-start": "2026/07/31",
         "MP": "2026/08/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2623",
@@ -1023,7 +1406,7 @@
       "status": "EVT 機台於4/28已經抵台陸續分發給RD 驗證,5/7 分別寄送給NV 各辦公室測試",
       "highlight": "備料: Samsung panel 不支援N1平台,須等leading customer 10/M MP+12wks 方可上線",
       "mp_sort": "2026/09/14",
-      "orig_idx": 52,
+      "orig_idx": 69,
       "dates": {
         "Kickoff": "2025/04/30",
         "DVT-start": "2025/09/01",
@@ -1032,7 +1415,8 @@
         "BTO ready": "2026/08/03",
         "ATS-start": "2026/09/01",
         "MP": "2026/09/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "14V2",
@@ -1044,7 +1428,7 @@
       "status": "MVT debug中，,Base on 物料Ready時間安排 ATS上線",
       "highlight": "1.物料: 需05/15齊料, 才能meet 05/30 TTM (Risk物料 CPU/ADP/KB) PIC:PMC/PUR  2.認證: 抓5/15 資料ready，+3W 拿證6/5 PIC: Sales   馬來西亞 進口商WIFI 模組證書失效&提供認證資料, 預計7/M拿證PIC: Sales",
       "mp_sort": "2026/05/30",
-      "orig_idx": 53,
+      "orig_idx": 70,
       "dates": {
         "Kickoff": "2025/11/14",
         "DVT-start": "2026/01/04",
@@ -1052,7 +1436,8 @@
         "BTO ready": "2026/03/16",
         "ATS-start": "2026/05/15",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "14T2",
@@ -1064,7 +1449,7 @@
       "status": "MVT SMT:5/10, ASSY:5/15",
       "highlight": "NA",
       "mp_sort": "2026/06/30",
-      "orig_idx": 54,
+      "orig_idx": 71,
       "dates": {
         "Kickoff": "2026/04/13",
         "MVT-start": "2026/05/10",
@@ -1083,7 +1468,7 @@
       "status": "MVT debug中，Base  on 物料Ready時間安排ATS",
       "highlight": "1.物料: 需05/15齊料, 才能meet 05/30 TTM (Risk物料 CPU/ADP/KB) PIC:PMC/PUR  2.認證:  只有VN一筆訂單，排程 05/30， 認證06/10 ready 須請Weibu加快認證速度 PIC:Weibu",
       "mp_sort": "2026/05/30",
-      "orig_idx": 55,
+      "orig_idx": 72,
       "dates": {
         "Kickoff": "2025/11/14",
         "DVT-start": "2026/01/04",
@@ -1103,7 +1488,7 @@
       "status": "MVT測試中",
       "highlight": "1.PWM IC來料異常，導致系統有hang的風險， a.台北的機台已重工完成。MSIK機台預計周五會收到料，請工廠協助重工。已寄出for NV/MSFT的樣品，請廠商快遞回台重工，待後續安排。 b.因此issue，DQA需重新安排long run與複測部分會當機的問題。 2.battery life power break down，更新WLAN driver與PD FW後耗電有進步，MCU及USB retimer仍分析中，同時也請EC fine tune中。",
       "mp_sort": "2026/08/14",
-      "orig_idx": 56,
+      "orig_idx": 73,
       "dates": {
         "Kickoff": "2024/11/25",
         "DVT-start": "2025/01/20",
@@ -1124,7 +1509,7 @@
       "status": "預計5/7安排MVT試產，RD Sample 5/13 ETD",
       "highlight": "1.物料 WLAN：5/28 ETA* 10K , 6K TBD ,  Adapter ：目標16K， 需pull-in到06/15  ETA 2.認證  CE需加急處理, 06/06 ready 才能meet 06/30 PH出貨",
       "mp_sort": "2026/06/25",
-      "orig_idx": 57,
+      "orig_idx": 74,
       "dates": {
         "Kickoff": "2026/01/05",
         "DVT-start": "2026/03/30",
@@ -1144,7 +1529,7 @@
       "status": "預計5/7安排MVT試產，RD Sample 5/13ETD",
       "highlight": "1.物料 WLAN：5/28 ETA* 10K , 6K TBD ,  Adapter ：目標16K， 需pull-in到06/15  ETA 2.認證  CE需加急處理, 06/06 ready 才能meet 06/30 PH出貨",
       "mp_sort": "2026/06/25",
-      "orig_idx": 58,
+      "orig_idx": 75,
       "dates": {
         "Kickoff": "2026/01/05",
         "DVT-start": "2026/03/30",
@@ -1164,7 +1549,7 @@
       "status": "1. SMT ongoing 5/7, Assembly on 5/11, Customer Inspection on 5/21.",
       "highlight": "None.",
       "mp_sort": "2026/05/28",
-      "orig_idx": 59,
+      "orig_idx": 76,
       "dates": {
         "Kickoff": "2025/10/01",
         "DVT-start": "2025/11/17",
@@ -1185,7 +1570,7 @@
       "status": "等業務訂單安排ATS",
       "highlight": "1. Schedule: 等業務訂單安排ATS",
       "mp_sort": "2026/05/21",
-      "orig_idx": 60,
+      "orig_idx": 77,
       "dates": {
         "Kickoff": "2026/04/21",
         "MVT-start": "2026/04/27",
@@ -1204,7 +1589,7 @@
       "status": "",
       "highlight": "0",
       "mp_sort": "2025/07/02",
-      "orig_idx": 61,
+      "orig_idx": 78,
       "dates": {
         "Kickoff": "2025/05/27",
         "BTO ready": "2025/06/05",
@@ -1222,7 +1607,7 @@
       "status": "",
       "highlight": "0",
       "mp_sort": "2025/07/02",
-      "orig_idx": 62,
+      "orig_idx": 79,
       "dates": {
         "Kickoff": "2025/05/27",
         "BTO ready": "2025/06/05",
@@ -1240,7 +1625,7 @@
       "status": "0A Gerberout @5/11",
       "highlight": "1. Schedule: 因C件是新廠商新開模,計畫進行二次MVT組裝, 確保問題都能在ATS前fix, 暫定MVT1 @7/8, 量產時間暫不影響",
       "mp_sort": "2026/08/27",
-      "orig_idx": 63,
+      "orig_idx": 80,
       "dates": {
         "Kickoff": "2026/04/20",
         "DVT-start": "2026/05/26",
@@ -1260,7 +1645,7 @@
       "status": "等業務訂單安排ATS",
       "highlight": "1. schedule: 等業務訂單安排ATS",
       "mp_sort": "2026/05/21",
-      "orig_idx": 64,
+      "orig_idx": 81,
       "dates": {
         "Kickoff": "2026/04/21",
         "MVT-start": "2026/04/27",
@@ -1279,7 +1664,7 @@
       "status": "-105",
       "highlight": "1. GPU缺料 2. 原US訂單無法上線改ATS訂單 3. FHD camera 卻料",
       "mp_sort": "2025/06/06",
-      "orig_idx": 65,
+      "orig_idx": 82,
       "dates": {
         "Kickoff": "2025/02/14",
         "MVT-start": "2025/03/24",
@@ -1298,7 +1683,7 @@
       "status": "-105",
       "highlight": "1. GPU缺料 2. 原US訂單無法上線改ATS訂單 3. FHD camera 卻料",
       "mp_sort": "2025/06/06",
-      "orig_idx": 66,
+      "orig_idx": 83,
       "dates": {
         "Kickoff": "2025/02/14",
         "MVT-start": "2025/03/24",
@@ -1317,7 +1702,7 @@
       "status": "1. DQA客驗進行中. 2. QA客驗於5/8開始.",
       "highlight": "None.",
       "mp_sort": "2026/05/13",
-      "orig_idx": 67,
+      "orig_idx": 84,
       "dates": {
         "Kickoff": "2025/10/01",
         "DVT-start": "2025/11/17",
@@ -1338,7 +1723,7 @@
       "status": "ATS SMT預抓5/14, ASSY 5/15",
       "highlight": "1.物料：三合一包材包材廠商回復交期5/18,請採購追蹤交期中 2. 認證：3C認證測試battery cable輸出功率大於15W,待提供50cm延長線測試;機構殼燃燒測試fail,中國區出貨受影響,拿到CCC認證時間預計6月初.",
       "mp_sort": "2026/05/26",
-      "orig_idx": 68,
+      "orig_idx": 85,
       "dates": {
         "Kickoff": "2025/11/06",
         "DVT-start": "2025/12/16",
@@ -1359,7 +1744,7 @@
       "status": "大禮包包材follow 12XE",
       "highlight": "follow 12XE",
       "mp_sort": "2026/05/26",
-      "orig_idx": 69,
+      "orig_idx": 86,
       "dates": {
         "Kickoff": "2025/11/06",
         "BTO ready": "2026/04/09",
@@ -1377,7 +1762,7 @@
       "status": "暫無業務需求，未開放BTO",
       "highlight": "follow 12xe",
       "mp_sort": "2026/05/23",
-      "orig_idx": 70,
+      "orig_idx": 87,
       "dates": {
         "Kickoff": "2025/11/06",
         "DVT-start": "2025/12/16",
@@ -1389,5 +1774,5 @@
       }
     }
   ],
-  "buildTime": "2026/05/09 13:59:42"
+  "buildTime": "2026/05/09 18:00:01"
 }

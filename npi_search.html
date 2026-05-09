@@ -14,6 +14,15 @@
   --study:#FFC000;--mp:#FF69B4;
 }
 body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
+/* ── 登录遮罩 ── */
+#loginOverlay{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:9999}
+#loginBox{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:32px 28px;width:360px;text-align:center}
+#loginBox h2{color:#fff;font-size:20px;margin-bottom:20px}
+#loginBox input{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:6px;background:var(--bg3);color:#fff;font-size:15px;outline:none;margin-bottom:12px}
+#loginBox input:focus{border-color:#4472C4}
+#loginBox button{width:100%;padding:10px;border:none;border-radius:6px;background:#4472C4;color:#fff;font-size:15px;cursor:pointer}
+#loginBox button:hover{background:#365a9e}
+#loginErr{color:#FF4444;font-size:13px;margin-top:8px;display:none}
 /* ── 头部 ── */
 .top-bar{background:var(--bg2);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .top-bar h1{font-size:20px;color:#fff;font-weight:600}
@@ -93,8 +102,17 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 </style>
 </head>
 <body>
+<!-- 登录遮罩 -->
+<div id="loginOverlay">
+  <div id="loginBox">
+    <h2>NPI Search</h2>
+    <input type="password" id="pwdInput" placeholder="Password" autofocus>
+    <button onclick="checkLogin()">Enter</button>
+    <div id="loginErr">Password incorrect</div>
+  </div>
+</div>
 <!-- 主体 -->
-<div id="mainApp">
+<div id="mainApp" style="display:none">
   <div class="top-bar">
     <h1>NPI Statistic</h1>
     <span class="stats" id="statsInfo"></span>
@@ -560,7 +578,8 @@ const DATA = {
         "BTO ready": "2026/05/26",
         "ATS-start": "2026/06/26",
         "MP": "2026/07/06"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -579,7 +598,8 @@ const DATA = {
         "BTO ready": "2026/05/26",
         "ATS-start": "2026/06/26",
         "MP": "2026/07/06"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -598,7 +618,8 @@ const DATA = {
         "BTO ready": "2026/05/26",
         "ATS-start": "2026/06/26",
         "MP": "2026/07/06"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -619,7 +640,8 @@ const DATA = {
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/20",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -640,7 +662,8 @@ const DATA = {
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/20",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -661,7 +684,8 @@ const DATA = {
         "BTO ready": "2026/03/24",
         "ATS-start": "2026/04/20",
         "MP": "2026/04/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -737,7 +761,8 @@ const DATA = {
         "BTO ready": "2026/05/19",
         "ATS-start": "2026/06/18",
         "MP": "2026/06/28"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -756,7 +781,8 @@ const DATA = {
         "BTO ready": "2026/05/19",
         "ATS-start": "2026/06/18",
         "MP": "2026/06/28"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "265L",
@@ -775,7 +801,8 @@ const DATA = {
         "BTO ready": "2026/05/19",
         "ATS-start": "2026/06/18",
         "MP": "2026/06/28"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -796,7 +823,8 @@ const DATA = {
         "BTO ready": "2026/11/02",
         "ATS-start": "2026/11/28",
         "MP": "2026/12/07"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -817,7 +845,8 @@ const DATA = {
         "BTO ready": "2026/11/02",
         "ATS-start": "2026/11/28",
         "MP": "2026/12/07"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -838,7 +867,8 @@ const DATA = {
         "BTO ready": "2026/11/02",
         "ATS-start": "2026/11/28",
         "MP": "2026/12/07"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -859,7 +889,8 @@ const DATA = {
         "BTO ready": "2026/11/02",
         "ATS-start": "2026/11/28",
         "MP": "2026/12/07"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -878,7 +909,8 @@ const DATA = {
         "BTO ready": "2026/12/30",
         "ATS-start": "2027/01/19",
         "MP": "2027/01/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -897,7 +929,8 @@ const DATA = {
         "BTO ready": "2026/12/30",
         "ATS-start": "2027/01/19",
         "MP": "2027/01/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -916,7 +949,8 @@ const DATA = {
         "BTO ready": "2026/12/30",
         "ATS-start": "2027/01/19",
         "MP": "2027/01/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -935,7 +969,8 @@ const DATA = {
         "BTO ready": "2026/12/30",
         "ATS-start": "2027/01/19",
         "MP": "2027/01/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2634",
@@ -956,7 +991,8 @@ const DATA = {
         "BTO ready": "2026/11/27",
         "ATS-start": "2026/12/29",
         "MP": "2027/01/08"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -975,7 +1011,8 @@ const DATA = {
         "BTO ready": "2026/03/02",
         "ATS-start": "2026/05/20",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -993,7 +1030,8 @@ const DATA = {
         "BTO ready": "2026/03/02",
         "ATS-start": "2026/05/20",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1824",
@@ -1011,7 +1049,8 @@ const DATA = {
         "BTO ready": "2026/03/02",
         "ATS-start": "2026/05/20",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1030,7 +1069,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1049,7 +1089,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1068,7 +1109,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1087,7 +1129,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1106,7 +1149,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1125,7 +1169,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1144,7 +1189,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/08",
         "MP": "2026/05/13"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1163,7 +1209,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1182,7 +1229,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1201,7 +1249,8 @@ const DATA = {
         "BTO ready": "2026/04/15",
         "ATS-start": "2026/05/06",
         "MP": "2026/05/16"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T1",
@@ -1220,7 +1269,8 @@ const DATA = {
         "BTO ready": "2026/05/08",
         "ATS-start": "2026/06/05",
         "MP": "2026/06/18"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15TK",
@@ -1240,7 +1290,8 @@ const DATA = {
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/05/18",
         "MP": "2026/05/29"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15TK",
@@ -1260,7 +1311,8 @@ const DATA = {
         "BTO ready": "2026/02/06",
         "ATS-start": "2026/05/18",
         "MP": "2026/05/29"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -1281,7 +1333,8 @@ const DATA = {
         "BTO ready": "2026/11/02",
         "ATS-start": "2026/11/21",
         "MP": "2026/11/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -1302,7 +1355,8 @@ const DATA = {
         "BTO ready": "2026/11/02",
         "ATS-start": "2026/11/21",
         "MP": "2026/11/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -1323,7 +1377,8 @@ const DATA = {
         "BTO ready": "2026/11/02",
         "ATS-start": "2026/11/21",
         "MP": "2026/11/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -1342,7 +1397,8 @@ const DATA = {
         "BTO ready": "2026/12/30",
         "ATS-start": "2027/01/19",
         "MP": "2027/01/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -1361,7 +1417,8 @@ const DATA = {
         "BTO ready": "2026/12/30",
         "ATS-start": "2027/01/19",
         "MP": "2027/01/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "1861",
@@ -1380,7 +1437,8 @@ const DATA = {
         "BTO ready": "2026/12/30",
         "ATS-start": "2027/01/19",
         "MP": "2027/01/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T3",
@@ -1400,7 +1458,8 @@ const DATA = {
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
         "MP": "2026/08/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T3",
@@ -1420,7 +1479,8 @@ const DATA = {
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
         "MP": "2026/08/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T3",
@@ -1440,7 +1500,8 @@ const DATA = {
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
         "MP": "2026/08/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "15T3",
@@ -1460,7 +1521,8 @@ const DATA = {
         "BTO ready": "2026/07/30",
         "ATS-start": "2026/08/20",
         "MP": "2026/08/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "14T3",
@@ -1481,7 +1543,8 @@ const DATA = {
         "BTO ready": "2026/08/03",
         "ATS-start": "2026/09/01",
         "MP": "2026/09/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2621",
@@ -1502,7 +1565,8 @@ const DATA = {
         "BTO ready": "2026/04/13",
         "ATS-start": "2026/07/31",
         "MP": "2026/08/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "2623",
@@ -1523,7 +1587,8 @@ const DATA = {
         "BTO ready": "2026/08/03",
         "ATS-start": "2026/09/01",
         "MP": "2026/09/14"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "14V2",
@@ -1543,7 +1608,8 @@ const DATA = {
         "BTO ready": "2026/03/16",
         "ATS-start": "2026/05/15",
         "MP": "2026/05/30"
-      }
+      },
+      "mp_changed": true
     },
     {
       "model": "14T2",
@@ -1880,8 +1946,18 @@ const DATA = {
       }
     }
   ],
-  "buildTime": "2026/05/09 16:10:17"
+  "buildTime": "2026/05/09 18:00:01"
 };
+
+// ── 密码 ──
+const CORRECT=hashCode('msiyjb');
+function hashCode(s){let h=0;for(let i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0;}return h.toString(36);}
+function checkLogin(){
+  const v=document.getElementById('pwdInput').value;
+  if(hashCode(v)===CORRECT){document.getElementById('loginOverlay').style.display='none';document.getElementById('mainApp').style.display='block';renderList();}
+  else{document.getElementById('loginErr').style.display='block';document.getElementById('pwdInput').value='';document.getElementById('pwdInput').focus();}
+}
+document.getElementById('pwdInput').addEventListener('keydown',function(e){if(e.key==='Enter')checkLogin();});
 
 // ── 筛选状态 ──
 let filterModelVals=new Set();
