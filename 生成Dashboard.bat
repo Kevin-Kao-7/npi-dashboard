@@ -3,38 +3,38 @@ chcp 65001 >nul
 set PYTHONIOENCODING=utf-8
 cd /d "%~dp0"
 
-:: 1. 生成 Dashboard
-echo [1/3] 正在生成 Dashboard...
+:: 1. Build Dashboard
+echo [1/3] Building Dashboard...
 python build_npi.py
 if errorlevel 1 (
-    echo 生成失败，请检查 build_npi.py 输出
+    echo Build failed, check build_npi.py output
     pause
     exit /b 1
 )
 echo.
 
-:: 2. Git 提交
-echo [2/3] 正在提交到本地仓库...
+:: 2. Git commit
+echo [2/3] Committing to local repo...
 "C:\Program Files\Git\cmd\git.exe" add npi_dashboard.html npi_search.html npi_dashboard.xlsx npi_data.json
 "C:\Program Files\Git\cmd\git.exe" commit -m "auto update %date% %time%" --quiet 2>nul
 if errorlevel 1 (
-    echo 没有变更需要提交
+    echo No changes to commit
 ) else (
-    echo 已提交
+    echo Committed
 )
 echo.
 
-:: 3. 推送到 GitHub（使用本地代理）
-echo [3/3] 正在推送到 GitHub...
+:: 3. Push to GitHub (using local proxy)
+echo [3/3] Pushing to GitHub...
 set http_proxy=http://127.0.0.1:7890
 set https_proxy=http://127.0.0.1:7890
 "C:\Program Files\Git\cmd\git.exe" push origin main 2>nul
 if errorlevel 1 (
-    echo 推送失败，请检查网络/代理是否开启
-    echo 可稍后手动执行: git push origin main
+    echo Push failed, check network/proxy
+    echo Run manually: git push origin main
 ) else (
-    echo 推送成功！GitHub Pages 将自动更新。
+    echo Push success! GitHub Pages will update.
 )
 echo.
-echo 全部完成！
+echo All done!
 pause

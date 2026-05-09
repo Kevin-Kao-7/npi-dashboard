@@ -7,15 +7,14 @@ export default async (request: Request, context: Context) => {
 
   // If no password is set, allow access without authentication
   if (!password) {
-    return context.next();
+    return await context.next();
   }
 
   // Check Authorization header
   const authHeader = request.headers.get('Authorization');
-  const expectedAuth = `Basic ${btoa(`${username}:${password}`)}`;
 
-  if (!authHeader || authHeader !== expectedAuth) {
-    return new Response('Unauthorized', {
+  if (!authHeader) {
+    return new Response('Authentication required', {
       status: 401,
       headers: {
         'WWW-Authenticate': 'Basic realm="NPI Dashboard"',
@@ -23,10 +22,24 @@ export default async (request: Request, context: Context) => {
     });
   }
 
-  return context.next();
+  // Parse and verify credentials
+  const encoded = authHeader.replace('Basic ', '');
+  const decoded = atob(encoded);
+  const [user, pass] = decoded.split(':');
+
+  if (user !== username || pass !== password) {
+    return new Response('Authentication required', {
+      status: 401,
+      headers: {
+        'WWW-Authenticate': 'Basic realm="NPI Dashboard"',
+      },
+    });
+  }
+
+  // Auth successful, continue to static file
+  return await context.next();
 };
 
 export const config = {
   path: '/*',
-  excludedPath: '/.netlify/*',
 };

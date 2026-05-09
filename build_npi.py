@@ -584,17 +584,20 @@ function onSearchChange(){{
 // ── 过滤+排序 ──
 function getFilteredRecords(){{
   const activeStages=['Design','DVT','EVT','MVT','ATS','m','M'];
+  const listStages=['Design','DVT','EVT','MVT','ATS','m'];
   return DATA.records.filter(r=>{{
+    // 列表只显示 Design/DVT/EVT/MVT/ATS（m=MVT别名）
+    const stg=(r.stage||'').trim();
+    if(!listStages.includes(stg))return false;
     if(filterModelVals.size>0&&!filterModelVals.has(r.model))return false;
     if(filterMktVals.size>0&&!filterMktVals.has(r.mkt.split(' ')[0]))return false;
     if(searchModelVal){{const q=searchModelVal.toLowerCase();if(!r.model.toLowerCase().includes(q))return false;}}
     if(searchMktVal){{const q=searchMktVal.toLowerCase();if(!r.mkt.toLowerCase().includes(q))return false;}}
     // 统计栏筛选
     if(statStageFilter==='MVT'){{
-      const s=(r.stage||'').trim();
-      if(s!=='MVT'&&s!=='m')return false;
+      if(stg!=='MVT'&&stg!=='m')return false;
     }} else if(statStageFilter){{
-      if((r.stage||'').trim()!==statStageFilter)return false;
+      if(stg!==statStageFilter)return false;
     }}
     return true;
   }});
@@ -664,6 +667,17 @@ document.getElementById('detailModal').addEventListener('click',function(e){{
   if(e.target===this)closeDetail();
 }});
 
+// ── 排版工具：有"数字."就换行分段，否则原样输出 ──
+function formatSectionText(text){{
+  if(!text)return 'N/A';
+  // 检测是否含有效序号（数字. 后面不是数字，避免 7.0 被切）
+  if(!/\\d+\\.[^\\d]/.test(text))return escHtml(text);
+  // 按 (空格 | 中文句号后) 跟着「数字.非数字」分割
+  const parts=text.split(/(?:[\\s]+|(?<=。))(?=\\d+\\.[^\\d])/).map(s=>s.trim()).filter(s=>s);
+  if(parts.length<=1)return escHtml(text);
+  return parts.map(p=>'<div style="margin-bottom:6px">'+escHtml(p)+'</div>').join('');
+}}
+
 function generateDetailHTML(r){{
   const stage=r.stage||'';
   const bto=r.dates?r.dates['BTO ready']||'':'';
@@ -689,8 +703,8 @@ function generateDetailHTML(r){{
   h+='<div class="field"><div class="field-label">CPU</div><div class="field-value" style="font-size:11px">'+escHtml(r.cpu||'N/A')+'</div></div>';
   h+='<div class="field"><div class="field-label">GPU</div><div class="field-value" style="font-size:11px">'+escHtml(r.gpu||'N/A')+'</div></div>';
   h+='</div>';
-  h+='<div class="section"><div class="section-title">Current Status</div><div class="section-body">'+escHtml(r.status||'N/A')+'</div></div>';
-  h+='<div class="section"><div class="section-title">Highlight</div><div class="section-body">'+escHtml(r.highlight||'N/A')+'</div></div>';
+  h+='<div class="section"><div class="section-title">Current Status</div><div class="section-body">'+formatSectionText(r.status||'')+'</div></div>';
+  h+='<div class="section"><div class="section-title">Highlight</div><div class="section-body">'+formatSectionText(r.highlight||'')+'</div></div>';
   h+='<div class="section"><div class="section-title">Timeline</div><div class="section-body" style="padding:8px 12px">'+timelineH+'</div></div>';
   return h;
 }}
