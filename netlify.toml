@@ -1,6 +1,0 @@
-[build]
-  publish = "."
-
-[[edge_functions]]
-  function = "basic_auth"
-  path = "/*"
