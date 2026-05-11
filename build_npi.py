@@ -12,12 +12,10 @@ import openpyxl
 
 # ── 路径配置 ──
 EXCEL_PATH = r"C:\Users\msipm\Desktop\work\Spec總表.xlsx"
-HTML_PATH  = r"c:\Users\msipm\WorkBuddy\20260422080636\npi_dashboard.html"
-JSON_PATH  = r"c:\Users\msipm\WorkBuddy\20260422080636\npi_data.json"
-SEARCH_HTML_PATH = r"c:\Users\msipm\WorkBuddy\20260422080636\npi_search.html"
-
-# ── 密码配置 ──
-DASHBOARD_PASSWORD = "msiyjb"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+HTML_PATH  = os.path.join(BASE_DIR, "npi_dashboard.html")
+JSON_PATH  = os.path.join(BASE_DIR, "npi_data.json")
+SEARCH_HTML_PATH = os.path.join(BASE_DIR, "npi_search.html")
 
 # Excel Schedule sheet 列映射 (1-indexed, Row 1=表头)
 COL = {
@@ -149,22 +147,6 @@ def inject_html(records):
     if count == 0:
         raise RuntimeError("未找到 'const DATA = { ... };' 块，请检查 HTML 文件")
 
-    # 替换密码（支持占位符和已有值两种情况）
-    # JS hashCode: h=((h<<5)-h)+s.charCodeAt(i); h|=0; return h.toString(36)
-    def js_hashcode(s):
-        h = 0
-        for c in s:
-            h = ((h << 5) - h) + ord(c)
-            h = h & 0xFFFFFFFF  # simulate JS 32-bit int
-            if h >= 0x80000000:
-                h -= 0x100000000  # simulate JS |=0 (signed)
-        return str(h & 0xFFFFFFFF) if h >= 0 else str(h)
-
-    pwd_code = js_hashcode(DASHBOARD_PASSWORD)
-    new_html = new_html.replace("__NPI_PWD_HASH__", pwd_code)
-    # 如果占位符已被替换过，替换 const CORRECT=hashCode('...')
-    new_html = re.sub(r"hashCode\('[^']*'\)", f"hashCode('{DASHBOARD_PASSWORD}')", new_html, count=1)
-
     with open(HTML_PATH, "w", encoding="utf-8") as f:
         f.write(new_html)
 
@@ -276,10 +258,6 @@ def build_search_html(records):
     data_obj = {"records": records, "buildTime": datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S")}
     json_str = json.dumps(data_obj, ensure_ascii=False, indent=2)
 
-    # JS hashCode: h=((h<<5)-h)+s.charCodeAt(i); h|=0; return h.toString(36)
-    # 与现有 Dashboard 一致，直接用 JS 运行时计算密码 hashCode
-    pwd_js = f"hashCode('{DASHBOARD_PASSWORD}')"
-
     html = f'''<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -296,15 +274,6 @@ def build_search_html(records):
   --study:#FFC000;--mp:#FF69B4;
 }}
 body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}}
-/* ── 登录遮罩 ── */
-#loginOverlay{{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:9999}}
-#loginBox{{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:32px 28px;width:360px;text-align:center}}
-#loginBox h2{{color:#fff;font-size:20px;margin-bottom:20px}}
-#loginBox input{{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:6px;background:var(--bg3);color:#fff;font-size:15px;outline:none;margin-bottom:12px}}
-#loginBox input:focus{{border-color:#4472C4}}
-#loginBox button{{width:100%;padding:10px;border:none;border-radius:6px;background:#4472C4;color:#fff;font-size:15px;cursor:pointer}}
-#loginBox button:hover{{background:#365a9e}}
-#loginErr{{color:#FF4444;font-size:13px;margin-top:8px;display:none}}
 /* ── 头部 ── */
 .top-bar{{background:var(--bg2);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}}
 .top-bar h1{{font-size:20px;color:#fff;font-weight:600}}
@@ -384,17 +353,8 @@ body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sa
 </style>
 </head>
 <body>
-<!-- 登录遮罩 -->
-<div id="loginOverlay">
-  <div id="loginBox">
-    <h2>NPI Search</h2>
-    <input type="password" id="pwdInput" placeholder="Password" autofocus>
-    <button onclick="checkLogin()">Enter</button>
-    <div id="loginErr">Password incorrect</div>
-  </div>
-</div>
 <!-- 主体 -->
-<div id="mainApp" style="display:none">
+<div id="mainApp">
   <div class="top-bar">
     <h1>NPI Statistic</h1>
     <span class="stats" id="statsInfo"></span>
@@ -453,16 +413,6 @@ body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sa
 <script>
 // ── 数据 ──
 const DATA = {json_str};
-
-// ── 密码 ──
-const CORRECT={pwd_js};
-function hashCode(s){{let h=0;for(let i=0;i<s.length;i++){{h=((h<<5)-h)+s.charCodeAt(i);h|=0;}}return h.toString(36);}}
-function checkLogin(){{
-  const v=document.getElementById('pwdInput').value;
-  if(hashCode(v)===CORRECT){{document.getElementById('loginOverlay').style.display='none';document.getElementById('mainApp').style.display='block';renderList();}}
-  else{{document.getElementById('loginErr').style.display='block';document.getElementById('pwdInput').value='';document.getElementById('pwdInput').focus();}}
-}}
-document.getElementById('pwdInput').addEventListener('keydown',function(e){{if(e.key==='Enter')checkLogin();}});
 
 // ── 筛选状态 ──
 let filterModelVals=new Set();
@@ -712,6 +662,7 @@ function generateDetailHTML(r){{
 // ── 初始化 ──
 buildMsDropdown('model');
 buildMsDropdown('mkt');
+renderList();
 </script>
 </body>
 </html>'''
