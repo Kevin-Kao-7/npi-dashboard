@@ -15,7 +15,7 @@ import urllib.parse
 import urllib.error
 
 # ── 路径配置 ──
-PROJECT_DIR = r"C:\Users\msipm\WorkBuddy\20260422080636"
+PROJECT_DIR = r"C:\npi-dashboard"
 EXCEL_PATH = r"C:\Users\msipm\Desktop\work\Spec總表.xlsx"
 BUILD_SCRIPT = os.path.join(PROJECT_DIR, "build_npi.py")
 DASHBOARD_HTML = os.path.join(PROJECT_DIR, "npi_dashboard.html")
@@ -156,10 +156,25 @@ def run_git_push():
         cwd=PROJECT_DIR, capture_output=True, text=True, env=env, encoding="utf-8", errors="replace"
     )
     if r.returncode != 0:
-        log(f"git push 失败: {r.stderr.strip()}")
-        return False
+        # push 被拒绝，尝试 pull --rebase 后重新推送
+        log("push 被拒绝，尝试 git pull --rebase 后重试...")
+        pr = subprocess.run(
+            [GIT_EXE, "pull", "--rebase", "origin", "main"],
+            cwd=PROJECT_DIR, capture_output=True, text=True, env=env, encoding="utf-8", errors="replace"
+        )
+        if pr.returncode != 0:
+            log(f"git pull --rebase 也失败: {pr.stderr.strip()}")
+            return False
+        # rebase 成功，重新 push
+        r2 = subprocess.run(
+            [GIT_EXE, "push", "origin", "main"],
+            cwd=PROJECT_DIR, capture_output=True, text=True, env=env, encoding="utf-8", errors="replace"
+        )
+        if r2.returncode != 0:
+            log(f"重试 push 仍然失败: {r2.stderr.strip()}")
+            return False
 
-    log("推送成功！Netlify 将自动更新。")
+    log("推送成功！GitHub Pages 将自动更新。")
     return True
 
 
@@ -210,7 +225,7 @@ def main():
             "✅ NPI Dashboard 已更新",
             f"检测到 Excel 有更新，Dashboard 已自动构建并推送到 GitHub/Netlify。\n\n"
             f"**Excel 修改时间**: {excel_time_str}\n\n"
-            f"[查看 Dashboard](https://bright-crumble-d4ec15.netlify.app/npi_search.html)"
+            f"[查看 Dashboard](https://kabonka.github.io/npi-dashboard/npi_search.html)"
         )
     else:
         send_wechat_notify(
