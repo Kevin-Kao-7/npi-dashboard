@@ -1,6 +1,6 @@
 """
 NPI Dashboard 自动更新脚本
-检查 Excel 是否有更新，有则自动构建 Dashboard 并推送到 GitHub/Netlify。
+检查 Excel 是否有更新，有则自动构建 Dashboard 并推送到 GitHub Pages。
 用于 Windows 任务计划程序定时执行。
 更新时通过 Server酱 推送微信通知。
 """
@@ -122,7 +122,7 @@ def run_build():
 
 def run_git_push():
     """执行 git add/commit/push"""
-    log("正在提交并推送到 GitHub/Netlify...")
+    log("正在提交并推送到 GitHub Pages...")
     env = os.environ.copy()
     env["http_proxy"] = PROXY
     env["https_proxy"] = PROXY
@@ -213,7 +213,7 @@ def main():
         )
         sys.exit(1)
 
-    # 4. 推送到 GitHub/Netlify
+    # 4. 推送到 GitHub Pages
     push_ok = run_git_push()
     if not push_ok:
         log("推送失败，Dashboard 已本地更新但未同步到 GitHub。")
@@ -223,14 +223,14 @@ def main():
     if push_ok:
         send_wechat_notify(
             "✅ NPI Dashboard 已更新",
-            f"检测到 Excel 有更新，Dashboard 已自动构建并推送到 GitHub/Netlify。\n\n"
+            f"检测到 Excel 有更新，Dashboard 已自动构建并推送到 GitHub Pages。\n\n"
             f"**Excel 修改时间**: {excel_time_str}\n\n"
             f"[查看 Dashboard](https://kabonka.github.io/npi-dashboard/npi_search.html)"
         )
     else:
         send_wechat_notify(
             "⚠️ NPI Dashboard 本地已更新，GitHub 推送失败",
-            f"Excel 检测到更新，Dashboard 已本地构建，但推送到 GitHub/Netlify 失败。\n\n"
+            f"Excel 检测到更新，Dashboard 已本地构建，但推送到 GitHub 失败。\n\n"
             f"**Excel 修改时间**: {excel_time_str}"
         )
 
